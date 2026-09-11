@@ -1,0 +1,53 @@
+---
+export const prerender = false;
+let runs_recent = [], costs_daily = [], verdicts = [];
+try {
+  const db = Astro.locals.runtime.env.DB;
+  const q = async (sql) => (await db.prepare(sql).all()).results;
+  runs_recent = await q('SELECT ts_utc, model, trigger, generation_id, cost_usd FROM council_runs ORDER BY ts_utc DESC LIMIT 50');
+  costs_daily = await q('SELECT * FROM daily_totals ORDER BY date_utc DESC');
+  verdicts = await q('SELECT rejected_id, model, verdict, confidence, generation_id, cost_usd FROM council_verdicts ORDER BY id DESC LIMIT 60');
+} catch (e) { console.error(e); }
+const money = (n) => n==null ? '—' : '$' + Number(n).toFixed(4);
+const tot = costs_daily.reduce((a,d)=>a+d.total_cost_usd, 0);
+---
+<html><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Cash Machine — Council</title>
+<style>
+body{font-family:-apple-system,system-ui,sans-serif;background:#0e1117;color:#e6e6e6;margin:0;padding:24px;max-width:960px;margin-inline:auto}
+h1{font-size:1.5rem;font-weight:600} h2{font-size:1rem;color:#9ca3af;margin-top:32px;margin-bottom:8px}
+a{color:#93c5fd;text-decoration:none} nav{margin-bottom:8px;font-size:.9rem} nav a{margin-right:14px}
+.muted{color:#6b7280;font-size:.85rem}
+table{width:100%;border-collapse:collapse;font-size:.85rem;margin-top:8px}
+th{color:#9ca3af;text-align:left;font-weight:500;font-size:.72rem;text-transform:uppercase;padding:6px 8px;border-bottom:1px solid #2a2f3a}
+td{padding:8px;border-bottom:1px solid #1c2029;vertical-align:top}
+.card{background:#161b22;border:1px solid #2a2f3a;border-radius:12px;padding:16px 20px;display:inline-block;margin-top:16px}
+.card .v{font-size:1.6rem;font-weight:700;margin-top:6px}
+.card .l{font-size:.7rem;color:#9ca3af;text-transform:uppercase;letter-spacing:.06em}
+code{background:#1c2029;padding:1px 5px;border-radius:4px;font-size:.78rem}
+</style></head><body>
+<h1>Council</h1>
+<nav><a href="/">← Home</a></nav>
+<div class="card"><div class="l">Total spend</div><div class="v">${tot.toFixed(2)}</div></div>
+
+<h2>Calls by day</h2>
+<table><tr><th>Date</th><th>Cost</th><th>Calls</th></tr>
+{costs_daily.map(d=>(<tr><td>{d.date_utc}</td><td>${d.total_cost_usd.toFixed(2)}</td><td>{d.run_count}</td></tr>))}
+</table>
+
+<h2>Verdicts by thesis</h2>
+<table><tr><th>Thesis</th><th>Model</th><th>Verdict</th><th>Conf</th><th>Cost</th><th>Generation</th></tr>
+{verdicts.map(v=>(<tr>
+ <td><a href={`/thesis/${v.rejected_id}/`}>{v.rejected_id}</a></td>
+ <td>{v.model}</td><td>{v.verdict?.slice?.(0,30)}</td><td>{v.confidence ?? '—'}</td>
+ <td>{money(v.cost_usd)}</td>
+ <td class="muted"><code>{(v.generation_id||'').slice(0,20)}…</code></td>
+</tr>))}
+</table>
+
+<h2>Recent council calls</h2>
+<table><tr><th>When</th><th>Model</th><th>Trigger</th><th>Cost</th></tr>
+{runs_recent.map(r=>(<tr><td class="muted">{r.ts_utc?.slice?.(0,16).replace('T',' ')}</td><td>{r.model}</td><td class="muted">{r.trigger}</td><td>{money(r.cost_usd)}</td></tr>))}
+</table>
+</body></html>

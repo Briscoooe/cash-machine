@@ -1,21 +1,21 @@
 ---
 export const prerender = false;
 let state = {mode:'—', started:'—', paper_balance:'—'};
-let trades = [], rejected = [], costs_daily = [], runs_recent = [];
+// wallet address intentionally NOT displayed (privacy)
+let trades = [], rejected = [], snapshots = [];
 
 try {
   const db = Astro.locals.runtime.env.DB;
   const q = async (sql) => (await db.prepare(sql).all()).results;
   state = Object.fromEntries((await q('SELECT k,v FROM state')).map(r=>[r.k,r.v]));
   trades = await q('SELECT * FROM trades ORDER BY ts_utc DESC');
-  rejected = await q('SELECT * FROM rejected ORDER BY ts_utc DESC');
-  costs_daily = await q('SELECT * FROM daily_totals ORDER BY date_utc DESC');
-  runs_recent = await q('SELECT ts_utc, model, trigger, cost_usd FROM council_runs ORDER BY ts_utc DESC LIMIT 15');
+  rejected = await q('SELECT id, ts_utc, thesis, decision, side, my_est_yes, proposed_price FROM rejected ORDER BY ts_utc DESC');
+  snapshots = await q('SELECT * FROM market_snapshots ORDER BY id DESC LIMIT 40');
 } catch (e) {
   console.error('D1 read error', e);
 }
-const totalCost = costs_daily.reduce((a,d)=>a+d.total_cost_usd, 0);
 const money = (n) => '$' + Number(n).toFixed(2);
+const pct = (n) => (Number(n)*100).toFixed(1) + '%';
 ---
 <html>
 <head>
@@ -25,6 +25,8 @@ const money = (n) => '$' + Number(n).toFixed(2);
 <style>
 body{font-family:-apple-system,system-ui,sans-serif;background:#0e1117;color:#e6e6e6;margin:0;padding:24px;max-width:960px;margin-inline:auto}
 h1{font-size:1.5rem;font-weight:600;margin-bottom:4px} h2{font-size:1rem;color:#9ca3af;margin-top:32px;margin-bottom:8px}
+a{color:#93c5fd;text-decoration:none} a:hover{text-decoration:underline}
+nav{margin-bottom:8px;font-size:.9rem} nav a{margin-right:14px}
 .muted{color:#6b7280;font-size:.85rem}
 .cards{display:flex;gap:16px;flex-wrap:wrap;margin-top:20px}
 .card{background:#161b22;border:1px solid #2a2f3a;border-radius:12px;padding:16px 20px;min-width:150px}
@@ -39,12 +41,12 @@ td{padding:9px 8px;border-bottom:1px solid #1c2029;vertical-align:top}
 </head>
 <body>
 <h1>Cash Machine <span class="badge">{state.mode}</span></h1>
-<p class="muted">Polymarket dry run · started {state.started?.slice?.(0,10) || state.started} · wallet <code>{state.wallet?.slice?.(0,10) || ''}…</code></p>
+<nav><a href="/">Home</a><a href="/council/">Council</a></nav>
+<p class="muted">Polymarket dry run · started {state.started?.slice?.(0,10) || state.started}</p>
 
 <div class="cards">
   <div class="card"><div class="l">Paper balance</div><div class="v">{money(state.paper_balance)}</div></div>
   <div class="card"><div class="l">Open positions</div><div class="v">{trades.filter(t=>t.status==='open').length}</div></div>
-  <div class="card"><div class="l">Council spend</div><div class="v">{money(totalCost)}</div></div>
 </div>
 
 <h2>Open positions</h2>
@@ -54,20 +56,20 @@ td{padding:9px 8px;border-bottom:1px solid #1c2029;vertical-align:top}
       {trades.map(t=>(<tr><td>{t.market}</td><td>{t.side}</td><td>{money(t.size_usd)}</td><td>{t.entry_price}</td><td class="muted">{t.ts_utc?.slice?.(0,10)}</td></tr>))}
     </table>}
 
-<h2>Council cost by day</h2>
-<table><tr><th>Date</th><th>Cost</th><th>Calls</th></tr>
-{costs_daily.map(d=>(<tr><td>{d.date_utc}</td><td>{money(d.total_cost_usd)}</td><td>{d.run_count}</td></tr>))}
+<h2>Market snapshot <span class="muted">({snapshots.length} tracked markets, latest prices)</span></h2>
+<table>
+<tr><th>Question</th><th>YES</th><th>Volume</th><th>Ends</th></tr>
+{snapshots.map(s=>(<tr><td>{s.question?.slice?.(0,90)}</td><td>{(Number(s.yes_price)*100).toFixed(1)}%</td><td class="muted">${Math.round(Number(s.volume)/1e6*10)/10}M</td><td class="muted">{s.end_date}</td></tr>))}
 </table>
 
-<h2>Rejected theses</h2>
+<h2>Theses <span class="muted">(full details, sources, council verdicts on each page)</span></h2>
 {rejected.length === 0
   ? <p class="empty">None yet</p>
-  : <table><tr><th>Thesis</th><th>Decision</th><th>Date</th></tr>
-      {rejected.map(r=>(<tr><td>{r.thesis?.slice?.(0,120)}</td><td class="muted">{r.decision}</td><td class="muted">{r.ts_utc?.slice?.(0,10)}</td></tr>))}
+  : <table><tr><th>Market</th><th>Side</th><th>My est.</th><th>Market</th><th>Decision</th><th>Date</th></tr>
+      {rejected.map(r=>(<tr>
+        <td><a href={`/thesis/${r.id}/`}>{r.thesis?.slice?.(0,80)}</a></td>
+        <td>{r.side}</td><td>{r.my_est_yes}</td><td>{r.proposed_price!=null?(Number(r.proposed_price)*100).toFixed(1)+'%':''}</td>
+        <td class="muted">{r.decision}</td>
+      </tr>))}
     </table>}
-
-<h2>Recent council calls</h2>
-<table><tr><th>When</th><th>Model</th><th>Trigger</th><th>Cost</th></tr>
-{runs_recent.map(r=>(<tr><td class="muted">{r.ts_utc?.slice?.(0,16).replace('T',' ')}</td><td>{r.model}</td><td class="muted">{r.trigger}</td><td>${r.cost_usd?.toFixed?.(4)}</td></tr>))}
-</table>
 </body></html>
