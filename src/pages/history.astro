@@ -1,0 +1,52 @@
+---
+export const prerender = false;
+let balance_history = [], calibration = [], rejected = [], avg = {b:null,n:0};
+try {
+  const db = Astro.locals.runtime.env.DB;
+  const q = async (sql) => (await db.prepare(sql).all()).results;
+  balance_history = await q('SELECT * FROM balance_history ORDER BY date_utc DESC LIMIT 60');
+  calibration = await q('SELECT market, my_est, market_price, outcome, brier, resolved_at FROM calibration WHERE outcome IS NOT NULL ORDER BY resolved_at DESC');
+  avg = (await q('SELECT AVG(brier) b, COUNT(*) n FROM calibration WHERE brier IS NOT NULL'))[0];
+  rejected = await q('SELECT id, thesis, resolved_outcome, my_est_yes, postmortem FROM rejected WHERE postmortem IS NOT NULL ORDER BY ts_utc DESC');
+} catch (e) { console.error(e); }
+const money = (n) => '$' + Number(n).toFixed(2);
+---
+<html><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Cash Machine — History & Calibration</title>
+<style>
+body{font-family:-apple-system,system-ui,sans-serif;background:#0e1117;color:#e6e6e6;margin:0;padding:24px;max-width:960px;margin-inline:auto}
+h1{font-size:1.5rem;font-weight:600} h2{font-size:1rem;color:#9ca3af;margin-top:32px;margin-bottom:8px}
+a{color:#93c5fd;text-decoration:none} nav{margin-bottom:8px;font-size:.9rem} nav a{margin-right:14px}
+.muted{color:#6b7280;font-size:.85rem}
+table{width:100%;border-collapse:collapse;font-size:.88rem;margin-top:8px}
+th{color:#9ca3af;text-align:left;font-weight:500;font-size:.72rem;text-transform:uppercase;padding:6px 8px;border-bottom:1px solid #2a2f3a}
+td{padding:9px 8px;border-bottom:1px solid #1c2029;vertical-align:top}
+.card{background:#161b22;border:1px solid #2a2f3a;border-radius:12px;padding:16px 20px;display:inline-block;margin:16px 16px 0 0}
+.card .v{font-size:1.5rem;font-weight:700;margin-top:6px}
+.card .l{font-size:.7rem;color:#9ca3af;text-transform:uppercase;letter-spacing:.06em}
+p.note{background:#161b22;border:1px solid #2a2f3a;border-radius:10px;padding:12px 14px;line-height:1.5;font-size:.9rem}
+</style></head><body>
+<h1>History & Calibration</h1>
+<nav><a href="/">← Home</a></nav>
+<div>
+  <div class="card"><div class="l">Avg Brier score</div><div class="v">{avg?.b!=null?avg.b.toFixed(3):'—'}</div><div class="muted">{avg?.n||0} resolved</div></div>
+  <div class="card"><div class="l">Resolved markets tracked</div><div class="v">{calibration.length}</div></div>
+</div>
+<p class="note muted">Brier score = mean squared error of my probability estimates vs outcomes. 0 = perfect, 0.25 = coin-flip level, lower is better.</p>
+
+<h2>Balance over time</h2>
+<table><tr><th>Date</th><th>Balance</th><th>Unrealized P/L</th><th>Total value</th><th>Open</th></tr>
+{balance_history.map(b=>(<tr><td>{b.date_utc}</td><td>{money(b.balance)}</td><td>{b.unrealized_pl!=null?money(b.unrealized_pl):'—'}</td><td>{b.total_value!=null?money(b.total_value):'—'}</td><td class="muted">{b.open_positions??'—'}</td></tr>))}
+</table>
+
+<h2>Calibration records <span class="muted">(my estimate vs what happened)</span></h2>
+{calibration.length === 0 ? <p class="empty">No resolved markets yet — scores appear as tracked markets resolve</p> :
+<table><tr><th>Market</th><th>My est.</th><th>Market price</th><th>Outcome</th><th>Brier</th></tr>
+{calibration.map(c=>(<tr><td>{c.market?.slice?.(0,70)}</td><td>{(Number(c.my_est)*100).toFixed(0)}%</td><td>{(Number(c.market_price)*100).toFixed(0)}%</td><td>{c.outcome}</td><td>{c.brier?.toFixed?.(3)}</td></tr>))}
+</table>}
+
+<h2>Post-mortems</h2>
+{rejected.length === 0 ? <p class="empty">None yet</p> :
+rejected.map(r=>(<div class="note"><strong>{r.thesis?.slice?.(0,90)}</strong> → resolved {r.resolved_outcome}<br/>{r.postmortem}</div>))}
+</body></html>

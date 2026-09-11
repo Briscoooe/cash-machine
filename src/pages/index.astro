@@ -1,19 +1,21 @@
 ---
 export const prerender = false;
 let state = {mode:'—', started:'—', paper_balance:'—'};
-// wallet address intentionally NOT displayed (privacy)
-let trades = [], rejected = [];
+let trades = [], rejected = [], balance_history = [], cats = [];
 
 try {
   const db = Astro.locals.runtime.env.DB;
   const q = async (sql) => (await db.prepare(sql).all()).results;
   state = Object.fromEntries((await q('SELECT k,v FROM state')).map(r=>[r.k,r.v]));
   trades = await q('SELECT * FROM trades ORDER BY ts_utc DESC');
-  rejected = await q('SELECT id, ts_utc, thesis, decision, side, my_est_yes, proposed_price FROM rejected ORDER BY ts_utc DESC');
+  rejected = await q('SELECT id, ts_utc, thesis, decision, side, my_est_yes, proposed_price, category, counterfactual_pnl, resolved_outcome FROM rejected ORDER BY ts_utc DESC');
+  balance_history = await q('SELECT * FROM balance_history ORDER BY date_utc DESC LIMIT 30');
+  cats = await q("SELECT category, COUNT(*) n FROM rejected WHERE category IS NOT NULL GROUP BY category ORDER BY n DESC");
 } catch (e) {
   console.error('D1 read error', e);
 }
 const money = (n) => '$' + Number(n).toFixed(2);
+const cfSum = rejected.reduce((a,r)=>a+(r.counterfactual_pnl ?? 0), 0);
 ---
 <html>
 <head>
@@ -34,35 +36,51 @@ table{width:100%;border-collapse:collapse;font-size:.9rem;margin-top:8px}
 th{color:#9ca3af;text-align:left;font-weight:500;font-size:.72rem;text-transform:uppercase;padding:6px 8px;border-bottom:1px solid #2a2f3a}
 td{padding:9px 8px;border-bottom:1px solid #1c2029;vertical-align:top}
 .badge{display:inline-block;background:#1e3a5f;color:#93c5fd;border-radius:6px;padding:2px 10px;font-size:.75rem}
+.tag{display:inline-block;border-radius:5px;padding:1px 7px;font-size:.7rem;background:#2a2f3a;color:#9ca3af}
 .empty{color:#6b7280;padding:14px 0;font-style:italic}
+.pos{color:#4ade80}.neg{color:#f87171}
+.spark{font-size:.8rem;color:#6b7280}
 </style>
 </head>
 <body>
 <h1>Cash Machine <span class="badge">{state.mode}</span></h1>
-<nav><a href="/">Home</a><a href="/council/">Council</a></nav>
+<nav><a href="/">Home</a><a href="/council/">Council</a><a href="/history/">History</a></nav>
 <p class="muted">Polymarket dry run · started {state.started?.slice?.(0,10) || state.started}</p>
 
 <div class="cards">
   <div class="card"><div class="l">Paper balance</div><div class="v">{money(state.paper_balance)}</div></div>
   <div class="card"><div class="l">Open positions</div><div class="v">{trades.filter(t=>t.status==='open').length}</div></div>
   <div class="card"><div class="l">Theses reviewed</div><div class="v">{rejected.length}</div></div>
+  <div class="card"><div class="l">Rejected pile (hypothetical P/L)</div>
+    <div class="v" class={cfSum>=0?'pos':'neg'}>{cfSum>=0?'+':''}{money(cfSum)}</div>
+    <div class="muted">what council-rejected $10 bets would be worth now</div></div>
 </div>
 
+<h2>Rejection categories <span class="muted">(why the council kills theses)</span></h2>
+{cats.length === 0 ? <p class="empty">No rejections yet</p> :
+<table><tr><th>Category</th><th>Count</th></tr>
+{cats.map(c=>(<tr><td><span class="tag">{c.category}</span></td><td>{c.n}</td></tr>))}
+</table>}
+
 <h2>Open positions</h2>
-{trades.length === 0
+{trades.filter(t=>t.status==='open').length === 0
   ? <p class="empty muted">None — scans run every 10 minutes</p>
-  : <table><tr><th>Market</th><th>Side</th><th>Size</th><th>Entry</th><th>Date</th></tr>
-      {trades.map(t=>(<tr><td>{t.market}</td><td>{t.side}</td><td>{money(t.size_usd)}</td><td>{t.entry_price}</td><td class="muted">{t.ts_utc?.slice?.(0,10)}</td></tr>))}
+  : <table><tr><th>Market</th><th>Side</th><th>Size</th><th>Entry</th><th>My est.</th><th>Date</th></tr>
+      {trades.filter(t=>t.status==='open').map(t=>(<tr><td>{t.market}</td><td>{t.side}</td><td>{money(t.size_usd)}</td><td>{t.entry_price}</td><td>{t.my_est_yes??'—'}</td><td class="muted">{t.ts_utc?.slice?.(0,10)}</td></tr>))}
     </table>}
 
-<h2>Decisions <span class="muted">(each thesis has a full detail page: the bet, the evidence, why it was rejected or taken)</span></h2>
+<h2>Decisions <span class="muted">(full detail pages: bet, evidence, why rejected/taken)</span></h2>
 {rejected.length === 0
   ? <p class="empty">None yet</p>
-  : <table><tr><th>Market</th><th>Side</th><th>My est.</th><th>Market</th><th>Decision</th><th>Date</th></tr>
+  : <table><tr><th>Market</th><th>Side</th><th>My est.</th><th>Market</th><th>Category</th><th>CF P/L</th><th>Outcome</th><th>Decision</th></tr>
       {rejected.map(r=>(<tr>
-        <td><a href={`/thesis/${r.id}/`}>{r.thesis?.slice?.(0,80)}</a></td>
-        <td>{r.side}</td><td>{r.my_est_yes}</td><td>{r.proposed_price!=null?(Number(r.proposed_price)*100).toFixed(1)+'%':''}</td>
-        <td class="muted">{r.decision}</td><td class="muted">{(r.ts_utc||'').slice(0,10)}</td>
+        <td><a href={`/thesis/${r.id}/`}>{r.thesis?.slice?.(0,70)}</a></td>
+        <td>{r.side}</td><td>{r.my_est_yes}</td>
+        <td>{r.proposed_price!=null?(Number(r.proposed_price)*100).toFixed(1)+'%':''}</td>
+        <td>{r.category ? <span class="tag">{r.category}</span> : <span class="muted">—</span>}</td>
+        <td>{r.counterfactual_pnl!=null?money(r.counterfactual_pnl):'—'}</td>
+        <td class="muted">{r.resolved_outcome||'—'}</td>
+        <td class="muted">{r.decision}</td>
       </tr>))}
     </table>}
 </body></html>
