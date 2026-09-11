@@ -1,0 +1,73 @@
+---
+export const prerender = false;
+let state = {mode:'—', started:'—', paper_balance:'—'};
+let trades = [], rejected = [], costs_daily = [], runs_recent = [];
+
+try {
+  const db = Astro.locals.runtime.env.DB;
+  const q = async (sql) => (await db.prepare(sql).all()).results;
+  state = Object.fromEntries((await q('SELECT k,v FROM state')).map(r=>[r.k,r.v]));
+  trades = await q('SELECT * FROM trades ORDER BY ts_utc DESC');
+  rejected = await q('SELECT * FROM rejected ORDER BY ts_utc DESC');
+  costs_daily = await q('SELECT * FROM daily_totals ORDER BY date_utc DESC');
+  runs_recent = await q('SELECT ts_utc, model, trigger, cost_usd FROM council_runs ORDER BY ts_utc DESC LIMIT 15');
+} catch (e) {
+  console.error('D1 read error', e);
+}
+const totalCost = costs_daily.reduce((a,d)=>a+d.total_cost_usd, 0);
+const money = (n) => '$' + Number(n).toFixed(2);
+---
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Cash Machine — Polymarket Dry Run</title>
+<style>
+body{font-family:-apple-system,system-ui,sans-serif;background:#0e1117;color:#e6e6e6;margin:0;padding:24px;max-width:960px;margin-inline:auto}
+h1{font-size:1.5rem;font-weight:600;margin-bottom:4px} h2{font-size:1rem;color:#9ca3af;margin-top:32px;margin-bottom:8px}
+.muted{color:#6b7280;font-size:.85rem}
+.cards{display:flex;gap:16px;flex-wrap:wrap;margin-top:20px}
+.card{background:#161b22;border:1px solid #2a2f3a;border-radius:12px;padding:16px 20px;min-width:150px}
+.card .l{font-size:.7rem;color:#9ca3af;text-transform:uppercase;letter-spacing:.06em}
+.card .v{font-size:1.6rem;font-weight:700;margin-top:6px}
+table{width:100%;border-collapse:collapse;font-size:.9rem;margin-top:8px}
+th{color:#9ca3af;text-align:left;font-weight:500;font-size:.72rem;text-transform:uppercase;padding:6px 8px;border-bottom:1px solid #2a2f3a}
+td{padding:9px 8px;border-bottom:1px solid #1c2029;vertical-align:top}
+.badge{display:inline-block;background:#1e3a5f;color:#93c5fd;border-radius:6px;padding:2px 10px;font-size:.75rem}
+.empty{color:#6b7280;padding:14px 0;font-style:italic}
+</style>
+</head>
+<body>
+<h1>Cash Machine <span class="badge">{state.mode}</span></h1>
+<p class="muted">Polymarket dry run · started {state.started?.slice?.(0,10) || state.started} · wallet <code>{state.wallet?.slice?.(0,10) || ''}…</code></p>
+
+<div class="cards">
+  <div class="card"><div class="l">Paper balance</div><div class="v">{money(state.paper_balance)}</div></div>
+  <div class="card"><div class="l">Open positions</div><div class="v">{trades.filter(t=>t.status==='open').length}</div></div>
+  <div class="card"><div class="l">Council spend</div><div class="v">{money(totalCost)}</div></div>
+</div>
+
+<h2>Open positions</h2>
+{trades.length === 0
+  ? <p class="empty muted">None — scans run every 10 minutes</p>
+  : <table><tr><th>Market</th><th>Side</th><th>Size</th><th>Entry</th><th>Date</th></tr>
+      {trades.map(t=>(<tr><td>{t.market}</td><td>{t.side}</td><td>{money(t.size_usd)}</td><td>{t.entry_price}</td><td class="muted">{t.ts_utc?.slice?.(0,10)}</td></tr>))}
+    </table>}
+
+<h2>Council cost by day</h2>
+<table><tr><th>Date</th><th>Cost</th><th>Calls</th></tr>
+{costs_daily.map(d=>(<tr><td>{d.date_utc}</td><td>{money(d.total_cost_usd)}</td><td>{d.run_count}</td></tr>))}
+</table>
+
+<h2>Rejected theses</h2>
+{rejected.length === 0
+  ? <p class="empty">None yet</p>
+  : <table><tr><th>Thesis</th><th>Decision</th><th>Date</th></tr>
+      {rejected.map(r=>(<tr><td>{r.thesis?.slice?.(0,120)}</td><td class="muted">{r.decision}</td><td class="muted">{r.ts_utc?.slice?.(0,10)}</td></tr>))}
+    </table>}
+
+<h2>Recent council calls</h2>
+<table><tr><th>When</th><th>Model</th><th>Trigger</th><th>Cost</th></tr>
+{runs_recent.map(r=>(<tr><td class="muted">{r.ts_utc?.slice?.(0,16).replace('T',' ')}</td><td>{r.model}</td><td class="muted">{r.trigger}</td><td>${r.cost_usd?.toFixed?.(4)}</td></tr>))}
+</table>
+</body></html>

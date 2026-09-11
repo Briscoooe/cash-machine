@@ -1,0 +1,9 @@
+
+name = "cash-machine"
+compatibility_date = "2024-12-01"
+pages_build_output_dir = "./dist"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "cash-machine"
+database_id = "eeb98259-0e2f-44a0-8683-470f3d614e3c"
