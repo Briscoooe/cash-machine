@@ -37,6 +37,7 @@ p.reason{background:#161b22;border:1px solid #2a2f3a;border-radius:10px;padding:
 </style></head><body>
 <nav><a href="/">← Home</a></nav>
 <h1>{r.thesis} <span class="badge">{r.decision}</span></h1>
+{r.market_url && <p><a href={r.market_url} target="_blank" rel="noopener">View market on Polymarket ↗</a></p>}
 <div class="meta">
   <div class="item"><div class="l">Side</div><div class="v">{r.side || '—'}</div></div>
   <div class="item"><div class="l">My estimate</div><div class="v">{r.my_est_yes || '—'}</div></div>

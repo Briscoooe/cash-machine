@@ -8,7 +8,7 @@ try {
   const q = async (sql) => (await db.prepare(sql).all()).results;
   state = Object.fromEntries((await q('SELECT k,v FROM state')).map(r=>[r.k,r.v]));
   trades = await q('SELECT * FROM trades ORDER BY ts_utc DESC');
-  rejected = await q('SELECT id, ts_utc, thesis, decision, side, my_est_yes, proposed_price, category, counterfactual_pnl, resolved_outcome FROM rejected ORDER BY ts_utc DESC');
+  rejected = await q('SELECT id, ts_utc, thesis, decision, side, my_est_yes, proposed_price, category, counterfactual_pnl, resolved_outcome, market_url FROM rejected ORDER BY ts_utc DESC');
   balance_history = await q('SELECT * FROM balance_history ORDER BY date_utc DESC LIMIT 30');
   cats = await q("SELECT category, COUNT(*) n FROM rejected WHERE category IS NOT NULL GROUP BY category ORDER BY n DESC");
 } catch (e) {
@@ -74,7 +74,7 @@ td{padding:9px 8px;border-bottom:1px solid #1c2029;vertical-align:top}
   ? <p class="empty">None yet</p>
   : <table><tr><th>Market</th><th>Side</th><th>My est.</th><th>Market</th><th>Category</th><th>CF P/L</th><th>Outcome</th><th>Decision</th></tr>
       {rejected.map(r=>(<tr>
-        <td><a href={`/thesis/${r.id}/`}>{r.thesis?.slice?.(0,70)}</a></td>
+        <td><a href={`/thesis/${r.id}/`}>{r.thesis?.slice?.(0,70)}</a>{r.market_url && <a href={r.market_url} target="_blank" rel="noopener" style={{marginLeft:'6px',fontSize:'.75rem'}}>↗</a>}</td>
         <td>{r.side}</td><td>{r.my_est_yes}</td>
         <td>{r.proposed_price!=null?(Number(r.proposed_price)*100).toFixed(1)+'%':''}</td>
         <td>{r.category ? <span class="tag">{r.category}</span> : <span class="muted">—</span>}</td>
