@@ -48,6 +48,7 @@ p.reason{background:#161b22;border:1px solid #2a2f3a;border-radius:10px;padding:
 
 {r.reason && <><h2>Reasoning</h2><p class="reason">{r.reason}</p></>}
 {r.lesson && <><h2>Lesson</h2><p class="reason">{r.lesson}</p></>}
+{r.key_figures && <><h2>Key figures</h2><ul>{JSON.parse(r.key_figures).map((f) => <li>{f}</li>)}</ul></>}
 
 <h2>Evidence sources</h2>
 {sources.length === 0 ? <p class="muted">No sources recorded</p> :
