@@ -118,26 +118,20 @@ html[data-theme=dark]{--bg:#101013;--fg:#e6e6e9;--mut:#8b8b92;--hair:#26262b;--a
 <g id="icoMoon" style="display:none"><path d="M12.6 9.4A5.4 5.4 0 1 1 5.6 2.4a4.3 4.3 0 0 0 7 7z" stroke="currentColor" fill="none"/></g>
 <g id="icoAuto" style="display:none"><circle cx="7.5" cy="7.5" r="3" stroke="currentColor"/><path d="M7.5 4.5a3 3 0 0 1 0 6z" fill="currentColor" stroke="none"/></g>
 </svg>
-</button><button class="theme-t" id="themeBtn" type="button" aria-label="Toggle theme">
-<svg id="themeIcon" width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
-<g id="icoSun" style="display:none"><circle cx="7.5" cy="7.5" r="3"/><path d="M7.5 1v1.6M7.5 12.4V14M1 7.5h1.6M12.4 7.5H14M2.9 2.9l1.1 1.1M11 11l1.1 1.1M12.1 2.9L11 4M4 11l-1.1 1.1"/></g>
-<g id="icoMoon" style="display:none"><path d="M12.6 9.4A5.4 5.4 0 1 1 5.6 2.4a4.3 4.3 0 0 0 7 7z"/></g>
-<g id="icoAuto" style="display:none"><circle cx="7.5" cy="7.5" r="3"/><path d="M7.5 4.5a3 3 0 0 1 0 6z" fill="currentColor" stroke="none"/></g>
-</svg>
 </button></div>
   <h1>Bets on public questions, published in full.</h1>
   <p class="mut">One machine, small sums, every judgment on the record. Started {(state.started||'2026-09-11').slice(0,10)}.</p>
 </header>
 
 <div class="statline">
-  <div class="stat"><div class="v">{money(state.wallet_cash)}</div><div class="k">free cash</div></div>
-  <div class="stat"><div class="v">{money(state.position_value)}</div><div class="k">in positions</div></div>
-  <div class="stat"><div class="v">{rejected.length}</div><div class="k">judged</div></div>
-  <div class="stat"><div class="v num {cfSum>=0?'pos':'neg'}">{cfSum>=0?'+':''}{money(cfSum)}</div><div class="k">refusal p/l</div></div>
+  <div class="stat"><div class="v">{money(state.wallet_cash)}</div><div class="k"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="2" y="2" width="9" height="9" rx="2"/><path d="M4.5 6.5h4M6.5 4.5v4" stroke-linecap="round"/></svg>free cash</div></div>
+  <div class="stat"><div class="v">{money(state.position_value)}</div><div class="k"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="1.5" y="1.5" width="7" height="7" rx="1.5"/></svg>in positions</div></div>
+  <div class="stat"><div class="v">{rejected.length}</div><div class="k"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M2.5 11V7.5m4 3.5V4.5m4 6.5V2.5" stroke-linecap="round"/></svg>judged</div></div>
+  <div class="stat"><div class="v num {cfSum>=0?'pos':'neg'}">{cfSum>=0?'+':''}{money(cfSum)}</div><div class="k"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M2.5 8.5l2.5-2.5 2 2 3.5-4" stroke-linecap="round" stroke-linejoin="round"/><path d="M10.5 7.5v-3h-3" stroke-linecap="round" stroke-linejoin="round"/></svg>refusal p/l</div></div>
 </div>
 
 <section>
-  <h2>Open positions</h2>
+  <h2><svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="vertical-align:-1px;margin-right:6px"><rect x="1.8" y="1.8" width="8.4" height="8.4" rx="1.5" stroke="currentColor" stroke-width="1.1"/><path d="M4 6h4M6 4v4" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg>Open positions</h2>
   <div class="rows">
     {openTrades.length === 0
       ? <div class="row mut">None right now</div>
@@ -152,7 +146,7 @@ html[data-theme=dark]{--bg:#101013;--fg:#e6e6e9;--mut:#8b8b92;--hair:#26262b;--a
 </section>
 
 <section>
-  <h2>Recent judgments</h2>
+  <h2><svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="vertical-align:-1px;margin-right:6px"><path d="M3 2h6M3 4.5h6M3 7h4" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/><path d="M3 9.5h6" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg>Recent judgments</h2>
   <div class="rows">
     {rejected.slice(0,12).map(r=>(
       <div class="row">
@@ -165,7 +159,7 @@ html[data-theme=dark]{--bg:#101013;--fg:#e6e6e9;--mut:#8b8b92;--hair:#26262b;--a
 </section>
 
 <section>
-  <h2>Why the machine says no</h2>
+  <h2><svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="vertical-align:-1px;margin-right:6px"><circle cx="6" cy="6" r="4.6" stroke="currentColor" stroke-width="1.1"/><path d="M4.2 4.6a1.9 1.9 0 1 1 2.6 1.8c-.5.2-.7.5-.7 1M6 8.6h.01" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg>Why the machine says no</h2>
   <div class="rows">
     {cats.map(c=>(
       <div class="row">

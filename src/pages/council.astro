@@ -110,7 +110,7 @@ footer a{color:var(--mut)}footer a:hover{color:var(--accent)}
 </div>
 
 <section>
-<h2>Calls by day</h2>
+<h2><svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="vertical-align:-1px;margin-right:6px"><rect x="1.8" y="5.5" width="2" height="4.5" stroke="currentColor" stroke-width="1.1"/><rect x="5" y="3" width="2" height="7" stroke="currentColor" stroke-width="1.1"/><rect x="8.2" y="1.5" width="2" height="8.5" stroke="currentColor" stroke-width="1.1"/></svg>Calls by day</h2>
 <div class="rows">
 {costs_daily.map(d=>(<div class="row">
   <span class="t mut">{d.date_utc}</span>
@@ -121,7 +121,7 @@ footer a{color:var(--mut)}footer a:hover{color:var(--accent)}
 </section>
 
 <section>
-<h2>Verdicts by thesis</h2>
+<h2><svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="vertical-align:-1px;margin-right:6px"><circle cx="3.4" cy="6" r="2.6" stroke="currentColor" stroke-width="1.1"/><circle cx="8.6" cy="6" r="2.6" stroke="currentColor" stroke-width="1.1"/></svg>Verdicts by thesis</h2>
 <div class="rows">
 {verdicts.map(v=>(<div class="row">
   <span class="t"><a href={`/thesis/${v.rejected_id}/`}>{v.rejected_id}</a></span>
@@ -133,7 +133,7 @@ footer a{color:var(--mut)}footer a:hover{color:var(--accent)}
 </section>
 
 <section>
-<h2>Recent calls</h2>
+<h2><svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="vertical-align:-1px;margin-right:6px"><path d="M2 2.5h8M2 6h8M2 9.5h5" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg>Recent calls</h2>
 <div class="rows">
 {runs_recent.map(r=>(<div class="row">
   <span class="t mut">{r.ts_utc?.slice?.(0,16).replace('T',' ')}</span>
