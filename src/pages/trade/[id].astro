@@ -1,5 +1,6 @@
 ---
 export const prerender = false;
+import Icon from '../../components/Icon.astro';
 let db_error = false;
 Astro.response.headers.set('Cache-Control', 'no-store');
 const { id } = Astro.params;
@@ -102,6 +103,10 @@ ul.kf li{margin:4px 0}
 .reason{border-left:2px solid var(--hair);padding:2px 0 2px 14px;font-family:var(--serif);font-size:1.02rem;white-space:pre-wrap}
 footer{margin-top:72px;display:flex;gap:20px;font-size:.75rem;color:var(--mut)}
 footer a{color:var(--mut)}footer a:hover{color:var(--accent)}
+
+.ic{vertical-align:-2px;color:var(--mut)}
+h2 .ic{vertical-align:-1.5px;margin-right:5px}
+.k .ic{margin-right:3px}
 @media (max-width:640px){
   .wrap{padding:40px 16px 64px}
 }
@@ -125,17 +130,17 @@ footer a{color:var(--mut)}footer a:hover{color:var(--accent)}
 </header>
 
 <div class="statline">
-  <div class="stat"><div class="v">{money(t.size_usd)}</div><div class="k"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="6.5" cy="6.5" r="4.5"/><path d="M6.5 4v5M4.8 5.2 6.5 4l1.7 1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>size</div></div>
-  <div class="stat"><div class="v">{t.entry_price ? pct(t.entry_price) : '—'}</div><div class="k"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M2 11L11 2M11 2H6.5M11 2v4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>entry</div></div>
-  {exit && <div class="stat"><div class="v">{pct(exit)}</div><div class="k"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M11 2L2 11M2 11h4.5M2 11V6.5" stroke-linecap="round" stroke-linejoin="round"/></svg>exit</div></div>}
-  <div class="stat"><div class="v">{estVal != null ? pct(estVal) : '—'}</div><div class="k"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="6.5" cy="6.5" r="4.5"/><path d="M6.5 4v2.5l1.8 1.2" stroke-linecap="round"/></svg>my est. {estSide}</div></div>
-  {pl && <div class="stat"><div class="v num {Number(pl)>=0?'pos':'neg'}">{Number(pl)>=0?'+':''}{money(pl)}</div><div class="k">realized p/l</div></div>}
-  <div class="stat"><div class="v">{(t.ts_utc||'—').slice(0,10)}</div><div class="k"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="2" y="3" width="9" height="8" rx="1.5"/><path d="M2 6h9M4.5 1.5v3M8.5 1.5v3" stroke-linecap="round"/></svg>opened</div></div>
+  <div class="stat"><div class="v">{money(t.size_usd)}</div><div class="k"><Icon name="coins" size={11} /> size</div></div>
+  <div class="stat"><div class="v">{t.entry_price ? pct(t.entry_price) : '—'}</div><div class="k"><Icon name="log-in" size={11} /> entry</div></div>
+  {exit && <div class="stat"><div class="v">{pct(exit)}</div><div class="k"><Icon name="log-out" size={11} /> exit</div></div>}
+  <div class="stat"><div class="v">{estVal != null ? pct(estVal) : '—'}</div><div class="k">our est. {estSide}</div></div>
+  {pl && <div class="stat"><div class="v num {Number(pl)>=0?'pos':'neg'}">{Number(pl)>=0?'+':''}{money(pl)}</div><div class="k"><Icon name="trending-up" size={11} /> p/l</div></div>}
+  <div class="stat"><div class="v">{(t.ts_utc||'—').slice(0,10)}</div><div class="k"><Icon name="calendar" size={11} /> opened</div></div>
 </div>
 
-{t.thesis && <section><h2><svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="vertical-align:-1px;margin-right:6px"><circle cx="6" cy="6" r="4.6" stroke="currentColor" stroke-width="1.1"/><path d="M6 4.4v3.2M6 8.6h.01" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg>Thesis</h2><p class="reason">{t.thesis}</p></section>}
+{t.thesis && <section><h2><Icon name="file-text" size=12 cls="h2ic" />Thesis</h2><p class="reason">{t.thesis}</p></section>}
 
-{kf.length > 0 && <section><h2><svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="vertical-align:-1px;margin-right:6px"><path d="M2 9.5V6m3 3.5V2.5m3 7V4.5m3 5V5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>Key figures</h2>
+{kf.length > 0 && <section><h2><Icon name="sigma" size=12 cls="h2ic" />Key figures</h2>
 <ul class="kf">
 {kf.map(k => {
   const FMT = {entry:['Entry', v => (Number(v)*100).toFixed(1)+'%'], size_usd:['Size', v => '$'+Number(v).toFixed(2)],
@@ -153,7 +158,7 @@ footer a{color:var(--mut)}footer a:hover{color:var(--accent)}
 </ul>
 </section>}
 
-{verdicts.length > 0 && <section><h2><svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="vertical-align:-1px;margin-right:6px"><circle cx="3.4" cy="6" r="2.6" stroke="currentColor" stroke-width="1.1"/><circle cx="8.6" cy="6" r="2.6" stroke="currentColor" stroke-width="1.1"/></svg>Council verdicts</h2>
+{verdicts.length > 0 && <section><h2><Icon name="users" size=12 cls="h2ic" />Council verdicts</h2>
 <div class="rows">
 {verdicts.map(v => (
 <div class="verdict">
@@ -166,7 +171,7 @@ footer a{color:var(--mut)}footer a:hover{color:var(--accent)}
 </div>
 </section>}
 
-{sources.length > 0 && <section><h2><svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="vertical-align:-1px;margin-right:6px"><path d="M5 2.5C3.5 1.6 2 1.8 1.5 2v7.2c1.2-.3 2.7-.1 3.5.5.8-.6 2.3-.8 3.5-.5V2c-.5-.2-2 0-3.5.9v7" stroke="currentColor" stroke-width="1.05" fill="none" stroke-linejoin="round"/></svg>Evidence sources</h2>
+{sources.length > 0 && <section><h2><Icon name="book-open" size=12 cls="h2ic" />Evidence sources</h2>
 <div class="rows">
 {sources.filter(s => !isHash(s.url)).map(s => (
 <div class="src">
@@ -177,7 +182,7 @@ footer a{color:var(--mut)}footer a:hover{color:var(--accent)}
 </div>
 </section>}
 
-{t.lesson && <section><h2><svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="vertical-align:-1px;margin-right:6px"><path d="M6 1.5l1.3 2.7 3 .4-2.2 2.1.5 3-2.6-1.4-2.6 1.4.5-3L1.7 4.6l3-.4L6 1.5z" stroke="currentColor" stroke-width="1.05" stroke-linejoin="round"/></svg>Lesson</h2><p class="reason">{t.lesson}</p></section>}
+{t.lesson && <section><h2><Icon name="graduation-cap" size=12 cls="h2ic" />Lesson</h2><p class="reason">{t.lesson}</p></section>}
 
 {t.market_url && <p class="note"><a href={t.market_url} target="_blank" rel="noopener">View market on Polymarket →</a></p>}
 

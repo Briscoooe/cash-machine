@@ -1,0 +1,10 @@
+---
+import { ICONS } from '../icons/lucide.js';
+const { name, size = 13, cls = '' } = Astro.props;
+let svg = ICONS[name] || '';
+if (svg) {
+  svg = svg.replace(/\s*width="24"\s*height="24"/, '');
+  svg = svg.replace('<svg', `<svg width="${size}" height="${size}" class="ic ${cls}"`);
+}
+---
+<Fragment set:html={svg} />

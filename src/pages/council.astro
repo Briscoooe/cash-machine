@@ -1,5 +1,6 @@
 ---
 export const prerender = false;
+import Icon from '../components/Icon.astro';
 let db_error = false;
 Astro.response.headers.set('Cache-Control', 'no-store');
 let runs_recent = [], costs_daily = [], verdicts = [];
@@ -81,6 +82,10 @@ h2{font-size:.72rem;font-weight:500;letter-spacing:.08em;text-transform:uppercas
 code{font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:.72rem;color:var(--mut);word-break:break-all}
 footer{margin-top:72px;display:flex;gap:20px;font-size:.75rem;color:var(--mut)}
 footer a{color:var(--mut)}footer a:hover{color:var(--accent)}
+
+.ic{vertical-align:-2px;color:var(--mut)}
+h2 .ic{vertical-align:-1.5px;margin-right:5px}
+.k .ic{margin-right:3px}
 @media (max-width:640px){
   .wrap{padding:40px 16px 64px}
   .statline{gap:18px;flex-wrap:wrap}
@@ -105,12 +110,12 @@ footer a{color:var(--mut)}footer a:hover{color:var(--accent)}
 </header>
 
 <div class="statline">
-  <div class="stat"><div class="v">${tot.toFixed(2)}</div><div class="k">total spend</div></div>
-  <div class="stat"><div class="v">{costs_daily.length}</div><div class="k">days active</div></div>
+  <div class="stat"><div class="v">${tot.toFixed(2)}</div><div class="k"><Icon name="coins" size=11 /> spend</div></div>
+  <div class="stat"><div class="v">{costs_daily.length}</div><div class="k"><Icon name="calendar" size=11 /> days</div></div>
 </div>
 
 <section>
-<h2><svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="vertical-align:-1px;margin-right:6px"><rect x="1.8" y="5.5" width="2" height="4.5" stroke="currentColor" stroke-width="1.1"/><rect x="5" y="3" width="2" height="7" stroke="currentColor" stroke-width="1.1"/><rect x="8.2" y="1.5" width="2" height="8.5" stroke="currentColor" stroke-width="1.1"/></svg>Calls by day</h2>
+<h2><Icon name="bar-chart-3" size=12 cls="h2ic" />Calls by day</h2>
 <div class="rows">
 {costs_daily.map(d=>(<div class="row">
   <span class="t mut">{d.date_utc}</span>
@@ -121,7 +126,7 @@ footer a{color:var(--mut)}footer a:hover{color:var(--accent)}
 </section>
 
 <section>
-<h2><svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="vertical-align:-1px;margin-right:6px"><circle cx="3.4" cy="6" r="2.6" stroke="currentColor" stroke-width="1.1"/><circle cx="8.6" cy="6" r="2.6" stroke="currentColor" stroke-width="1.1"/></svg>Verdicts by thesis</h2>
+<h2><Icon name="scale" size=12 cls="h2ic" />Verdicts by thesis</h2>
 <div class="rows">
 {verdicts.map(v=>(<div class="row">
   <span class="t"><a href={`/thesis/${v.rejected_id}/`}>{v.rejected_id}</a></span>
@@ -133,7 +138,7 @@ footer a{color:var(--mut)}footer a:hover{color:var(--accent)}
 </section>
 
 <section>
-<h2><svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="vertical-align:-1px;margin-right:6px"><path d="M2 2.5h8M2 6h8M2 9.5h5" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg>Recent calls</h2>
+<h2><Icon name="history" size=12 cls="h2ic" />Recent calls</h2>
 <div class="rows">
 {runs_recent.map(r=>(<div class="row">
   <span class="t mut">{r.ts_utc?.slice?.(0,16).replace('T',' ')}</span>

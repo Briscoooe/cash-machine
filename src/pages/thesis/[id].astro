@@ -1,5 +1,6 @@
 ---
 export const prerender = false;
+import Icon from '../../components/Icon.astro';
 let db_error = false;
 Astro.response.headers.set('Cache-Control', 'no-store');
 const { id } = Astro.params;
@@ -108,6 +109,10 @@ ul.kf li{margin:4px 0}
 .stat .k{font-size:.7rem;color:var(--mut);margin-top:2px;white-space:nowrap}
 footer{margin-top:72px;display:flex;gap:20px;font-size:.75rem;color:var(--mut)}
 footer a{color:var(--mut)}footer a:hover{color:var(--accent)}
+
+.ic{vertical-align:-2px;color:var(--mut)}
+h2 .ic{vertical-align:-1.5px;margin-right:5px}
+.k .ic{margin-right:3px}
 @media (max-width:640px){
   .wrap{padding:40px 16px 64px}
   .statline{gap:18px;flex-wrap:wrap}
@@ -133,19 +138,19 @@ footer a{color:var(--mut)}footer a:hover{color:var(--accent)}
 </header>
 
 <div class="statline">
-  <div class="stat"><div class="v">{r.side || '—'}</div><div class="k"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M2.5 10.5l4-8 4 8" stroke-linejoin="round"/></svg>side</div></div>
-  <div class="stat"><div class="v">{(r.my_est_yes ?? '') === '' || isNaN(Number(r.my_est_yes)) ? '—' : (Number(r.my_est_yes)*100).toFixed(0)+'%'}</div><div class="k"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="6.5" cy="6.5" r="4.5"/><path d="M6.5 4v2.5l1.8 1.2" stroke-linecap="round"/></svg>my estimate</div></div>
-  <div class="stat"><div class="v">{r.proposed_price!=null?(Number(r.proposed_price)*100).toFixed(0)+'%':'—'}</div><div class="k"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M3 10.5V6.7a3.5 3.5 0 0 1 7 0v3.8M2 11h9" stroke-linecap="round"/></svg>proposed</div></div>
-  <div class="stat"><div class="v">{r.market_price_yes!=null?(Number(r.market_price_yes)*100).toFixed(0)+'%':'—'}</div><div class="k"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M2 5l1-2.5h7L12 5M2 5v6h10V5M2 5h10M5.5 11V8h3v3" stroke-linejoin="round"/></svg>market</div></div>
-  <div class="stat"><div class="v">{(r.ts_utc||'—').slice(0,10)}</div><div class="k"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="2" y="3" width="9" height="8" rx="1.5"/><path d="M2 6h9M4.5 1.5v3M8.5 1.5v3" stroke-linecap="round"/></svg>date</div></div>
+  <div class="stat"><div class="v">{r.side || '—'}</div><div class="k"><Icon name="scale" size=11 /> side</div></div>
+  <div class="stat"><div class="v">{(r.my_est_yes ?? '') === '' || isNaN(Number(r.my_est_yes)) ? '—' : (Number(r.my_est_yes)*100).toFixed(0)+'%'}</div><div class="k"><Icon name="brain" size={11} /> our estimate</div></div>
+  <div class="stat"><div class="v">{r.proposed_price!=null?(Number(r.proposed_price)*100).toFixed(0)+'%':'—'}</div><div class="k"><Icon name="lightbulb" size=11 /> proposed</div></div>
+  <div class="stat"><div class="v">{r.market_price_yes!=null?(Number(r.market_price_yes)*100).toFixed(0)+'%':'—'}</div><div class="k"><Icon name="store" size=11 /> market</div></div>
+  <div class="stat"><div class="v">{(r.ts_utc||'—').slice(0,10)}</div><div class="k"><Icon name="calendar" size=11 /> date</div></div>
 </div>
 
-{r.reason && <section><h2>Reasoning</h2><p class="reason">{r.reason}</p></section>}
-{r.lesson && <section><h2><svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="vertical-align:-1px;margin-right:6px"><path d="M6 1.5l1.3 2.7 3 .4-2.2 2.1.5 3-2.6-1.4-2.6 1.4.5-3L1.7 4.6l3-.4L6 1.5z" stroke="currentColor" stroke-width="1.05" stroke-linejoin="round"/></svg>Lesson</h2><p class="reason">{r.lesson}</p></section>}
-{kf.length > 0 && <section><h2><svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="vertical-align:-1px;margin-right:6px"><path d="M2 9.5V6m3 3.5V2.5m3 7V4.5m3 5V5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>Key figures</h2><ul class="kf">{kf.map((f,i) => <li>{typeof f === 'string' ? f : (f.fact || f.market || Object.entries(f).map(([k2,v2]) => k2+': '+String(v2)).join(' · '))}</li>)}</ul></section>}
+{r.reason && <section><h2><Icon name="message-square-quote" size=12 cls="h2ic" />Reasoning</h2><p class="reason">{r.reason}</p></section>}
+{r.lesson && <section><h2><Icon name="graduation-cap" size=12 cls="h2ic" />Lesson</h2><p class="reason">{r.lesson}</p></section>}
+{kf.length > 0 && <section><h2><Icon name="sigma" size=12 cls="h2ic" />Key figures</h2><ul class="kf">{kf.map((f,i) => <li>{typeof f === 'string' ? f : (f.fact || f.market || Object.entries(f).map(([k2,v2]) => k2+': '+String(v2)).join(' · '))}</li>)}</ul></section>}
 
 <section>
-<h2><svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="vertical-align:-1px;margin-right:6px"><path d="M5 2.5C3.5 1.6 2 1.8 1.5 2v7.2c1.2-.3 2.7-.1 3.5.5.8-.6 2.3-.8 3.5-.5V2c-.5-.2-2 0-3.5.9v7" stroke="currentColor" stroke-width="1.05" fill="none" stroke-linejoin="round"/></svg>Evidence sources</h2>
+<h2><Icon name="book-open" size=12 cls="h2ic" />Evidence sources</h2>
 {sources.length === 0 ? <p class="mut">No sources recorded</p> :
 <div class="rows">
 {sources.filter(s=>!isHash(s.url)).map(s=>(<div class="src"><a href={s.url} target="_blank" rel="noopener">{s.url?.replace(/^https?:\/\//,'').slice(0,60)}</a>{s.fact && <div class="fact">{s.fact}</div>}</div>))}
@@ -153,7 +158,7 @@ footer a{color:var(--mut)}footer a:hover{color:var(--accent)}
 </section>
 
 <section>
-<h2><svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="vertical-align:-1px;margin-right:6px"><circle cx="3.4" cy="6" r="2.6" stroke="currentColor" stroke-width="1.1"/><circle cx="8.6" cy="6" r="2.6" stroke="currentColor" stroke-width="1.1"/></svg>Council verdicts</h2>
+<h2><Icon name="users" size=12 cls="h2ic" />Council verdicts</h2>
 {verdicts.length === 0 ? <p class="mut">No council record</p> :
 <div class="rows">
 {verdicts.map(v=>(<div class="verdict">

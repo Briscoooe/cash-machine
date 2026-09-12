@@ -1,5 +1,6 @@
 ---
 export const prerender = false;
+import Icon from '../components/Icon.astro';
 let db_error = false;
 Astro.response.headers.set('Cache-Control', 'no-store');
 let state = {mode:'—', started:'—', wallet_cash:'—', position_value:'—'};
@@ -100,6 +101,10 @@ footer a:hover{color:var(--accent)}
 html[data-theme=dark]{--bg:#101013;--fg:#e6e6e9;--mut:#8b8b92;--hair:#26262b;--accent:#8b8bf5;--pos:#3fbf6e;--neg:#e56060}
 .theme-t{background:none;border:1px solid var(--hair);border-radius:6px;color:var(--mut);font:inherit;font-size:.72rem;padding:3px 9px;cursor:pointer;letter-spacing:.03em}
 .theme-t:hover{color:var(--fg);border-color:var(--mut)}
+
+.ic{vertical-align:-2px;color:var(--mut)}
+h2 .ic{vertical-align:-1.5px;margin-right:5px}
+.k .ic{margin-right:3px}
 @media (max-width:640px){
   .wrap{padding:40px 16px 64px}
   .statline{gap:18px;flex-wrap:wrap}
@@ -124,14 +129,14 @@ html[data-theme=dark]{--bg:#101013;--fg:#e6e6e9;--mut:#8b8b92;--hair:#26262b;--a
 </header>
 
 <div class="statline">
-  <div class="stat"><div class="v">{money(state.wallet_cash)}</div><div class="k"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="2" y="2" width="9" height="9" rx="2"/><path d="M4.5 6.5h4M6.5 4.5v4" stroke-linecap="round"/></svg>free cash</div></div>
-  <div class="stat"><div class="v">{money(state.position_value)}</div><div class="k"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="1.5" y="1.5" width="7" height="7" rx="1.5"/></svg>in positions</div></div>
-  <div class="stat"><div class="v">{rejected.length}</div><div class="k"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M2.5 11V7.5m4 3.5V4.5m4 6.5V2.5" stroke-linecap="round"/></svg>judged</div></div>
-  <div class="stat"><div class="v num {cfSum>=0?'pos':'neg'}">{cfSum>=0?'+':''}{money(cfSum)}</div><div class="k"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M2.5 8.5l2.5-2.5 2 2 3.5-4" stroke-linecap="round" stroke-linejoin="round"/><path d="M10.5 7.5v-3h-3" stroke-linecap="round" stroke-linejoin="round"/></svg>refusal p/l</div></div>
+  <div class="stat"><div class="v">{money(state.wallet_cash)}</div><div class="k"><Icon name="wallet" size=11 /> cash</div></div>
+  <div class="stat"><div class="v">{money(state.position_value)}</div><div class="k"><Icon name="layers" size=11 /> committed</div></div>
+  <div class="stat"><div class="v">{rejected.length}</div><div class="k"><Icon name="scale" size=11 /> judged</div></div>
+  <div class="stat"><div class="v num {cfSum>=0?'pos':'neg'}">{cfSum>=0?'+':''}{money(cfSum)}</div><div class="k"><Icon name="shield-x" size=11 /> refusals</div></div>
 </div>
 
 <section>
-  <h2><svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="vertical-align:-1px;margin-right:6px"><rect x="1.8" y="1.8" width="8.4" height="8.4" rx="1.5" stroke="currentColor" stroke-width="1.1"/><path d="M4 6h4M6 4v4" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg>Open positions</h2>
+  <h2><Icon name="layers" size=12 cls="h2ic" />Open positions</h2>
   <div class="rows">
     {openTrades.length === 0
       ? <div class="row mut">None right now</div>
@@ -146,7 +151,7 @@ html[data-theme=dark]{--bg:#101013;--fg:#e6e6e9;--mut:#8b8b92;--hair:#26262b;--a
 </section>
 
 <section>
-  <h2><svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="vertical-align:-1px;margin-right:6px"><path d="M3 2h6M3 4.5h6M3 7h4" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/><path d="M3 9.5h6" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg>Recent judgments</h2>
+  <h2><Icon name="gavel" size=12 cls="h2ic" />Recent judgments</h2>
   <div class="rows">
     {rejected.slice(0,12).map(r=>(
       <div class="row">
@@ -159,7 +164,7 @@ html[data-theme=dark]{--bg:#101013;--fg:#e6e6e9;--mut:#8b8b92;--hair:#26262b;--a
 </section>
 
 <section>
-  <h2><svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="vertical-align:-1px;margin-right:6px"><circle cx="6" cy="6" r="4.6" stroke="currentColor" stroke-width="1.1"/><path d="M4.2 4.6a1.9 1.9 0 1 1 2.6 1.8c-.5.2-.7.5-.7 1M6 8.6h.01" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg>Why the machine says no</h2>
+  <h2><Icon name="shield-x" size=12 cls="h2ic" />Why the machine says no</h2>
   <div class="rows">
     {cats.map(c=>(
       <div class="row">
