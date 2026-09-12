@@ -40,6 +40,27 @@ const modelName = (m) => (m || '').replace(/^openai\//, '').replace(/^anthropic\
 <html>
 <head>
 <meta charset="utf-8"/>
+<script is:inline>
+(function(){
+  try {
+    var pref = new URLSearchParams(location.search).get('theme') || localStorage.getItem('cm-theme') || 'auto';
+    var dark = pref === 'dark' || (pref === 'auto' && matchMedia('(prefers-color-scheme: dark)').matches);
+    document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+  } catch(e) {}
+})();
+</script>
+<style is:global>
+:root{--pos:#0f8a3d;--neg:#d64545}
+html[data-theme=dark]{
+  --bg:#101013;--fg:#e6e6e9;--mut:#8b8b92;--hair:#26262b;--accent:#8b8bf5;
+  --pos:#3fbf6e;--neg:#e56060;
+}
+html[data-theme=dark] body{background:var(--bg)}
+.theme-t{background:none;border:1px solid var(--hair);border-radius:6px;color:var(--mut);
+  font:inherit;font-size:.72rem;padding:3px 9px;cursor:pointer;letter-spacing:.03em}
+.theme-t:hover{color:var(--fg);border-color:var(--mut)}
+</style>
+
 <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600&display=swap" rel="stylesheet">
@@ -97,35 +118,42 @@ footer a{color:var(--mut)}footer a:hover{color:var(--accent)}
 <div class="wrap">
 {db_error && <div class="err">Ledger unreachable — figures may be incomplete.</div>}
 
-<nav class="id"><span class="dot"></span><a href="/">Cash machine</a><a href="/council/">council</a><a href="/history/">history</a></nav>
+<nav class="id"><span class="dot"></span><a href="/">Cash machine</a><a href="/council/">council</a><a href="/history/">history</a> <button class="theme-t" id="themeBtn" type="button" aria-label="Toggle theme">
+<svg id="themeIcon" width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
+<g id="icoSun" style="display:none"><circle cx="7.5" cy="7.5" r="3"/><path d="M7.5 1v1.6M7.5 12.4V14M1 7.5h1.6M12.4 7.5H14M2.9 2.9l1.1 1.1M11 11l1.1 1.1M12.1 2.9L11 4M4 11l-1.1 1.1"/></g>
+<g id="icoMoon" style="display:none"><path d="M12.6 9.4A5.4 5.4 0 1 1 5.6 2.4a4.3 4.3 0 0 0 7 7z"/></g>
+<g id="icoAuto" style="display:none"><circle cx="7.5" cy="7.5" r="3"/><path d="M7.5 4.5a3 3 0 0 1 0 6z" fill="currentColor" stroke="none"/></g>
+</svg>
+</button></nav>
 
 <header>
-  <h1>{title}<span class="badge">{r.decision}</span></h1>
+  <h1>{title}</h1>
+<p class="mut" style="margin:6px 0 0"><span class="badge">{r.decision}</span></p>
   {r.market_url && <p class="mut"><a href={r.market_url} target="_blank" rel="noopener">View market on Polymarket →</a></p>}
 </header>
 
 <div class="statline">
-  <div class="stat"><div class="v">{r.side || '—'}</div><div class="k">side</div></div>
-  <div class="stat"><div class="v">{(r.my_est_yes ?? '') === '' || isNaN(Number(r.my_est_yes)) ? '—' : (Number(r.my_est_yes)*100).toFixed(0)+'%'}</div><div class="k">my estimate</div></div>
-  <div class="stat"><div class="v">{r.proposed_price!=null?(Number(r.proposed_price)*100).toFixed(0)+'%':'—'}</div><div class="k">proposed</div></div>
-  <div class="stat"><div class="v">{r.market_price_yes!=null?(Number(r.market_price_yes)*100).toFixed(0)+'%':'—'}</div><div class="k">market</div></div>
-  <div class="stat"><div class="v">{(r.ts_utc||'—').slice(0,10)}</div><div class="k">date</div></div>
+  <div class="stat"><div class="v">{r.side || '—'}</div><div class="k"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M2.5 10.5l4-8 4 8" stroke-linejoin="round"/></svg>side</div></div>
+  <div class="stat"><div class="v">{(r.my_est_yes ?? '') === '' || isNaN(Number(r.my_est_yes)) ? '—' : (Number(r.my_est_yes)*100).toFixed(0)+'%'}</div><div class="k"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="6.5" cy="6.5" r="4.5"/><path d="M6.5 4v2.5l1.8 1.2" stroke-linecap="round"/></svg>my estimate</div></div>
+  <div class="stat"><div class="v">{r.proposed_price!=null?(Number(r.proposed_price)*100).toFixed(0)+'%':'—'}</div><div class="k"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M3 10.5V6.7a3.5 3.5 0 0 1 7 0v3.8M2 11h9" stroke-linecap="round"/></svg>proposed</div></div>
+  <div class="stat"><div class="v">{r.market_price_yes!=null?(Number(r.market_price_yes)*100).toFixed(0)+'%':'—'}</div><div class="k"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M2 5l1-2.5h7L12 5M2 5v6h10V5M2 5h10M5.5 11V8h3v3" stroke-linejoin="round"/></svg>market</div></div>
+  <div class="stat"><div class="v">{(r.ts_utc||'—').slice(0,10)}</div><div class="k"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="2" y="3" width="9" height="8" rx="1.5"/><path d="M2 6h9M4.5 1.5v3M8.5 1.5v3" stroke-linecap="round"/></svg>date</div></div>
 </div>
 
 {r.reason && <section><h2>Reasoning</h2><p class="reason">{r.reason}</p></section>}
-{r.lesson && <section><h2>Lesson</h2><p class="reason">{r.lesson}</p></section>}
-{kf.length > 0 && <section><h2>Key figures</h2><ul class="kf">{kf.map((f,i) => <li>{typeof f === 'string' ? f : (f.fact || f.market || Object.entries(f).map(([k2,v2]) => k2+': '+String(v2)).join(' · '))}</li>)}</ul></section>}
+{r.lesson && <section><h2><svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="vertical-align:-1px;margin-right:6px"><path d="M6 1.5l1.3 2.7 3 .4-2.2 2.1.5 3-2.6-1.4-2.6 1.4.5-3L1.7 4.6l3-.4L6 1.5z" stroke="currentColor" stroke-width="1.05" stroke-linejoin="round"/></svg>Lesson</h2><p class="reason">{r.lesson}</p></section>}
+{kf.length > 0 && <section><h2><svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="vertical-align:-1px;margin-right:6px"><path d="M2 9.5V6m3 3.5V2.5m3 7V4.5m3 5V5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>Key figures</h2><ul class="kf">{kf.map((f,i) => <li>{typeof f === 'string' ? f : (f.fact || f.market || Object.entries(f).map(([k2,v2]) => k2+': '+String(v2)).join(' · '))}</li>)}</ul></section>}
 
 <section>
-<h2>Evidence sources</h2>
+<h2><svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="vertical-align:-1px;margin-right:6px"><path d="M5 2.5C3.5 1.6 2 1.8 1.5 2v7.2c1.2-.3 2.7-.1 3.5.5.8-.6 2.3-.8 3.5-.5V2c-.5-.2-2 0-3.5.9v7" stroke="currentColor" stroke-width="1.05" fill="none" stroke-linejoin="round"/></svg>Evidence sources</h2>
 {sources.length === 0 ? <p class="mut">No sources recorded</p> :
 <div class="rows">
-{sources.map(s=>(<div class="src"><a href={s.url} target="_blank" rel="noopener">{s.url?.replace(/^https?:\/\//,'').slice(0,60)}</a>{s.fact && <div class="fact">{s.fact}</div>}</div>))}
+{sources.filter(s=>!isHash(s.url)).map(s=>(<div class="src"><a href={s.url} target="_blank" rel="noopener">{s.url?.replace(/^https?:\/\//,'').slice(0,60)}</a>{s.fact && <div class="fact">{s.fact}</div>}</div>))}
 </div>}
 </section>
 
 <section>
-<h2>Council verdicts</h2>
+<h2><svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="vertical-align:-1px;margin-right:6px"><circle cx="3.4" cy="6" r="2.6" stroke="currentColor" stroke-width="1.1"/><circle cx="8.6" cy="6" r="2.6" stroke="currentColor" stroke-width="1.1"/></svg>Council verdicts</h2>
 {verdicts.length === 0 ? <p class="mut">No council record</p> :
 <div class="rows">
 {verdicts.map(v=>(<div class="verdict">
@@ -138,4 +166,24 @@ footer a{color:var(--mut)}footer a:hover{color:var(--accent)}
 
 <footer><a href="/">home</a><a href="/council/">council</a><a href="/history/">history</a></footer>
 </div>
+<script is:inline>
+(function(){
+  var b=document.getElementById('themeBtn'); if(!b) return;
+  var modes=['auto','light','dark'];
+  var cur=localStorage.getItem('cm-theme')||'auto';
+  function apply(p){
+    var dark=p==='dark'||(p==='auto'&&matchMedia('(prefers-color-scheme: dark)').matches);
+    document.documentElement.setAttribute('data-theme',dark?'dark':'light');
+    var sun=document.getElementById('icoSun'),moon=document.getElementById('icoMoon'),auto=document.getElementById('icoAuto');
+    if(sun){sun.style.display=p==='light'?'':'none';moon.style.display=p==='dark'?'':'none';auto.style.display=p==='auto'?'':'none';}
+  }
+  apply(cur);
+  b.addEventListener('click',function(){
+    cur=modes[(modes.indexOf(cur)+1)%3];
+    localStorage.setItem('cm-theme',cur);
+    apply(cur);
+  });
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){ if((localStorage.getItem('cm-theme')||'auto')==='auto') apply('auto'); });
+})();
+</script>
 </body></html>
