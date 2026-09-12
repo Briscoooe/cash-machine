@@ -154,7 +154,7 @@ h2 .ic{opacity:.75}
 <h2><Icon name="scale" size=12 cls="h2ic" />Verdicts by thesis</h2>
 <div class="rows">
 {verdictGroups.map(g=>(<div class="row">
-  <span class="t"><a href={`/thesis/${g.id}/`}>{/^REJ-\d/.test(g.title) || /^CR /.test(g.title) ? 'Earlier thesis' : g.title}</a></span>
+  <span class="t"><a href={`/thesis/${g.id}/`}>{/^(REJ|CR)[\d-]|^[A-Z]{1,4} \d{8}/.test(g.title) ? 'Earlier thesis' : g.title}</a></span>
   <span class="n">{g.vs.map(v=>(<span class="mv"><span class={v.verdict === 'APPROVE' ? 'mini approve' : 'mini reject'}>{v.verdict[0]}</span>{v.m}</span>))}</span>
 </div>))}
 </div>
@@ -166,7 +166,7 @@ h2 .ic{opacity:.75}
 <div class="rows">
 {runs_recent.map(r=>(<div class="row">
   <span class="t mut">{fmtAgo(r.ts_utc)}</span>
-  <span class="n">{modelName(r.model)} · {r.trigger?.startsWith('new-trade') ? 'new trade' : r.trigger?.startsWith('position-review') ? 'position review' : r.trigger?.startsWith('watchlist') ? 'watchlist' : r.trigger}</span>
+  <span class="n">{modelName(r.model)} · {r.trigger?.startsWith('new-trade') ? 'new trade' : r.trigger?.startsWith('position-review') ? 'position review' : r.trigger?.startsWith('watchlist') ? 'watchlist' : (/\b(REJ|CR)-\d{8}/.test(r.trigger) ? r.trigger.replace(/\b[A-Z]+-\d{8}[^\s]*/,'').trim() || 'new trade' : /^\d{8}$/.test(r.trigger) ? 'new trade' : r.trigger)}</span>
   <span class="v">{money(r.cost_usd)}</span>
 </div>))}
 </div>
