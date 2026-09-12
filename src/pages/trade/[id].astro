@@ -5,6 +5,7 @@ Astro.response.headers.set('Cache-Control', 'no-store');
 const { id } = Astro.params;
 let t = {};
 let sources = [], verdicts = [];
+const isHash = (s) => /0x[0-9a-f]{16,}/i.test(s || '');
 try {
   const db = Astro.locals.runtime.env.DB;
   const q = async (sql, bind) => (await db.prepare(sql).bind(...(bind||[])).all()).results;
@@ -22,6 +23,9 @@ const entry = t.entry_price ? Number(t.entry_price).toFixed(3) : '—';
 const exit = t.exit_price ? Number(t.exit_price).toFixed(3) : null;
 let kf = [];
 try { kf = t.key_figures ? JSON.parse(t.key_figures) : []; } catch (e) {}
+const estNo = (t.side||'').toUpperCase()==='NO' && t.my_est_yes != null && Number(t.my_est_yes) <= 0.5;
+const estVal = t.my_est_yes == null ? null : (estNo ? 1-Number(t.my_est_yes) : Number(t.my_est_yes));
+const estSide = estNo ? 'NO' : 'YES';
 const modelName = (m) => (m || '').replace(/^openai\//, '').replace(/^anthropic\//, '').replace(/^moonshotai\//, '');
 ---
 <html>
@@ -50,6 +54,9 @@ h1 code{font-size:.9rem;color:var(--mut);font-weight:500}
 .mut{color:var(--mut);font-size:.82rem}
 p.prose{font-family:var(--serif);font-size:1.02rem;line-height:1.6}
 section{margin-top:40px}
+.statline{display:flex;flex-wrap:wrap;gap:26px;margin-top:22px}
+.stat .v{font-family:var(--serif);font-size:1.35rem;font-weight:500;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.stat .k{font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:var(--mut);margin-top:1px}
 h2{font-size:.72rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);margin:0 0 10px}
 .rows{display:flex;flex-direction:column}
 .row{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:13px 0;border-top:1px solid var(--hair);font-size:.95rem}
@@ -94,7 +101,7 @@ footer a{color:var(--mut)}footer a:hover{color:var(--accent)}
   <div class="stat"><div class="v">{money(t.size_usd)}</div><div class="k">size</div></div>
   <div class="stat"><div class="v">{t.entry_price ? pct(t.entry_price) : '—'}</div><div class="k">entry</div></div>
   {exit && <div class="stat"><div class="v">{pct(exit)}</div><div class="k">exit</div></div>}
-  <div class="stat"><div class="v">{t.my_est_yes != null ? pct(t.my_est_yes) : '—'}</div><div class="k">my estimate</div></div>
+  <div class="stat"><div class="v">{estVal != null ? pct(estVal) : '—'}</div><div class="k">my est. {estSide}</div></div>
   {pl && <div class="stat"><div class="v num {Number(pl)>=0?'pos':'neg'}">{Number(pl)>=0?'+':''}{money(pl)}</div><div class="k">realized p/l</div></div>}
   <div class="stat"><div class="v">{(t.ts_utc||'—').slice(0,10)}</div><div class="k">opened</div></div>
 </div>
@@ -104,10 +111,17 @@ footer a{color:var(--mut)}footer a:hover{color:var(--accent)}
 {kf.length > 0 && <section><h2>Key figures</h2>
 <ul class="kf">
 {kf.map(k => {
-  const label = k.market || k.fact || Object.keys(k)[0];
+  const FMT = {entry:['Entry', v => (Number(v)*100).toFixed(1)+'%'], size_usd:['Size', v => '$'+Number(v).toFixed(2)],
+    shares:['Shares', v => String(v)], expected_profit:['Expected profit', v => '+$'+Number(String(v).replace('~',''))],
+    settlement:['Settles', v => String(v)], market:['Market', v => String(v)]};
+  const label0 = k.market || k.fact || '';
   const rest = { ...k };
   delete rest.market; delete rest.fact;
-  return <li>{k.fact || <>{k.market ? <b>{k.market}</b> : null} {Object.entries(rest).map(([key, val]) => <span>{key}: {String(val)}{val === rest[Object.keys(rest)[Object.keys(rest).length-1]] ? '' : ' · '}</span>)}</>}</li>;
+  const parts = Object.entries(rest).map(([key, val]) => {
+    const f = FMT[key];
+    return f ? f[0] + ' ' + f[1](val) : key.replace(/_/g,' ') + ' ' + String(val);
+  });
+  return <li>{label0 ? <b>{label0} — </b> : null}{parts.join(' · ')}</li>;
 })}
 </ul>
 </section>}
@@ -127,7 +141,7 @@ footer a{color:var(--mut)}footer a:hover{color:var(--accent)}
 
 {sources.length > 0 && <section><h2>Evidence sources</h2>
 <div class="rows">
-{sources.map(s => (
+{sources.filter(s => !isHash(s.url)).map(s => (
 <div class="src">
   <a href={s.url} target="_blank" rel="noopener">{s.url.replace(/^https?:\/\/(www\.)?/, '').slice(0, 60)}</a>
   {s.fact && <div class="fact">{s.fact}</div>}
@@ -139,7 +153,7 @@ footer a{color:var(--mut)}footer a:hover{color:var(--accent)}
 {t.lesson && <section><h2>Lesson</h2><p class="reason">{t.lesson}</p></section>}
 
 {t.market_url && <p class="note"><a href={t.market_url} target="_blank" rel="noopener">View market on Polymarket →</a></p>}
-{t.condition_id && <p class="note"><code>{t.condition_id.slice(0,26)}…</code></p>}
+
 
 <footer><a href="/">home</a><a href="/council/">council</a><a href="/history/">history</a></footer>
 </div>
