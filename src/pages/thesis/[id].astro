@@ -4,6 +4,7 @@ let db_error = false;
 Astro.response.headers.set('Cache-Control', 'no-store');
 const { id } = Astro.params;
 let kf = [];
+const isHash = (s) => /0x[0-9a-f]{16,}/i.test(s || '');
 let r = {}, sources = [], verdicts = [];
 try {
   const db = Astro.locals.runtime.env.DB;
