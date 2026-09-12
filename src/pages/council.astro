@@ -1,5 +1,7 @@
 ---
 export const prerender = false;
+let db_error = false;
+Astro.response.headers.set('Cache-Control', 'no-store');
 let runs_recent = [], costs_daily = [], verdicts = [];
 try {
   const db = Astro.locals.runtime.env.DB;
@@ -7,47 +9,110 @@ try {
   runs_recent = await q('SELECT ts_utc, model, trigger, generation_id, cost_usd FROM council_runs ORDER BY ts_utc DESC LIMIT 50');
   costs_daily = await q('SELECT * FROM daily_totals ORDER BY date_utc DESC');
   verdicts = await q('SELECT rejected_id, model, verdict, confidence, generation_id, cost_usd FROM council_verdicts ORDER BY id DESC LIMIT 60');
-} catch (e) { console.error(e); }
+} catch (e) {
+  db_error = true;
+}
 const money = (n) => n==null ? '—' : '$' + Number(n).toFixed(4);
 const tot = costs_daily.reduce((a,d)=>a+d.total_cost_usd, 0);
+const modelName = (m) => (m || '').replace(/^openai\//, '').replace(/^anthropic\//, '').replace(/^moonshotai\//, '');
 ---
-<html><head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Cash Machine — Council</title>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Council — Cash Machine</title>
 <style>
-body{font-family:-apple-system,system-ui,sans-serif;background:#0e1117;color:#e6e6e6;margin:0;padding:24px;max-width:960px;margin-inline:auto}
-h1{font-size:1.5rem;font-weight:600} h2{font-size:1rem;color:#9ca3af;margin-top:32px;margin-bottom:8px}
-a{color:#93c5fd;text-decoration:none} nav{margin-bottom:8px;font-size:.9rem} nav a{margin-right:14px}
-.muted{color:#6b7280;font-size:.85rem}
-table{width:100%;border-collapse:collapse;font-size:.85rem;margin-top:8px}
-th{color:#9ca3af;text-align:left;font-weight:500;font-size:.72rem;text-transform:uppercase;padding:6px 8px;border-bottom:1px solid #2a2f3a}
-td{padding:8px;border-bottom:1px solid #1c2029;vertical-align:top}
-.card{background:#161b22;border:1px solid #2a2f3a;border-radius:12px;padding:16px 20px;display:inline-block;margin-top:16px}
-.card .v{font-size:1.6rem;font-weight:700;margin-top:6px}
-.card .l{font-size:.7rem;color:#9ca3af;text-transform:uppercase;letter-spacing:.06em}
-code{background:#1c2029;padding:1px 5px;border-radius:4px;font-size:.78rem}
-</style></head><body>
-<h1>Council</h1>
-<nav><a href="/">← Home</a></nav>
-<div class="card"><div class="l">Total spend</div><div class="v">${tot.toFixed(2)}</div></div>
+:root{--bg:#fbfbfa;--fg:#18181b;--mut:#8e8e93;--hair:#e8e8e6;--accent:#4f46e5;--pos:#16a34a;--neg:#dc2626}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);margin:0;padding:0;
+  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,sans-serif;
+  font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:640px;margin:0 auto;padding:64px 20px 96px}
+a{color:inherit;text-decoration:none}
+a:hover{color:var(--accent)}
+.id{font-size:.8rem;font-weight:600;letter-spacing:.02em;display:flex;align-items:center;gap:8px;margin-bottom:26px}
+.id .dot{width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.id small{color:var(--mut);font-weight:400;margin-left:10px;font-size:.75rem}
+nav.id a{margin-right:14px;color:var(--mut)}
+nav.id a:hover{color:var(--accent)}
+h1{font-size:1.05rem;font-weight:600;margin:0 0 2px;letter-spacing:-.01em}
+.mut{color:var(--mut);font-size:.82rem}
+section{margin-top:40px}
+h2{font-size:.72rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);margin:0 0 10px}
+.rows{display:flex;flex-direction:column}
+.row{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:13px 0;border-top:1px solid var(--hair);font-size:.9rem}
+.rows .row:last-child{border-bottom:1px solid var(--hair)}
+.row .t{min-width:0;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.row .n{color:var(--mut);font-size:.78rem;white-space:nowrap;font-variant-numeric:tabular-nums}
+.row .v{font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:500}
+.pos{color:var(--pos)}.neg{color:var(--neg)}
+.note{font-size:.75rem;color:var(--mut);margin-top:12px}
+.badge{display:inline-block;border:1px solid var(--hair);border-radius:4px;padding:1px 8px;font-size:.7rem;letter-spacing:.04em;text-transform:uppercase}
+.badge.approve{color:var(--pos);border-color:#d3ecd9}
+.badge.reject{color:var(--neg);border-color:#f5d4d4}
+.err{background:#fdecec;color:#b91c1c;padding:9px 12px;border-radius:6px;margin-bottom:20px;font-size:.8rem}
+.statline{display:flex;gap:26px;padding:18px 0;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair)}
+.stat .v{font-size:1.25rem;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.stat .k{font-size:.72rem;color:var(--mut);margin-top:2px;white-space:nowrap}
+code{font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:.72rem;color:var(--mut);word-break:break-all}
+footer{margin-top:72px;display:flex;gap:20px;font-size:.75rem;color:var(--mut)}
+footer a{color:var(--mut)}footer a:hover{color:var(--accent)}
+@media (max-width:640px){
+  .wrap{padding:40px 16px 64px}
+  .statline{gap:18px;flex-wrap:wrap}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+{db_error && <div class="err">Ledger unreachable — figures may be incomplete.</div>}
 
+<nav class="id"><span class="dot"></span><a href="/">Cash machine</a><a href="/council/">council</a><a href="/history/">history</a></nav>
+
+<header>
+  <h1>Council</h1>
+  <p class="mut">Three models judge every thesis before money moves. Majority rules, at least one frontier model required.</p>
+</header>
+
+<div class="statline">
+  <div class="stat"><div class="v">${tot.toFixed(2)}</div><div class="k">total spend</div></div>
+  <div class="stat"><div class="v">{costs_daily.length}</div><div class="k">days active</div></div>
+</div>
+
+<section>
 <h2>Calls by day</h2>
-<table><tr><th>Date</th><th>Cost</th><th>Calls</th></tr>
-{costs_daily.map(d=>(<tr><td>{d.date_utc}</td><td>${d.total_cost_usd.toFixed(2)}</td><td>{d.run_count}</td></tr>))}
-</table>
+<div class="rows">
+{costs_daily.map(d=>(<div class="row">
+  <span class="t mut">{d.date_utc}</span>
+  <span class="n">{d.run_count} calls</span>
+  <span class="v">${d.total_cost_usd.toFixed(2)}</span>
+</div>))}
+</div>
+</section>
 
+<section>
 <h2>Verdicts by thesis</h2>
-<table><tr><th>Thesis</th><th>Model</th><th>Verdict</th><th>Conf</th><th>Cost</th><th>Generation</th></tr>
-{verdicts.map(v=>(<tr>
- <td><a href={`/thesis/${v.rejected_id}/`}>{v.rejected_id}</a></td>
- <td>{v.model}</td><td>{v.verdict?.slice?.(0,30)}</td><td>{v.confidence ?? '—'}</td>
- <td>{money(v.cost_usd)}</td>
- <td class="muted"><code>{(v.generation_id||'').slice(0,20)}…</code></td>
-</tr>))}
-</table>
+<div class="rows">
+{verdicts.map(v=>(<div class="row">
+  <span class="t"><a href={`/thesis/${v.rejected_id}/`}>{v.rejected_id}</a></span>
+  <span class="n">{modelName(v.model)}</span>
+  <span class={v.verdict === 'APPROVE' ? 'badge approve' : 'badge reject'}>{v.verdict}</span>
+</div>))}
+</div>
+<p class="note">Confidence and per-call cost are on each thesis page.</p>
+</section>
 
-<h2>Recent council calls</h2>
-<table><tr><th>When</th><th>Model</th><th>Trigger</th><th>Cost</th></tr>
-{runs_recent.map(r=>(<tr><td class="muted">{r.ts_utc?.slice?.(0,16).replace('T',' ')}</td><td>{r.model}</td><td class="muted">{r.trigger}</td><td>{money(r.cost_usd)}</td></tr>))}
-</table>
+<section>
+<h2>Recent calls</h2>
+<div class="rows">
+{runs_recent.map(r=>(<div class="row">
+  <span class="t mut">{r.ts_utc?.slice?.(0,16).replace('T',' ')}</span>
+  <span class="n">{modelName(r.model)} · {r.trigger}</span>
+  <span class="v">{money(r.cost_usd)}</span>
+</div>))}
+</div>
+</section>
+
+<footer><a href="/">home</a><a href="/history/">history</a></footer>
+</div>
 </body></html>

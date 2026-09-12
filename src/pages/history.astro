@@ -1,5 +1,7 @@
 ---
 export const prerender = false;
+let db_error = false;
+Astro.response.headers.set('Cache-Control', 'no-store');
 let balance_history = [], calibration = [], rejected = [], avg = {b:null,n:0};
 try {
   const db = Astro.locals.runtime.env.DB;
@@ -7,46 +9,121 @@ try {
   balance_history = await q('SELECT * FROM balance_history ORDER BY date_utc DESC LIMIT 60');
   calibration = await q('SELECT market, my_est, market_price, outcome, brier, resolved_at FROM calibration WHERE outcome IS NOT NULL ORDER BY resolved_at DESC');
   avg = (await q('SELECT AVG(brier) b, COUNT(*) n FROM calibration WHERE brier IS NOT NULL'))[0];
-  rejected = await q('SELECT id, thesis, resolved_outcome, my_est_yes, postmortem FROM rejected WHERE postmortem IS NOT NULL ORDER BY ts_utc DESC');
-} catch (e) { console.error(e); }
-const money = (n) => '$' + Number(n).toFixed(2);
+  rejected = await q('SELECT id, thesis, resolved_outcome, my_est_yes, postmortem FROM rejected WHERE postmortem IS NOT NULL ORDER BY ts_utc DESC LIMIT 60');
+} catch (e) {
+  db_error = true;
+}
+const money = (n) => { const x = Number(n); return Number.isFinite(x) ? '$' + x.toFixed(2) : '—'; };
+const slugTitle = (url, fallback) => {
+  try {
+    let slug = (url || '').split('/event/')[1] || '';
+    slug = slug.replace(/-[0-9a-f]{4,}$/,'');
+    if(!slug) return fallback;
+    let words = slug.split('-').map(w=>{
+      if(/^(by|of|in|the|a|an|on|for|and|or|to|at|its|their|from|between|after|before)$/i.test(w)) return w.toLowerCase();
+      if(/^(us|uk|dc|gdp|ipo|er|wti|sep|oct|nov|hr|eu)$/i.test(w)) return w.toUpperCase();
+      if(/^\d+$/.test(w)) return w;
+      return w.charAt(0).toUpperCase()+w.slice(1);
+    });
+    let out = words.join(' ').replace(/\s*Byptptpt\s*/i,' ').replace(/\s+(by|into|in|of|for)$/,'');
+    out = out.replace(/\s+/g,' ').trim();
+    return out.charAt(0).toUpperCase()+out.slice(1);
+  } catch { return fallback; }
+};
+const short = (s) => { if(!s) return ''; let t = s.slice(0,90); return t.charAt(0).toUpperCase()+t.slice(1); };
 ---
-<html><head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Cash Machine — History & Calibration</title>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>History — Cash Machine</title>
 <style>
-body{font-family:-apple-system,system-ui,sans-serif;background:#0e1117;color:#e6e6e6;margin:0;padding:24px;max-width:960px;margin-inline:auto}
-h1{font-size:1.5rem;font-weight:600} h2{font-size:1rem;color:#9ca3af;margin-top:32px;margin-bottom:8px}
-a{color:#93c5fd;text-decoration:none} nav{margin-bottom:8px;font-size:.9rem} nav a{margin-right:14px}
-.muted{color:#6b7280;font-size:.85rem}
-table{width:100%;border-collapse:collapse;font-size:.88rem;margin-top:8px}
-th{color:#9ca3af;text-align:left;font-weight:500;font-size:.72rem;text-transform:uppercase;padding:6px 8px;border-bottom:1px solid #2a2f3a}
-td{padding:9px 8px;border-bottom:1px solid #1c2029;vertical-align:top}
-.card{background:#161b22;border:1px solid #2a2f3a;border-radius:12px;padding:16px 20px;display:inline-block;margin:16px 16px 0 0}
-.card .v{font-size:1.5rem;font-weight:700;margin-top:6px}
-.card .l{font-size:.7rem;color:#9ca3af;text-transform:uppercase;letter-spacing:.06em}
-p.note{background:#161b22;border:1px solid #2a2f3a;border-radius:10px;padding:12px 14px;line-height:1.5;font-size:.9rem}
-</style></head><body>
-<h1>History & Calibration</h1>
-<nav><a href="/">← Home</a></nav>
-<div>
-  <div class="card"><div class="l">Avg Brier score</div><div class="v">{avg?.b!=null?avg.b.toFixed(3):'—'}</div><div class="muted">{avg?.n||0} resolved</div></div>
-  <div class="card"><div class="l">Resolved markets tracked</div><div class="v">{calibration.length}</div></div>
+:root{--bg:#fbfbfa;--fg:#18181b;--mut:#8e8e93;--hair:#e8e8e6;--accent:#4f46e5;--pos:#16a34a;--neg:#dc2626}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);margin:0;padding:0;
+  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,sans-serif;
+  font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:640px;margin:0 auto;padding:64px 20px 96px}
+a{color:inherit;text-decoration:none}
+a:hover{color:var(--accent)}
+.id{font-size:.8rem;font-weight:600;letter-spacing:.02em;display:flex;align-items:center;gap:8px;margin-bottom:26px}
+.id .dot{width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.id small{color:var(--mut);font-weight:400;margin-left:10px;font-size:.75rem}
+nav.id a{margin-right:14px;color:var(--mut)}
+nav.id a:hover{color:var(--accent)}
+h1{font-size:1.05rem;font-weight:600;margin:0 0 2px;letter-spacing:-.01em}
+.mut{color:var(--mut);font-size:.82rem}
+section{margin-top:40px}
+h2{font-size:.72rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);margin:0 0 10px}
+.rows{display:flex;flex-direction:column}
+.row{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:13px 0;border-top:1px solid var(--hair);font-size:.9rem}
+.rows .row:last-child{border-bottom:1px solid var(--hair)}
+.row .t{min-width:0;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.row .n{color:var(--mut);font-size:.78rem;white-space:nowrap;font-variant-numeric:tabular-nums}
+.row .v{font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:500}
+.pos{color:var(--pos)}.neg{color:var(--neg)}
+.note{font-size:.75rem;color:var(--mut);margin-top:12px}
+.err{background:#fdecec;color:#b91c1c;padding:9px 12px;border-radius:6px;margin-bottom:20px;font-size:.8rem}
+.statline{display:flex;gap:26px;padding:18px 0;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair)}
+.stat .v{font-size:1.25rem;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.stat .k{font-size:.72rem;color:var(--mut);margin-top:2px;white-space:nowrap}
+.pmline{border-left:2px solid var(--hair);padding:2px 0 2px 14px;font-size:.88rem;margin:14px 0}
+.pmline b{font-weight:600}
+.pmline .what{color:var(--mut);font-size:.82rem;margin-top:2px}
+footer{margin-top:72px;display:flex;gap:20px;font-size:.75rem;color:var(--mut)}
+footer a{color:var(--mut)}footer a:hover{color:var(--accent)}
+@media (max-width:640px){
+  .wrap{padding:40px 16px 64px}
+  .statline{gap:18px;flex-wrap:wrap}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+{db_error && <div class="err">Ledger unreachable — figures may be incomplete.</div>}
+
+<nav class="id"><span class="dot"></span><a href="/">Cash machine</a><a href="/council/">council</a><a href="/history/">history</a></nav>
+
+<header>
+  <h1>History</h1>
+  <p class="mut">Balance, calibration, and what the machine learned.</p>
+</header>
+
+<div class="statline">
+  <div class="stat"><div class="v">{avg?.b!=null?avg.b.toFixed(3):'—'}</div><div class="k">avg brier</div></div>
+  <div class="stat"><div class="v">{avg?.n||0}</div><div class="k">resolved</div></div>
 </div>
-<p class="note muted">Brier score = mean squared error of my probability estimates vs outcomes. 0 = perfect, 0.25 = coin-flip level, lower is better.</p>
+<p class="note">Brier score = mean squared error of estimates vs outcomes. 0 is perfect, 0.25 is coin-flip level. Lower is better.</p>
 
+<section>
 <h2>Balance over time</h2>
-<table><tr><th>Date</th><th>Balance</th><th>Unrealized P/L</th><th>Total value</th><th>Open</th></tr>
-{balance_history.map(b=>(<tr><td>{b.date_utc}</td><td>{money(b.balance)}</td><td>{b.unrealized_pl!=null?money(b.unrealized_pl):'—'}</td><td>{b.total_value!=null?money(b.total_value):'—'}</td><td class="muted">{b.open_positions??'—'}</td></tr>))}
-</table>
+<div class="rows">
+{balance_history.map(b=>(<div class="row">
+  <span class="t mut">{b.date_utc}</span>
+  <span class="v">{money(b.balance)}</span>
+  <span class="n">{b.total_value!=null?money(b.total_value):'—'} total · {b.open_positions??'—'} open</span>
+</div>))}
+</div>
+</section>
 
-<h2>Calibration records <span class="muted">(my estimate vs what happened)</span></h2>
-{calibration.length === 0 ? <p class="empty">No resolved markets yet — scores appear as tracked markets resolve</p> :
-<table><tr><th>Market</th><th>My est.</th><th>Market price</th><th>Outcome</th><th>Brier</th></tr>
-{calibration.map(c=>(<tr><td>{c.market?.slice?.(0,70)}</td><td>{(Number(c.my_est)*100).toFixed(0)}%</td><td>{(Number(c.market_price)*100).toFixed(0)}%</td><td>{c.outcome}</td><td>{c.brier?.toFixed?.(3)}</td></tr>))}
-</table>}
+<section>
+<h2>Calibration</h2>
+{calibration.length === 0 ? <p class="mut">No resolved markets yet — scores appear as tracked markets resolve</p> :
+<div class="rows">
+{calibration.map(c=>(<div class="row">
+  <span class="t">{c.market?.slice?.(0,70)}</span>
+  <span class="n">est {(Number(c.my_est)*100).toFixed(0)}% vs {(Number(c.market_price)*100).toFixed(0)}% · {c.outcome}</span>
+  <span class="v">{c.brier?.toFixed?.(3)}</span>
+</div>))}
+</div>}
+</section>
 
+<section>
 <h2>Post-mortems</h2>
-{rejected.length === 0 ? <p class="empty">None yet</p> :
-rejected.map(r=>(<div class="note"><strong>{r.thesis?.slice?.(0,90)}</strong> → resolved {r.resolved_outcome}<br/>{r.postmortem}</div>))}
+{rejected.length === 0 ? <p class="mut">None yet</p> :
+rejected.map(r=>(<div class="pmline"><b>{short(r.thesis)}</b> → resolved {r.resolved_outcome}<div class="what">{r.postmortem}</div></div>))}
+</section>
+
+<footer><a href="/">home</a><a href="/council/">council</a></footer>
+</div>
 </body></html>
