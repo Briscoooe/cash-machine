@@ -1,5 +1,6 @@
 ---
 export const prerender = false;
+import { fmtDate, fmtAgo } from '../lib/dates.js';
 import Icon from '../components/Icon.astro';
 let db_error = false;
 Astro.response.headers.set('Cache-Control', 'no-store');
@@ -101,6 +102,18 @@ footer a{color:var(--mut)}footer a:hover{color:var(--accent)}
 .ic{vertical-align:-2px;color:var(--mut)}
 h2 .ic{vertical-align:-1.5px;margin-right:5px}
 .k .ic{margin-right:3px}
+
+.ic{color:var(--mut);flex:none}
+h2{gap:6px}
+h2 .ic{opacity:.75}
+.k{gap:4px}
+.statline{gap:30px}
+.row{padding:14px 0}
+.pmline{padding:16px 0}
+.what{margin-top:10px;font-size:.82rem;line-height:1.6;color:var(--mut)}
+.what .badge{margin-bottom:6px}
+.what .badge{display:inline-block;margin-bottom:6px}
+.note{margin-top:10px}
 @media (max-width:640px){
   .wrap{padding:40px 16px 64px}
   .statline{gap:18px;flex-wrap:wrap}
@@ -138,7 +151,7 @@ h2 .ic{vertical-align:-1.5px;margin-right:5px}
   const d = (prev && b.total_value!=null && prev.total_value!=null) ? Number(b.total_value)-Number(prev.total_value) : null;
   const cls = d==null ? '' : (d>=0 ? ' pos' : ' neg');
   return (<div class="row">
-  <span class="t mut">{b.date_utc}</span>
+  <span class="t mut">{fmtDate(b.date_utc)}</span>
   <span class="v">{money(b.balance)}</span>
   <span class="n{cls}">{d!=null ? ((d>=0?'+':'−')+money(Math.abs(d))+' · ') : ''}{b.total_value!=null?money(b.total_value):'—'} total · {b.open_positions??'—'} open</span>
 </div>);
@@ -161,7 +174,14 @@ h2 .ic{vertical-align:-1.5px;margin-right:5px}
 <section>
 <h2><Icon name="notebook-pen" size=12 cls="h2ic" />Post-mortems</h2>
 {rejected.length === 0 ? <p class="mut">None yet</p> :
-rejected.map(r=>(<div class="pmline"><b>{short(r.thesis)}</b> → resolved {r.resolved_outcome}<div class="what">{r.postmortem}</div></div>))}
+rejected.map(r=>{
+  let parts = [];
+  try { const pm = JSON.parse(r.postmortem); parts = (pm.verdicts||[]).map(v=>({model:v.model, verdict:v.verdict, reasoning:v.reasoning})); } catch { parts = [{reasoning:String(r.postmortem).slice(0,240)}]; }
+  return (<div class="pmline">
+    <b>{short(r.thesis)}</b> → resolved {r.resolved_outcome} · {fmtAgo(r.resolved_at)}
+    {parts.map(p=>(<div class="what"><span class="badge {p.verdict === 'APPROVE' ? 'approve' : 'reject'}">{p.verdict || '—'}</span>{p.reasoning}</div>))}
+  </div>);
+})}
 </section>
 
 <footer><a href="/">home</a><a href="/council/">council</a></footer>

@@ -1,5 +1,6 @@
 ---
 export const prerender = false;
+import { fmtDate, fmtAgo } from '../lib/dates.js';
 import Icon from '../components/Icon.astro';
 let db_error = false;
 Astro.response.headers.set('Cache-Control', 'no-store');
@@ -9,7 +10,15 @@ try {
   const q = async (sql) => (await db.prepare(sql).all()).results;
   runs_recent = await q('SELECT ts_utc, model, trigger, generation_id, cost_usd FROM council_runs ORDER BY ts_utc DESC LIMIT 50');
   costs_daily = await q('SELECT * FROM daily_totals ORDER BY date_utc DESC');
-  verdicts = await q('SELECT rejected_id, model, verdict, confidence, generation_id, cost_usd FROM council_verdicts ORDER BY id DESC LIMIT 60');
+  verdicts = await q('SELECT v.rejected_id id, v.model, v.verdict, v.confidence FROM council_verdicts v ORDER BY v.id DESC LIMIT 120');
+  const titles = await q('SELECT id, market_url FROM rejected');
+  const slugTitle = (url) => { try { const slug = new URL(url).pathname.split('/').pop() || url; return slug.split('-').slice(0,-1).map(w=>w[0].toUpperCase()+w.slice(1)).join(' ') || slug; } catch { return url; } };
+  const titleById = Object.fromEntries(titles.map(t=>[t.id, t.market_url ? slugTitle(t.market_url) : t.id]));
+  const modelShort = (m) => ({'openai/gpt-6-astra':'gpt-6-astra','anthropic/claude-fable-5.1':'fable-5.1','moonshotai/kimi-k3':'kimi-k3'}[m] || m.split('/').pop());
+  const groups = {};
+  for (const v of verdicts) { (groups[v.id] = groups[v.id] || []).push(v); }
+  var verdictGroups = Object.entries(groups).map(([id, vs]) => ({ id, title: titleById[id] || id, vs: vs.map(v=>({m: modelShort(v.model), verdict: v.verdict})) }));
+  verdictGroups = verdictGroups.slice(0, 20);
 } catch (e) {
   db_error = true;
 }
@@ -86,6 +95,22 @@ footer a{color:var(--mut)}footer a:hover{color:var(--accent)}
 .ic{vertical-align:-2px;color:var(--mut)}
 h2 .ic{vertical-align:-1.5px;margin-right:5px}
 .k .ic{margin-right:3px}
+
+.ic{color:var(--mut);flex:none}
+h2{gap:6px}
+h2 .ic{opacity:.75}
+.k{gap:4px}
+.statline{gap:30px}
+.row{padding:14px 0}
+.pmline{padding:16px 0}
+.what{margin-top:8px;font-size:.82rem;line-height:1.55;color:var(--mut)}
+.what .badge{margin-right:6px}
+.note{margin-top:10px}
+
+.mv{display:inline-flex;align-items:center;gap:3px;margin-right:10px}
+.mini{display:inline-block;width:10px;height:10px;line-height:10px;text-align:center;border-radius:50%;font-size:.58rem;font-weight:600;color:#fff}
+.mini.approve{background:var(--pos)}
+.mini.reject{background:var(--neg)}
 @media (max-width:640px){
   .wrap{padding:40px 16px 64px}
   .statline{gap:18px;flex-wrap:wrap}
@@ -118,7 +143,7 @@ h2 .ic{vertical-align:-1.5px;margin-right:5px}
 <h2><Icon name="bar-chart-3" size=12 cls="h2ic" />Calls by day</h2>
 <div class="rows">
 {costs_daily.map(d=>(<div class="row">
-  <span class="t mut">{d.date_utc}</span>
+  <span class="t mut">{fmtDate(d.date_utc)}</span>
   <span class="n">{d.run_count} calls</span>
   <span class="v">${d.total_cost_usd.toFixed(2)}</span>
 </div>))}
@@ -128,10 +153,9 @@ h2 .ic{vertical-align:-1.5px;margin-right:5px}
 <section>
 <h2><Icon name="scale" size=12 cls="h2ic" />Verdicts by thesis</h2>
 <div class="rows">
-{verdicts.map(v=>(<div class="row">
-  <span class="t"><a href={`/thesis/${v.rejected_id}/`}>{v.rejected_id}</a></span>
-  <span class="n">{modelName(v.model)}</span>
-  <span class={v.verdict === 'APPROVE' ? 'badge approve' : 'badge reject'}>{v.verdict}</span>
+{verdictGroups.map(g=>(<div class="row">
+  <span class="t"><a href={`/thesis/${g.id}/`}>{/^REJ-\d/.test(g.title) || /^CR /.test(g.title) ? 'Earlier thesis' : g.title}</a></span>
+  <span class="n">{g.vs.map(v=>(<span class="mv"><span class={v.verdict === 'APPROVE' ? 'mini approve' : 'mini reject'}>{v.verdict[0]}</span>{v.m}</span>))}</span>
 </div>))}
 </div>
 <p class="note">Confidence and per-call cost are on each thesis page.</p>
@@ -141,8 +165,8 @@ h2 .ic{vertical-align:-1.5px;margin-right:5px}
 <h2><Icon name="history" size=12 cls="h2ic" />Recent calls</h2>
 <div class="rows">
 {runs_recent.map(r=>(<div class="row">
-  <span class="t mut">{r.ts_utc?.slice?.(0,16).replace('T',' ')}</span>
-  <span class="n">{modelName(r.model)} · {r.trigger}</span>
+  <span class="t mut">{fmtAgo(r.ts_utc)}</span>
+  <span class="n">{modelName(r.model)} · {r.trigger?.startsWith('new-trade') ? 'new trade' : r.trigger?.startsWith('position-review') ? 'position review' : r.trigger?.startsWith('watchlist') ? 'watchlist' : r.trigger}</span>
   <span class="v">{money(r.cost_usd)}</span>
 </div>))}
 </div>

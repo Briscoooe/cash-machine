@@ -4,7 +4,13 @@ const { name, size = 13, cls = '' } = Astro.props;
 let svg = ICONS[name] || '';
 if (svg) {
   svg = svg.replace(/\s*width="24"\s*height="24"/, '');
-  svg = svg.replace('<svg', `<svg width="${size}" height="${size}" class="ic ${cls}"`);
+  if (/class="([^"]*)"/.test(svg)) {
+    svg = svg.replace(/class="([^"]*)"/, `class="$1 ic ${cls}"`);
+  } else {
+    svg = svg.replace('<svg', `<svg class="ic ${cls}"`);
+  }
+  svg = svg.replace('<svg', `<svg width="${size}" height="${size}"`);
+  svg = svg.replace(/stroke-width="2"/, 'stroke-width="1.75"');
 }
 ---
 <Fragment set:html={svg} />

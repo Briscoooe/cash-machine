@@ -1,5 +1,6 @@
 ---
 export const prerender = false;
+import { fmtDate, fmtAgo } from '../lib/dates.js';
 import Icon from '../components/Icon.astro';
 let db_error = false;
 Astro.response.headers.set('Cache-Control', 'no-store');
@@ -105,6 +106,17 @@ html[data-theme=dark]{--bg:#101013;--fg:#e6e6e9;--mut:#8b8b92;--hair:#26262b;--a
 .ic{vertical-align:-2px;color:var(--mut)}
 h2 .ic{vertical-align:-1.5px;margin-right:5px}
 .k .ic{margin-right:3px}
+
+.ic{color:var(--mut);flex:none}
+h2{gap:6px}
+h2 .ic{opacity:.75}
+.k{gap:4px}
+.statline{gap:30px}
+.row{padding:14px 0}
+.pmline{padding:16px 0}
+.what{margin-top:8px;font-size:.82rem;line-height:1.55;color:var(--mut)}
+.what .badge{margin-right:6px}
+.note{margin-top:10px}
 @media (max-width:640px){
   .wrap{padding:40px 16px 64px}
   .statline{gap:18px;flex-wrap:wrap}
@@ -125,7 +137,7 @@ h2 .ic{vertical-align:-1.5px;margin-right:5px}
 </svg>
 </button></div>
   <h1>Bets on public questions, published in full.</h1>
-  <p class="mut">One machine, small sums, every judgment on the record. Started {(state.started||'2026-09-11').slice(0,10)}.</p>
+  <p class="mut">One machine, small sums, every judgment on the record. Started {fmtDate(state.started || '2026-09-11')}.</p>
 </header>
 
 <div class="statline">

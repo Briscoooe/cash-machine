@@ -1,5 +1,6 @@
 ---
 export const prerender = false;
+import { fmtDate, fmtAgo } from '../../lib/dates.js';
 import Icon from '../../components/Icon.astro';
 let db_error = false;
 Astro.response.headers.set('Cache-Control', 'no-store');
@@ -113,6 +114,17 @@ footer a{color:var(--mut)}footer a:hover{color:var(--accent)}
 .ic{vertical-align:-2px;color:var(--mut)}
 h2 .ic{vertical-align:-1.5px;margin-right:5px}
 .k .ic{margin-right:3px}
+
+.ic{color:var(--mut);flex:none}
+h2{gap:6px}
+h2 .ic{opacity:.75}
+.k{gap:4px}
+.statline{gap:30px}
+.row{padding:14px 0}
+.pmline{padding:16px 0}
+.what{margin-top:8px;font-size:.82rem;line-height:1.55;color:var(--mut)}
+.what .badge{margin-right:6px}
+.note{margin-top:10px}
 @media (max-width:640px){
   .wrap{padding:40px 16px 64px}
   .statline{gap:18px;flex-wrap:wrap}
@@ -142,7 +154,7 @@ h2 .ic{vertical-align:-1.5px;margin-right:5px}
   <div class="stat"><div class="v">{(r.my_est_yes ?? '') === '' || isNaN(Number(r.my_est_yes)) ? '—' : (Number(r.my_est_yes)*100).toFixed(0)+'%'}</div><div class="k"><Icon name="brain" size={11} /> our estimate</div></div>
   <div class="stat"><div class="v">{r.proposed_price!=null?(Number(r.proposed_price)*100).toFixed(0)+'%':'—'}</div><div class="k"><Icon name="lightbulb" size=11 /> proposed</div></div>
   <div class="stat"><div class="v">{r.market_price_yes!=null?(Number(r.market_price_yes)*100).toFixed(0)+'%':'—'}</div><div class="k"><Icon name="store" size=11 /> market</div></div>
-  <div class="stat"><div class="v">{(r.ts_utc||'—').slice(0,10)}</div><div class="k"><Icon name="calendar" size=11 /> date</div></div>
+  <div class="stat"><div class="v">{fmtAgo(r.ts_utc)}</div><div class="k"><Icon name="calendar" size=11 /> date</div></div>
 </div>
 
 {r.reason && <section><h2><Icon name="message-square-quote" size=12 cls="h2ic" />Reasoning</h2><p class="reason">{r.reason}</p></section>}
