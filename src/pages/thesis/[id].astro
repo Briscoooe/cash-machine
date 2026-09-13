@@ -8,6 +8,10 @@ import Icon from '../../components/Icon.astro';
 let db_error = false;
 Astro.response.headers.set('Cache-Control', 'no-store');
 const { id } = Astro.params;
+// Trade ids live at /trade/<id>/ — if someone hits /thesis/<trade-id>/, redirect.
+if (/^T[-0-9]/.test(id) && /^T\d{0,2}-/.test(id)) {
+  return Astro.redirect(`/trade/${id}/`, 301);
+}
 let kf = [];
 const isHash = (s) => /0x[0-9a-f]{16,}/i.test(s || '');
 let r = {}, sources = [], verdicts = [];
