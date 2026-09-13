@@ -76,7 +76,7 @@ html[data-theme=dark]{--bg:#101013;--fg:#e6e6e9;--mut:#8b8b92;--hair:#26262b;--a
 
 <div class="statline">
   <div class="stat"><div class="v">{money(state.wallet_cash)}</div><div class="k"><Icon name="wallet" size=11 /> cash</div></div>
-  <div class="stat"><div class="v">{money(state.position_value)}</div><div class="k"><Icon name="layers" size=11 /> committed</div></div>
+  <div class="stat"><div class="v">{money(openTrades.reduce((a,t)=>a+(t.size_usd??0),0) || state.position_value)}</div><div class="k"><Icon name="layers" size=11 /> committed</div></div>
   <div class="stat"><div class="v">{rejected.length}</div><div class="k"><Icon name="scale" size=11 /> judged</div></div>
   <div class="stat"><div class="v num {cfSum>=0?'pos':'neg'}">{cfSum>=0?'+':''}{money(cfSum)}</div><div class="k"><Icon name="shield-x" size=11 /> refusals</div></div>
 </div>
