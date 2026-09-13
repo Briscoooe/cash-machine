@@ -16,7 +16,7 @@ try {
   const q = async (sql, bind) => (await db.prepare(sql).bind(...(bind||[])).all()).results;
   t = (await q('SELECT * FROM trades WHERE id = ?', [id]))[0] || {};
   sources = await q('SELECT url, fact FROM sources WHERE rejected_id = ?', [id]);
-  verdicts = await q('SELECT model, verdict, confidence, cost_usd FROM council_verdicts WHERE rejected_id = ?', [id]);
+  verdicts = await q('SELECT model, verdict, round, confidence, cost_usd FROM council_verdicts WHERE rejected_id = ?', [id]);
 } catch (e) {
   db_error = true;
 }
@@ -118,6 +118,7 @@ ul.kf li{margin:4px 0}
 <div class="verdict">
   <span class={v.verdict === 'APPROVE' ? 'badge approve' : 'badge reject'}>{v.verdict}</span>
   <span class="t">{(v.model || '').replace(/^openai\//,'').replace(/^anthropic\//,'').replace(/^moonshotai\//,'')}</span>
+  {v.round && <span class="n">{v.round}</span>}
   {v.confidence && <span class="n">confidence {v.confidence}/10</span>}
   {v.cost_usd && <span class="n">${Number(v.cost_usd).toFixed(3)}</span>}
 </div>
