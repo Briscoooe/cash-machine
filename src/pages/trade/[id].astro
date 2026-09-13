@@ -100,6 +100,7 @@ ul.kf li{margin:4px 0}
   const FMT = {entry:['Entry', v => (Number(v)*100).toFixed(1)+'%'], size_usd:['Size', v => '$'+Number(v).toFixed(2)],
     shares:['Shares', v => String(v)], expected_profit:['Expected profit', v => '+$'+Number(String(v).replace('~',''))],
     settlement:['Settles', v => { const d = new Date(String(v)); return isNaN(d) ? String(v) : fmtDate(d); }], market:['Market', v => String(v)]};
+    FMT.note = ['', v => String(v)];
   const label0 = k.market || k.fact || '';
   const rest = { ...k };
   delete rest.market; delete rest.fact;
