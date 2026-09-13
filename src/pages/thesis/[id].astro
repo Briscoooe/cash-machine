@@ -22,6 +22,11 @@ try {
   r = rows[0] || {};
   sources = await q('SELECT url, fact FROM sources WHERE rejected_id = ?', [id]);
   verdicts = await q('SELECT model, verdict, confidence, generation_id, cost_usd, reasoning FROM council_verdicts WHERE rejected_id = ?', [id]);
+  if (verdicts.length === 0 && r.council_verdicts) {
+    try { const inl = typeof r.council_verdicts === 'string' ? JSON.parse(r.council_verdicts) : r.council_verdicts;
+      verdicts = (Array.isArray(inl) ? inl : (inl.verdicts || [])).map(v => ({model: v.model, verdict: v.verdict, confidence: v.confidence, cost_usd: v.cost, reasoning: v.reasoning, generation_id: null}));
+    } catch {}
+  }
 } catch (e) {
   db_error = true;
 }
@@ -105,7 +110,7 @@ ul.kf li{margin:4px 0}
 
 {r.reason && <section><h2><Icon name="message-square-quote" size=12 cls="h2ic" />Reasoning</h2><p class="reason">{r.reason}</p></section>}
 {r.lesson && <section><h2><Icon name="graduation-cap" size=12 cls="h2ic" />Lesson</h2><p class="reason">{r.lesson}</p></section>}
-{kf.length > 0 && <section><h2><Icon name="sigma" size=12 cls="h2ic" />Key figures</h2><ul class="kf">{kf.map((f,i) => <li>{typeof f === 'string' ? f : (f.fact || f.market || Object.entries(f).map(([k2,v2]) => k2+': '+String(v2)).join(' · '))}</li>)}</ul></section>}
+{kf.length > 0 && <section><h2><Icon name="sigma" size=12 cls="h2ic" />Key figures</h2><ul class="kf">{kf.map((f,i) => <li>{typeof f === 'string' ? f : (f.fact || f.market || (typeof f === 'number' ? String(f) : Object.entries(f).map(([k2,v2]) => k2+': '+String(v2)).join(' · ')))}</li>)}</ul></section>}
 
 <section>
 <h2><Icon name="book-open" size=12 cls="h2ic" />Evidence sources</h2>
