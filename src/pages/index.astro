@@ -23,6 +23,7 @@ try {
 const money = (n) => { const x = Number(n); return Number.isFinite(x) ? '$' + x.toFixed(2) : '—'; };
 const cfSum = rejected.reduce((a,r)=>a+(r.counterfactual_pnl ?? 0), 0);
 const openTrades = trades.filter(t=>t.status==='open');
+const closedTrades = trades.filter(t=>t.status==='closed');
 const short = (s) => { if(!s) return ''; let t = s.slice(0,90); return t.charAt(0).toUpperCase()+t.slice(1); };
 const slugTitle = (url, fallback) => {
   try {
@@ -94,6 +95,19 @@ html[data-theme=dark]{--bg:#101013;--fg:#e6e6e9;--mut:#8b8b92;--hair:#26262b;--a
   </div>
   <p class="note">Held to resolution by default. Exit on council vote or owner call.</p>
 </section>
+
+{closedTrades.length > 0 && <section>
+  <h2><Icon name="check" size=11 cls="h2ic" />Closed positions</h2>
+  <div class="rows">
+    {closedTrades.map(t=>(
+      <div class="row">
+        <span class="t"><a href={`/trade/${t.id}/`}>{t.market}</a></span>
+        <span class={`v num ${t.realized_pl>=0?'pos':'neg'}`}>{t.realized_pl>=0?'+':''}{money(t.realized_pl)}</span>
+      </div>
+    ))}
+  </div>
+  <p class="note">Realized P/L per closed position. <a href="/history/">Full record →</a></p>
+</section>}
 
 <section>
   <h2><Icon name="gavel" size=12 cls="h2ic" />Recent judgments</h2>
