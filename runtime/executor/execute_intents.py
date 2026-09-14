@@ -37,7 +37,8 @@ def q(env, sql, params=None):
     res = r.get("result") or []
     return res[0].get("results") if res else []
 
-WALLET = "REDACTED_WALLET"  # Deposit Wallet (public)
+import json, os
+WALLET = json.load(open("/root/.secrets/wallet_address.json"))["wallet"] if not os.environ.get("WALLET_ADDRESS") else os.environ["WALLET_ADDRESS"]
 
 def wallet():
     return WALLET

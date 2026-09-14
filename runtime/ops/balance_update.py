@@ -6,7 +6,8 @@ def post(url, data, headers={}):
                                           'User-Agent': 'Mozilla/5.0', **headers})
     return json.load(urllib.request.urlopen(req, timeout=30))
 
-WALLET = "REDACTED_WALLET"
+import json, os
+WALLET = json.load(open("/root/.secrets/wallet_address.json"))["wallet"] if not os.environ.get("WALLET_ADDRESS") else os.environ["WALLET_ADDRESS"]
 RPC = "https://polygon-bor-rpc.publicnode.com"
 
 r = post(RPC, {"jsonrpc": "2.0", "method": "eth_call",

@@ -35,7 +35,7 @@ const estSide = estNo ? 'NO' : 'YES';
 let live = null;
 if ((t.status === 'open') && t.live) {
   try {
-    const r = await fetch('https://data-api.polymarket.com/positions?user=REDACTED_WALLET', { signal: AbortSignal.timeout(8000) });
+    const r = await fetch('https://data-api.polymarket.com/positions?user=${import.meta.env.PUBLIC_WALLET_ADDRESS}', { signal: AbortSignal.timeout(8000) });
     if (r.ok) {
       const chainPos = await r.json();
       const mq = (t.market || '').trim().replace(/\?$/, '').toLowerCase();

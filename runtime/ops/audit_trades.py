@@ -2,7 +2,8 @@
 """Audit D1 trades against on-chain truth. Reverts false closes."""
 import json, gzip, datetime, requests
 
-WALLET = "REDACTED_WALLET"
+import json, os
+WALLET = json.load(open("/root/.secrets/wallet_address.json"))["wallet"] if not os.environ.get("WALLET_ADDRESS") else os.environ["WALLET_ADDRESS"]
 RPC = "https://polygon-bor-rpc.publicnode.com"
 env = {}
 for line in open("/root/.secrets/cloudflare.env"):
