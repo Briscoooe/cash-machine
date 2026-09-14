@@ -23,6 +23,24 @@ try {
 const money = (n) => { const x = Number(n); return Number.isFinite(x) ? '$' + x.toFixed(2) : '—'; };
 const cfSum = rejected.reduce((a,r)=>a+(r.counterfactual_pnl ?? 0), 0);
 const openTrades = trades.filter(t=>t.status==='open');
+// live tracking: join open trades with on-chain positions
+let chainPos = [];
+try {
+  const r = await fetch('https://data-api.polymarket.com/positions?user=REDACTED_WALLET', { signal: AbortSignal.timeout(8000) });
+  if (r.ok) chainPos = await r.json();
+} catch (e) { console.error('positions fetch failed', e); }
+const tracking = openTrades.map(t => {
+  const mq = (t.market||'').trim().replace(/\?$/,'').toLowerCase();
+  let p = chainPos.find(p => (p.title||'').trim().replace(/\?$/,'').toLowerCase() === mq);
+  if (!p) { const kw = mq.split(' ').slice(0,5).join(' '); const cands = chainPos.filter(p => (p.title||'').toLowerCase().includes(kw)); if (cands.length===1) p = cands[0]; }
+  if (!p) return { t, live: false };
+  const shares = Number(p.size)||0, cur = Number(p.curPrice)||0, cost = Number(t.size_usd)||0;
+  const now = shares*cur;
+  const pl = now - cost;
+  const atRes = shares*1; // full payout if our side wins
+  const plWin = atRes - cost;
+  return { t, live: true, shares, cur, now, pl, atRes, plWin };
+});
 const closedTrades = trades.filter(t=>t.status==='closed');
 const short = (s) => { if(!s) return ''; let t = s.slice(0,90); return t.charAt(0).toUpperCase()+t.slice(1); };
 const slugTitle = (url, fallback) => {
@@ -86,14 +104,17 @@ html[data-theme=dark]{--bg:#101013;--fg:#e6e6e9;--mut:#8b8b92;--hair:#26262b;--a
   <div class="rows">
     {openTrades.length === 0
       ? <div class="row mut">None right now</div>
-      : openTrades.map(t=>(
+      : tracking.map(({t, live, shares, cur, now, pl, atRes, plWin}) => (
         <div class="row">
-          <span class="t"><a href={`/trade/${t.id}/`}>{t.market}</a></span>
+          <span class="t"><a href={`/trade/${t.id}/`}>{t.market}</a>
+            {live && <span class="mut"> · {Number(shares).toFixed(1)} sh @ entry {money(t.size_usd)} · now {money(now)} ({pl>=0?'+':''}{money(pl)}) · wins → {money(atRes)} ({'+'+money(plWin)})</span>}
+            {!live && <span class="mut"> · live quote unavailable</span>}
+          </span>
           <span class="v num">{money(t.size_usd)} <span class="mut">{t.side}</span></span>
         </div>
       ))}
   </div>
-  <p class="note">Held to resolution by default. Exit on council vote or owner call.</p>
+  <p class="note">Now = mark-to-market. Wins → = payout at resolution if our side wins; loses → $0.</p>
 </section>
 
 {closedTrades.length > 0 && <section>
