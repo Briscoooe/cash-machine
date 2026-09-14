@@ -113,6 +113,7 @@ ul.kf li{margin:4px 0}
 </ul>
 </section>}
 
+{verdicts.length === 0 && <p class="note">No council verdicts recorded — this position predates the verdict ledger (Sep 12). Its approval reasoning is in the session archive, not reconstructable here.</p>}
 {verdicts.length > 0 && <section><h2><Icon name="users" size=12 cls="h2ic" />Council verdicts</h2>
 <div class="rows">
 {verdicts.map(v => (
@@ -127,6 +128,7 @@ ul.kf li{margin:4px 0}
 </div>
 </section>}
 
+{sources.length === 0 && <p class="note">No evidence sources recorded{t.status === 'intent_only' ? ' — this intent was never executed, so the scan never fetched sources for it.' : '.'}</p>}
 {sources.length > 0 && <section><h2><Icon name="book-open" size=12 cls="h2ic" />Evidence sources</h2>
 <div class="rows">
 {sources.filter(s => !isHash(s.url)).map(s => (
