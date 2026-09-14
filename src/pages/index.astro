@@ -105,12 +105,21 @@ html[data-theme=dark]{--bg:#101013;--fg:#e6e6e9;--mut:#8b8b92;--hair:#26262b;--a
     {openTrades.length === 0
       ? <div class="row mut">None right now</div>
       : tracking.map(({t, live, shares, cur, now, pl, atRes, plWin}) => (
-        <div class="row">
-          <span class="t"><a href={`/trade/${t.id}/`}>{t.market}</a>
-            {live && <span class="mut"> · {Number(shares).toFixed(1)} sh @ entry {money(t.size_usd)} · now {money(now)} ({pl>=0?'+':''}{money(pl)}) · wins → {money(atRes)} ({'+'+money(plWin)})</span>}
-            {!live && <span class="mut"> · live quote unavailable</span>}
-          </span>
-          <span class="v num">{money(t.size_usd)} <span class="mut">{t.side}</span></span>
+        <div class="row" style="display:block">
+          <div style="display:flex;justify-content:space-between;gap:12px">
+            <span class="t"><a href={`/trade/${t.id}/`}>{t.market}</a></span>
+            <span class="v num">{money(t.size_usd)} <span class="mut">{t.side}</span></span>
+          </div>
+          {live ? (
+            <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:4px;font-size:.92em">
+              <span>Now <b>{money(now)}</b> <span class={pl>=0?'pos':'neg'}>{pl>=0?'+':''}{money(pl)}</span></span>
+              <span>Mark <b>{(Number(cur)*100).toFixed(1)}%</b></span>
+              <span>Wins → <b>{money(atRes)}</b> <span class="pos">{'+'+money(plWin)}</span></span>
+              <span>Loses → <b>$0.00</b> <span class="neg">−{money(t.size_usd)}</span></span>
+            </div>
+          ) : (
+            <div class="mut" style="margin-top:4px">Live quote unavailable</div>
+          )}
         </div>
       ))}
   </div>
