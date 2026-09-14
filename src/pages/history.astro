@@ -7,7 +7,7 @@ import { fmtDate, fmtAgo } from '../lib/dates.js';
 import Icon from '../components/Icon.astro';
 let db_error = false;
 Astro.response.headers.set('Cache-Control', 'no-store');
-let balance_history = [], calibration = [], rejected = [], avg = {b:null,n:0};
+let balance_history = [], calibration = [], rejected = [], trades = [], avg = {b:null,n:0};
 try {
   const db = Astro.locals.runtime.env.DB;
   const q = async (sql) => (await db.prepare(sql).all()).results;
@@ -15,6 +15,7 @@ try {
   calibration = await q('SELECT market, my_est, market_price, outcome, brier, resolved_at FROM calibration WHERE outcome IS NOT NULL ORDER BY resolved_at DESC');
   avg = (await q('SELECT AVG(brier) b, COUNT(*) n FROM calibration WHERE brier IS NOT NULL'))[0];
   rejected = await q('SELECT id, thesis, resolved_outcome, my_est_yes, postmortem FROM rejected WHERE postmortem IS NOT NULL ORDER BY ts_utc DESC LIMIT 60');
+  trades = await q('SELECT id, market, side, status, size_usd, entry_price, exit_price, realized_pl, ts_utc FROM trades ORDER BY ts_utc DESC LIMIT 100');
 } catch (e) {
   db_error = true;
 }
@@ -81,6 +82,27 @@ html[data-theme=dark] body{background:var(--bg)}
   <div class="stat"><div class="v">{avg?.n||0}</div><div class="k"><Icon name="check-circle-2" size=11 /> resolved</div></div>
 </div>
 <p class="note">Brier score = mean squared error of estimates vs outcomes. 0 is perfect, 0.25 is coin-flip level. Lower is better.</p>
+
+<section>
+<h2><Icon name="list" size=12 cls="h2ic" />Results</h2>
+<div class="rows">
+{trades.length === 0 ? <div class="row mut">No trades yet</div> :
+trades.map(t=>(
+  <div class="row">
+    <span class="t"><a href={`/trade/${t.id}/`}>{t.market}</a>
+      <span class="mut"> · {fmtDate(t.ts_utc)} · {t.side} @ {t.entry_price!=null?Number(t.entry_price).toFixed(3):'—'}</span>
+    </span>
+    <span class="v">
+      <span class="badge">{t.status}</span>
+      {t.status==='closed' && <span class={'num '+(Number(t.realized_pl)>=0?'pos':'neg')}> {Number(t.realized_pl)>=0?'+':''}{money(t.realized_pl)}</span>}
+      {t.status==='open' && <span class="mut num"> {money(t.size_usd)} in play</span>}
+      {t.status==='rejected' && <span class="mut num"> {money(t.size_usd)} not taken</span>}
+    </span>
+  </div>
+))}
+</div>
+<p class="note">Every position the machine has taken, closed, or declined. Realized P/L shown on close.</p>
+</section>
 
 <section>
 <h2><Icon name="chart-line" size=12 cls="h2ic" />Balance over time</h2>
