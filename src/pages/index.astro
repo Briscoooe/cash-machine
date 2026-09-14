@@ -26,7 +26,7 @@ const openTrades = trades.filter(t=>t.status==='open');
 // live tracking: join open trades with on-chain positions
 let chainPos = [];
 try {
-  const r = await fetch('https://data-api.polymarket.com/positions?user=${import.meta.env.PUBLIC_WALLET_ADDRESS}', { signal: AbortSignal.timeout(8000) });
+  const r = await fetch('https://data-api.polymarket.com/positions?user=${Astro.locals.runtime.env.WALLET_ADDRESS}', { signal: AbortSignal.timeout(8000) });
   if (r.ok) chainPos = await r.json();
 } catch (e) { console.error('positions fetch failed', e); }
 const tracking = openTrades.map(t => {
