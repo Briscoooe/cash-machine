@@ -31,6 +31,25 @@ try { kf = t.key_figures ? JSON.parse(t.key_figures) : []; } catch (e) {}
 const estNo = (t.side||'').toUpperCase()==='NO' && t.my_est_yes != null && Number(t.my_est_yes) <= 0.5;
 const estVal = t.my_est_yes == null ? null : (estNo ? 1-Number(t.my_est_yes) : Number(t.my_est_yes));
 const estSide = estNo ? 'NO' : 'YES';
+// live position tracking for open trades (chain truth, not stored state)
+let live = null;
+if ((t.status === 'open') && t.live) {
+  try {
+    const r = await fetch('https://data-api.polymarket.com/positions?user=REDACTED_WALLET', { signal: AbortSignal.timeout(8000) });
+    if (r.ok) {
+      const chainPos = await r.json();
+      const mq = (t.market || '').trim().replace(/\?$/, '').toLowerCase();
+      let p = chainPos.find(p => (p.title || '').trim().replace(/\?$/, '').toLowerCase() === mq);
+      if (!p) { const kw = mq.split(' ').slice(0, 5).join(' '); const cands = chainPos.filter(p => (p.title || '').toLowerCase().includes(kw)); if (cands.length === 1) p = cands[0]; }
+      if (p) {
+        const shares = Number(p.size) || 0, cur = Number(p.curPrice) || 0, cost = Number(t.size_usd) || 0;
+        const now = shares * cur, win = shares * 1;
+        const markNo = t.side && t.side.toUpperCase() === 'NO' ? 1 - cur : cur;
+        live = { shares, markNo, now, pl: now - cost, win, plWin: win - cost, cost };
+      }
+    }
+  } catch (e) { console.error('live position fetch failed', e); }
+}
 const modelName = (m) => (m || '').replace(/^openai\//, '').replace(/^anthropic\//, '').replace(/^moonshotai\//, '');
 ---
 <html>
@@ -91,6 +110,17 @@ ul.kf li{margin:4px 0}
   {pl && <div class="stat"><div class="v num {Number(pl)>=0?'pos':'neg'}">{Number(pl)>=0?'+':''}{money(pl)}</div><div class="k"><Icon name="trending-up" size={11} /> p/l</div></div>}
   <div class="stat"><div class="v">{fmtAgo(t.ts_utc)}</div><div class="k"><Icon name="calendar" size={11} /> opened</div></div>
 </div>
+
+{live && <section>
+  <h2><Icon name="activity" size=12 cls="h2ic" />Position right now</h2>
+  <div class="statline">
+    <div class="stat"><div class="v">{money(live.now)}</div><div class="k"><Icon name="wallet" size={11} /> worth now</div></div>
+    <div class="stat"><div class="v"><span class={live.pl>=0?'pos':'neg'}>{live.pl>=0?'+':''}{money(live.pl)}</span></div><div class="k"><Icon name={live.pl>=0?'trending-up':'trending-down'} size={11} /> unrealized</div></div>
+    <div class="stat"><div class="v"><span class="pos">+{money(live.plWin)}</span></div><div class="k"><Icon name="check" size={11} /> if we win</div></div>
+    <div class="stat"><div class="v"><span class="neg">−{money(live.cost)}</span></div><div class="k"><Icon name="x" size={11} /> if we lose</div></div>
+  </div>
+  <p class="note">{Number(live.shares).toFixed(1)} shares · live mark {pct(live.markNo)} · pays $1.00/share at resolution. Held to resolution by default.</p>
+</section>}
 
 {t.thesis && <section><h2><Icon name="file-text" size=12 cls="h2ic" />Thesis</h2><p class="reason">{t.thesis}</p></section>}
 
