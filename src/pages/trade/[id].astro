@@ -33,9 +33,13 @@ const estVal = t.my_est_yes == null ? null : (estNo ? 1-Number(t.my_est_yes) : N
 const estSide = estNo ? 'NO' : 'YES';
 // live position tracking for open trades (chain truth, not stored state)
 let live = null;
-if ((t.status === 'open') && t.live) {
+const wallet = Astro.locals.runtime?.env?.WALLET_ADDRESS;
+if ((t.status === 'open') && t.live && wallet) {
   try {
-    const r = await fetch('/api/positions', { signal: AbortSignal.timeout(8000) });
+    const r = await fetch(`https://data-api.polymarket.com/positions?user=${wallet}&limit=100`, {
+      signal: AbortSignal.timeout(8000),
+      headers: { 'User-Agent': 'cash-machine-site' },
+    });
     if (r.ok) {
       const chainPos = await r.json();
       const mq = (t.market || '').trim().replace(/\?$/, '').toLowerCase();

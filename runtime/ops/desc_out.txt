@@ -1,0 +1,10 @@
+{"id": "REJ-20260915-KPRF2ND-NOEDGE", "t": "KPRF wins second-most Duma seats (market 0.92). Fresh polls: WCIOM Sep 6 KPRF 16.2 vs NL 12.9, LDPR 12.3; FOM Sep 6 KPRF", "category": "no-edge", "r": "Fair value within 5 pts of price under neutral weighting; P(NL or LDPR overtakes) ~8-10 percent. No edge."}
+
+{"id": "REJ-20260915-RUSSIA-ER-NOEDGE", "t": "United Russia most-seats", "category": "market-already-knows", "r": "Fair value within 5 pts of market price on fresh polling; no edge under pace-continuation weighting"}
+
+{"id": "REJ-20260914-LDPR", "t": "LDPR spoiler thesis: LDPR at 3c as YES to gain most seats in the Russian Duma election Sep 20. Value if LDPR surges past", "category": "no-edge", "r": "Fair value ~3% equals market price. Two fresh polls: WCIOM (n=1600, Sep 6) LDPR 12.3%, 59 seats; ExtremeScan (n=800, Sep 10) LDPR 11.0%, 53 seats. New Left is second in both (12.9%/16.2%). LDPR most-s"}
+
+{"id": "REJ-20260914-UR-REGION", "t": "United Russia party list loses plurality in at least one region, 2026 Duma election. Base rate: 4 of 89 regions lost in ", "category": "no-edge", "r": "Council 0-3 reject. No edge: fair NO 0.30 vs price 0.33, minus 3 points. Fable argues fair NO is 0.15-0.25. Smart Voting is gone, KPRF is weaker, Khabarovsk has a Kremlin governor, online voting cover"}
+
+{"id": "REJ-20260914-UR-SWEEP", "t": "United Russia party-list sweep of every region at 0.625. 2021 base: UR won 49.8 percent national but lost the party-list", "category": "no-edge", "r": "Neutral weighting reproduces the market price. Estimate sits inside 5 points of 0.625."}
+

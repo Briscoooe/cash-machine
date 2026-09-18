@@ -1,0 +1,1458 @@
+[
+ {
+  "question": "Will there be no change in Fed interest rates after the September 2026 meeting?",
+  "yes": 0.115,
+  "vol24": 7012708,
+  "end": "2026-09-16",
+  "slug": "fed-decision-in-september-762",
+  "desc": "The FED interest rates are defined in this market by the upper bound of the target federal funds range. The decisions on the target federal funds range are made by the Federal Open Market Committee (FOMC) meetings.\n\nThis market will resolve to the amount of basis points the upper bound of the target federal funds rate is changed by versus the level it was prior to the Federal Reserve's September 2026 meeting.\n\nIf the target federal funds rate is changed to a level not expressed in the displayed "
+ },
+ {
+  "question": "Will the Fed increase interest rates by 25 bps after the September 2026 meeting?",
+  "yes": 0.875,
+  "vol24": 4856201,
+  "end": "2026-09-16",
+  "slug": "fed-decision-in-september-762",
+  "desc": "The FED interest rates are defined in this market by the upper bound of the target federal funds range. The decisions on the target federal funds range are made by the Federal Open Market Committee (FOMC) meetings.\n\nThis market will resolve to the amount of basis points the upper bound of the target federal funds rate is changed by versus the level it was prior to the Federal Reserve's September 2026 meeting.\n\nIf the target federal funds rate is changed to a level not expressed in the displayed "
+ },
+ {
+  "question": "Will United Russia (ER) gain the most seats in the next Russian parliamentary election?",
+  "yes": 0.725,
+  "vol24": 733991,
+  "end": "2026-09-30",
+  "slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election",
+  "desc": "Parliamentary elections are to be scheduled to be held in Russia in September 2026.\n\nThis market will resolve according to the political party that gains the greatest number of seats in the next Russian State Duma election, compared to before the election.\n\nIf the results are not known definitively by September 30, 2027, 11:59 PM ET, this market will resolve to \"Other\".\n\nIn the event of a tie between multiple parties for the most seats gained, this market will resolve in favor of the party that "
+ },
+ {
+  "question": "Fed rate hike in 2026?",
+  "yes": 0.941,
+  "vol24": 305438,
+  "end": "2026-12-09",
+  "slug": "fed-rate-hike-in-2026",
+  "desc": "This market will resolve to \u201cYes\u201d if the upper bound of the target federal funds rate is increased at any point between January 1, 2026 and the Fed's December 2026 meeting, currently scheduled for December 8-9, 2026. Otherwise, this market will resolve to \u201cNo\u201d.\n\nThis market may not resolve to \"No\" until the Fed has released its rate change decision following its December meeting.\n\nThe primary resolution source for this market will be the official website of the Federal Reserve (https://www.feder"
+ },
+ {
+  "question": "Israel x Iran ceasefire continues through September 30?",
+  "yes": 0.895,
+  "vol24": 165390,
+  "end": "2026-09-30",
+  "slug": "israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963",
+  "desc": "This market will resolve to \"Yes\" if a state of ceasefire remains in effect between Israel and Iran through the listed date, 11:59 PM Iran Standard Time (IRST). Otherwise this market will resolve to \u201cNo\u201d. \n\nA state of ceasefire will be considered to no longer be in effect between Israel and Iran if either Israel or Iran takes a qualifying military action against the other country between market creation and the listed date, 11:59 PM IRST.\n\nA qualifying military action refers to an air strike or "
+ },
+ {
+  "question": "Fed Rate Hike by September 2026 Meeting?",
+  "yes": 0.885,
+  "vol24": 162692,
+  "end": "2026-12-09",
+  "slug": "fed-rate-hike-by",
+  "desc": "This market will resolve to \u201cYes\u201d if the upper bound of the target federal funds rate is increased at any point between December 16, 2025 and the completion of the listed Federal Open Market Committee (FOMC) meeting (inclusive of any rate hike announced as a result of the listed meeting). Otherwise, this market will resolve to \u201cNo\u201d.\n\nIf the listed meeting does not take place within 7 calendar days (ET) of its scheduled end date, 11:59 PM ET, and no qualifying rate hike has been announced, this m"
+ },
+ {
+  "question": "Will there be no change in Fed interest rates after the October 2026 meeting?",
+  "yes": 0.615,
+  "vol24": 157276,
+  "end": "2026-10-28",
+  "slug": "fed-decision-in-october-20260617190323537",
+  "desc": "The FED interest rates are defined in this market by the upper bound of the target federal funds range. The decisions on the target federal funds range are made by the Federal Open Market Committee (FOMC) meetings.\n\nThis market will resolve to the amount of basis points the upper bound of the target federal funds rate is changed by versus the level it was prior to the Federal Reserve's October 2026 meeting.\n\nIf the target federal funds rate is changed to a level not expressed in the displayed op"
+ },
+ {
+  "question": "Will the Democratic Party control the House after the 2026 Midterm elections?",
+  "yes": 0.875,
+  "vol24": 145559,
+  "end": "2026-11-03",
+  "slug": "which-party-will-win-the-house-in-2026",
+  "desc": "This market will resolve according to the party that wins control of the United States House of Representatives in the 2026 United States midterm election.\n\nA party wins control of the United States House of Representatives if it wins a majority of the chamber\u2019s voting seats. If no party wins a majority of voting seats, the chamber will be deemed controlled by the party with which the first elected Speaker of the House of the Congress that convenes after the 2026 midterm election is affiliated.\n"
+ },
+ {
+  "question": "Will the Fed increase interest rates by 25 bps after the October 2026 meeting?",
+  "yes": 0.385,
+  "vol24": 116573,
+  "end": "2026-10-28",
+  "slug": "fed-decision-in-october-20260617190323537",
+  "desc": "The FED interest rates are defined in this market by the upper bound of the target federal funds range. The decisions on the target federal funds range are made by the Federal Open Market Committee (FOMC) meetings.\n\nThis market will resolve to the amount of basis points the upper bound of the target federal funds rate is changed by versus the level it was prior to the Federal Reserve's October 2026 meeting.\n\nIf the target federal funds rate is changed to a level not expressed in the displayed op"
+ },
+ {
+  "question": "Will New People (NL) gain the most seats in the next Russian parliamentary election?",
+  "yes": 0.237,
+  "vol24": 115381,
+  "end": "2026-09-30",
+  "slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election",
+  "desc": "Parliamentary elections are to be scheduled to be held in Russia in September 2026.\n\nThis market will resolve according to the political party that gains the greatest number of seats in the next Russian State Duma election, compared to before the election.\n\nIf the results are not known definitively by September 30, 2027, 11:59 PM ET, this market will resolve to \"Other\".\n\nIn the event of a tie between multiple parties for the most seats gained, this market will resolve in favor of the party that "
+ },
+ {
+  "question": "Will Fl\u00e1vio Bolsonaro win the 2026 Brazilian presidential election?",
+  "yes": 0.5365,
+  "vol24": 114396,
+  "end": "2026-10-04",
+  "slug": "brazil-presidential-election",
+  "desc": "A presidential election is scheduled to take place in Brazil on October 4, 2026.\n\nThis market will resolve according to the listed candidate that wins this election.\n\nThis market includes any potential second round. If the result of this election isn't known by June 30, 2027, 11:59 PM ET, the market will resolve to \"Other\".\n\nThis market will resolve based on the result of the election as indicated by a consensus of credible reporting. If there is ambiguity, this market will resolve based solely "
+ },
+ {
+  "question": "Will China invade Taiwan by end of 2026?",
+  "yes": 0.0385,
+  "vol24": 107924,
+  "end": "2026-12-31",
+  "slug": "will-china-invade-taiwan-before-2027",
+  "desc": "This market will resolve to \"Yes\" if China commences a military offensive intended to establish control over any portion of the Republic of China (Taiwan) by December 31, 2026, 11:59 PM ET. Otherwise, this market will resolve to \"No\".\n\nTerritory under the administration of the Republic of China including any inhabited islands will qualify, however uninhabited islands will not qualify. \n\nThe resolution source for this market will be will be official confirmation by China, Taiwan, the United Natio"
+ },
+ {
+  "question": "Will WTI Crude Oil (WTI) hit (HIGH) $110 in September?",
+  "yes": 0.29,
+  "vol24": 89680,
+  "end": "2026-10-01",
+  "slug": "what-price-will-wti-hit-in-september-2026",
+  "desc": "This market will resolve to \"Yes\" if, at any point after market creation and during a trading session of September 2026, any 1-minute candle for the Active Month of WTI Crude Oil futures has a final \"High\" or \"Low\" price equal to or beyond (above for \u2191 High Prices, below for \u2193 Low Prices) the listed price. Otherwise, this market will resolve to \"No\".\n\nPrices will be used exactly as published by Pyth, without rounding.\n\nIf the Active Month contract does not trade at all during the listed time fra"
+ },
+ {
+  "question": "Will Elon Musk post 40-64 tweets from September 14 to September 16, 2026?",
+  "yes": 0.7525,
+  "vol24": 85620,
+  "end": "2026-09-16",
+  "slug": "elon-musk-of-tweets-september-14-september-16-2026",
+  "desc": "This market will resolve according to the number of times Elon Musk (@elonmusk), posts on X from September 14 12:00 PM ET to September 16, 2026 12:00 PM ET.\n\nFor the purposes of this market, only main feed posts, quote posts and reposts will count.\n\nReplies will NOT count towards the total - however, replies on the main feed such as https://x.com/elonmusk/status/1786073478711353576 will be counted by the tracker.\n\nDeleted posts will count as long as they remain available long enough to be captur"
+ },
+ {
+  "question": "US announces end of Iranian blockade by September 21, 2026?",
+  "yes": 0.048,
+  "vol24": 82130,
+  "end": "2026-09-22",
+  "slug": "us-announces-end-of-iranian-blockade-byptptpt-20260713152715080",
+  "desc": "On July 13, 2026, Trump announced the United States would reinstate its naval blockade of Iran, targeting Iranian ships and customers.\n\nThis market will resolve to \u201cYes\u201d if the United States government, or an authorized representative of the United States government, publicly and officially announces the end, termination, lifting, or suspension of the United States\u2019 naval blockade on Iranian ships and ships of Iranian customers, between market creation and the specified date, 11:59 PM ET. Otherw"
+ },
+ {
+  "question": "Fed Rate Hike by October 2026 Meeting?",
+  "yes": 0.915,
+  "vol24": 80201,
+  "end": "2026-12-09",
+  "slug": "fed-rate-hike-by",
+  "desc": "This market will resolve to \u201cYes\u201d if the upper bound of the target federal funds rate is increased at any point between December 16, 2025 and the completion of the listed Federal Open Market Committee (FOMC) meeting (inclusive of any rate hike announced as a result of the listed meeting). Otherwise, this market will resolve to \u201cNo\u201d.\n\nIf the listed meeting does not take place within 7 calendar days (ET) of its scheduled end date, 11:59 PM ET, and no qualifying rate hike has been announced, this m"
+ },
+ {
+  "question": "Will Elon Musk post 65-89 tweets from September 14 to September 16, 2026?",
+  "yes": 0.2635,
+  "vol24": 78660,
+  "end": "2026-09-16",
+  "slug": "elon-musk-of-tweets-september-14-september-16-2026",
+  "desc": "This market will resolve according to the number of times Elon Musk (@elonmusk), posts on X from September 14 12:00 PM ET to September 16, 2026 12:00 PM ET.\n\nFor the purposes of this market, only main feed posts, quote posts and reposts will count.\n\nReplies will NOT count towards the total - however, replies on the main feed such as https://x.com/elonmusk/status/1786073478711353576 will be counted by the tracker.\n\nDeleted posts will count as long as they remain available long enough to be captur"
+ },
+ {
+  "question": "Bab el-Mandeb Strait effectively closed by September 30?",
+  "yes": 0.0555,
+  "vol24": 72163,
+  "end": "2026-10-01",
+  "slug": "bab-el-mandeb-strait-effectively-closed-by",
+  "desc": "This market will resolve to \u201cYes\u201d if IMF PortWatch publishes a 7-day moving average of transit calls (\u201cArrivals of Ships\u201d) for the Bab el-Mandeb Strait less than or equal to 10 for any date between market creation and the listed date. Otherwise, this market will resolve to \u201cNo\u201d.\n\nThis market will resolve as soon as IMF PortWatch publishes a 7-day moving average of transit calls for the Bab el-Mandeb Strait equal to or below 10, or once data has been published for the listed date and no such valu"
+ },
+ {
+  "question": "Will WTI Crude Oil (WTI) hit (HIGH) $115 in September?",
+  "yes": 0.13,
+  "vol24": 65186,
+  "end": "2026-10-01",
+  "slug": "what-price-will-wti-hit-in-september-2026",
+  "desc": "This market will resolve to \"Yes\" if, at any point after market creation and during a trading session of September 2026, any 1-minute candle for the Active Month of WTI Crude Oil futures has a final \"High\" or \"Low\" price equal to or beyond (above for \u2191 High Prices, below for \u2193 Low Prices) the listed price. Otherwise, this market will resolve to \"No\".\n\nPrices will be used exactly as published by Pyth, without rounding.\n\nIf the Active Month contract does not trade at all during the listed time fra"
+ },
+ {
+  "question": "Will Elon Musk post 160-179 tweets from September 11 to September 18, 2026?",
+  "yes": 0.0325,
+  "vol24": 62512,
+  "end": "2026-09-18",
+  "slug": "elon-musk-of-tweets-september-11-september-18-2026",
+  "desc": "This market will resolve according to the number of times Elon Musk (@elonmusk), posts on X from September 11 12:00 PM ET to September 18, 2026 12:00 PM ET.\n\nFor the purposes of this market, only main feed posts, quote posts and reposts will count.\n\nReplies will NOT count towards the total - however, replies on the main feed such as https://x.com/elonmusk/status/1786073478711353576 will be counted by the tracker.\n\nDeleted posts will count as long as they remain available long enough to be captur"
+ },
+ {
+  "question": "Will Luiz In\u00e1cio Lula da Silva win the 2026 Brazilian presidential election?",
+  "yes": 0.445,
+  "vol24": 60223,
+  "end": "2026-10-04",
+  "slug": "brazil-presidential-election",
+  "desc": "A presidential election is scheduled to take place in Brazil on October 4, 2026.\n\nThis market will resolve according to the listed candidate that wins this election.\n\nThis market includes any potential second round. If the result of this election isn't known by June 30, 2027, 11:59 PM ET, the market will resolve to \"Other\".\n\nThis market will resolve based on the result of the election as indicated by a consensus of credible reporting. If there is ambiguity, this market will resolve based solely "
+ },
+ {
+  "question": "Will Linke win the most seats in the 2026 Berlin state elections?",
+  "yes": 0.675,
+  "vol24": 58684,
+  "end": "2026-09-20",
+  "slug": "berlin-state-election-winner",
+  "desc": "Parliamentary elections to elect the Abgeordnetehaus of Berlin are scheduled to take place in Berlin on September 20, 2026.\n\nThis market will resolve to the political party that wins the greatest number of seats in the formal deliberative assembly of Berlin (Abgeordnetenhaus) as a result of this election.\n\nIf voting in the Berlin election for the Abgeordnetenhaus does not occur by December 31, 2026, this market will resolve to \"Other\".\n\nIn the case of a tie between this party or coalition and an"
+ },
+ {
+  "question": "2026 Balance of Power: R Senate, R House",
+  "yes": 0.105,
+  "vol24": 55602,
+  "end": "2026-11-03",
+  "slug": "balance-of-power-2026-midterms",
+  "desc": "This market will resolve according to the party that wins control of the United States Senate and the party that wins control of the United States House of Representatives in the 2026 United States midterm election.\n\nA party wins control of the United States Senate if it wins a majority of the chamber\u2019s voting seats. If no party wins a majority of voting seats, the party that wins control of the chamber is the party that wins half of the voting seats and holds the Vice Presidency. If the outcome"
+ },
+ {
+  "question": "Will Magdalena Andersson be the next Prime Minister of Sweden?",
+  "yes": 0.915,
+  "vol24": 54805,
+  "end": "2026-09-13",
+  "slug": "next-prime-minister-of-sweden",
+  "desc": "Parliamentary elections are scheduled to be held in Sweden on September 13, 2026. \n\nThis market will resolve to the next individual who is officially appointed and assumes office as Prime Minister of Sweden following the next parliamentary election.\n\nTo count for resolution, the individual must officially assume office. Any interim or caretaker Prime Minister will not count toward the resolution of this market.\n\nIf no such Prime Minister assumes office by June 30, 2027, 11:59 PM ET, this market "
+ },
+ {
+  "question": "Will Fl\u00e1vio Bolsonaro finish in second place in the first round of the 2026 Brazilian presidential election?",
+  "yes": 0.755,
+  "vol24": 50951,
+  "end": "2026-10-04",
+  "slug": "brazil-presidential-election-first-round-2nd-place",
+  "desc": "A presidential election is scheduled to take place in Brazil on October 4, 2026.\n\nThis market will resolve according to the listed candidate who receives the second-most valid votes in the first round of this election.\n\nThe named candidates will be primarily ranked by the number of valid votes received in the specified election. If two or more candidates are tied on valid votes, ties will be broken by alphabetical order of the candidates' last names. This market will resolve to the candidate tha"
+ },
+ {
+  "question": "Israel x Iran ceasefire continues through October 31?",
+  "yes": 0.765,
+  "vol24": 47993,
+  "end": "2026-10-31",
+  "slug": "israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963",
+  "desc": "This market will resolve to \"Yes\" if a state of ceasefire remains in effect between Israel and Iran through the listed date, 11:59 PM Iran Standard Time (IRST). Otherwise this market will resolve to \u201cNo\u201d. \n\nA state of ceasefire will be considered to no longer be in effect between Israel and Iran if either Israel or Iran takes a qualifying military action against the other country between market creation and the listed date, 11:59 PM IRST.\n\nA qualifying military action refers to an air strike or "
+ },
+ {
+  "question": "Will Company F be the largest company in the world by market cap on September 30?",
+  "yes": 0.5,
+  "vol24": 46815,
+  "end": "2026-09-30",
+  "slug": "largest-company-end-of-september-1785358369147",
+  "desc": "This market will resolve to the largest company in the world by market cap on September 30, 2026, as of market close.\n\nThe resolution source for this market will be a consensus of credible reporting."
+ },
+ {
+  "question": "Will Company G be the largest company in the world by market cap on September 30?",
+  "yes": 0.5,
+  "vol24": 46815,
+  "end": "2026-09-30",
+  "slug": "largest-company-end-of-september-1785358369147",
+  "desc": "This market will resolve to the largest company in the world by market cap on September 30, 2026, as of market close.\n\nThe resolution source for this market will be a consensus of credible reporting."
+ },
+ {
+  "question": "Will Company H be the largest company in the world by market cap on September 30?",
+  "yes": 0.5,
+  "vol24": 46815,
+  "end": "2026-09-30",
+  "slug": "largest-company-end-of-september-1785358369147",
+  "desc": "This market will resolve to the largest company in the world by market cap on September 30, 2026, as of market close.\n\nThe resolution source for this market will be a consensus of credible reporting."
+ },
+ {
+  "question": "Will Company I be the largest company in the world by market cap on September 30?",
+  "yes": 0.5,
+  "vol24": 46815,
+  "end": "2026-09-30",
+  "slug": "largest-company-end-of-september-1785358369147",
+  "desc": "This market will resolve to the largest company in the world by market cap on September 30, 2026, as of market close.\n\nThe resolution source for this market will be a consensus of credible reporting."
+ },
+ {
+  "question": "Will Company J be the largest company in the world by market cap on September 30?",
+  "yes": 0.5,
+  "vol24": 46815,
+  "end": "2026-09-30",
+  "slug": "largest-company-end-of-september-1785358369147",
+  "desc": "This market will resolve to the largest company in the world by market cap on September 30, 2026, as of market close.\n\nThe resolution source for this market will be a consensus of credible reporting."
+ },
+ {
+  "question": "Will Company K be the largest company in the world by market cap on September 30?",
+  "yes": 0.5,
+  "vol24": 46815,
+  "end": "2026-09-30",
+  "slug": "largest-company-end-of-september-1785358369147",
+  "desc": "This market will resolve to the largest company in the world by market cap on September 30, 2026, as of market close.\n\nThe resolution source for this market will be a consensus of credible reporting."
+ },
+ {
+  "question": "Will Company L be the largest company in the world by market cap on September 30?",
+  "yes": 0.5,
+  "vol24": 46815,
+  "end": "2026-09-30",
+  "slug": "largest-company-end-of-september-1785358369147",
+  "desc": "This market will resolve to the largest company in the world by market cap on September 30, 2026, as of market close.\n\nThe resolution source for this market will be a consensus of credible reporting."
+ },
+ {
+  "question": "Will Company M be the largest company in the world by market cap on September 30?",
+  "yes": 0.5,
+  "vol24": 46815,
+  "end": "2026-09-30",
+  "slug": "largest-company-end-of-september-1785358369147",
+  "desc": "This market will resolve to the largest company in the world by market cap on September 30, 2026, as of market close.\n\nThe resolution source for this market will be a consensus of credible reporting."
+ },
+ {
+  "question": "Will Company N be the largest company in the world by market cap on September 30?",
+  "yes": 0.5,
+  "vol24": 46815,
+  "end": "2026-09-30",
+  "slug": "largest-company-end-of-september-1785358369147",
+  "desc": "This market will resolve to the largest company in the world by market cap on September 30, 2026, as of market close.\n\nThe resolution source for this market will be a consensus of credible reporting."
+ },
+ {
+  "question": "Will Company O be the largest company in the world by market cap on September 30?",
+  "yes": 0.5,
+  "vol24": 46815,
+  "end": "2026-09-30",
+  "slug": "largest-company-end-of-september-1785358369147",
+  "desc": "This market will resolve to the largest company in the world by market cap on September 30, 2026, as of market close.\n\nThe resolution source for this market will be a consensus of credible reporting."
+ },
+ {
+  "question": "Will Company P be the largest company in the world by market cap on September 30?",
+  "yes": 0.5,
+  "vol24": 46815,
+  "end": "2026-09-30",
+  "slug": "largest-company-end-of-september-1785358369147",
+  "desc": "This market will resolve to the largest company in the world by market cap on September 30, 2026, as of market close.\n\nThe resolution source for this market will be a consensus of credible reporting."
+ },
+ {
+  "question": "Will Company Q be the largest company in the world by market cap on September 30?",
+  "yes": 0.5,
+  "vol24": 46815,
+  "end": "2026-09-30",
+  "slug": "largest-company-end-of-september-1785358369147",
+  "desc": "This market will resolve to the largest company in the world by market cap on September 30, 2026, as of market close.\n\nThe resolution source for this market will be a consensus of credible reporting."
+ },
+ {
+  "question": "Will Company R be the largest company in the world by market cap on September 30?",
+  "yes": 0.5,
+  "vol24": 46815,
+  "end": "2026-09-30",
+  "slug": "largest-company-end-of-september-1785358369147",
+  "desc": "This market will resolve to the largest company in the world by market cap on September 30, 2026, as of market close.\n\nThe resolution source for this market will be a consensus of credible reporting."
+ },
+ {
+  "question": "Will Company S be the largest company in the world by market cap on September 30?",
+  "yes": 0.5,
+  "vol24": 46815,
+  "end": "2026-09-30",
+  "slug": "largest-company-end-of-september-1785358369147",
+  "desc": "This market will resolve to the largest company in the world by market cap on September 30, 2026, as of market close.\n\nThe resolution source for this market will be a consensus of credible reporting."
+ },
+ {
+  "question": "Will Company T be the largest company in the world by market cap on September 30?",
+  "yes": 0.5,
+  "vol24": 46815,
+  "end": "2026-09-30",
+  "slug": "largest-company-end-of-september-1785358369147",
+  "desc": "This market will resolve to the largest company in the world by market cap on September 30, 2026, as of market close.\n\nThe resolution source for this market will be a consensus of credible reporting."
+ },
+ {
+  "question": "Will any other company be the largest company in the world by market cap on September 30?",
+  "yes": 0.5,
+  "vol24": 46815,
+  "end": "2026-09-30",
+  "slug": "largest-company-end-of-september-1785358369147",
+  "desc": "This market will resolve to the largest company in the world by market cap on September 30, 2026, as of market close.\n\nThe resolution source for this market will be a consensus of credible reporting."
+ },
+ {
+  "question": "US announces end of Iranian blockade by September 30, 2026?",
+  "yes": 0.155,
+  "vol24": 46480,
+  "end": "2026-10-01",
+  "slug": "us-announces-end-of-iranian-blockade-byptptpt-20260713152715080",
+  "desc": "On July 13, 2026, Trump announced the United States would reinstate its naval blockade of Iran, targeting Iranian ships and customers.\n\nThis market will resolve to \u201cYes\u201d if the United States government, or an authorized representative of the United States government, publicly and officially announces the end, termination, lifting, or suspension of the United States\u2019 naval blockade on Iranian ships and ships of Iranian customers, between market creation and the specified date, 11:59 PM ET. Otherw"
+ },
+ {
+  "question": "US announces end of Iranian blockade by October 31, 2026?",
+  "yes": 0.37,
+  "vol24": 45432,
+  "end": "2026-11-01",
+  "slug": "us-announces-end-of-iranian-blockade-byptptpt-20260713152715080",
+  "desc": "On July 13, 2026, Trump announced the United States would reinstate its naval blockade of Iran, targeting Iranian ships and customers.\n\nThis market will resolve to \u201cYes\u201d if the United States government, or an authorized representative of the United States government, publicly and officially announces the end, termination, lifting, or suspension of the United States\u2019 naval blockade on Iranian ships and ships of Iranian customers, between market creation and the specified date, 11:59 PM ET. Otherw"
+ },
+ {
+  "question": "Will A win the 46th FIDE Chess Olympiad Open Tournament?",
+  "yes": 0.5,
+  "vol24": 43681,
+  "end": "2026-09-28",
+  "slug": "46th-fide-chess-olympiad-open-tournament-winner-20260716211453703",
+  "desc": "This market will resolve according to the winner of the 46th FIDE Chess Olympiad Open Tournament, currently scheduled for September 15, 2026 to September 28, 2026.\n\nIf this tournament is postponed after October 12, 2026, 11:59 PM ET, canceled, or a winner has not been declared within this timeframe, this market will resolve to \"Other.\"\n\nIf multiple teams are declared winner, this market will resolve in favor of the team whose listed team name comes first alphabetically.\n\nThe resolution source fo"
+ },
+ {
+  "question": "Will B win the 46th FIDE Chess Olympiad Open Tournament?",
+  "yes": 0.5,
+  "vol24": 43681,
+  "end": "2026-09-28",
+  "slug": "46th-fide-chess-olympiad-open-tournament-winner-20260716211453703",
+  "desc": "This market will resolve according to the winner of the 46th FIDE Chess Olympiad Open Tournament, currently scheduled for September 15, 2026 to September 28, 2026.\n\nIf this tournament is postponed after October 12, 2026, 11:59 PM ET, canceled, or a winner has not been declared within this timeframe, this market will resolve to \"Other.\"\n\nIf multiple teams are declared winner, this market will resolve in favor of the team whose listed team name comes first alphabetically.\n\nThe resolution source fo"
+ },
+ {
+  "question": "Will C win the 46th FIDE Chess Olympiad Open Tournament?",
+  "yes": 0.5,
+  "vol24": 43681,
+  "end": "2026-09-28",
+  "slug": "46th-fide-chess-olympiad-open-tournament-winner-20260716211453703",
+  "desc": "This market will resolve according to the winner of the 46th FIDE Chess Olympiad Open Tournament, currently scheduled for September 15, 2026 to September 28, 2026.\n\nIf this tournament is postponed after October 12, 2026, 11:59 PM ET, canceled, or a winner has not been declared within this timeframe, this market will resolve to \"Other.\"\n\nIf multiple teams are declared winner, this market will resolve in favor of the team whose listed team name comes first alphabetically.\n\nThe resolution source fo"
+ },
+ {
+  "question": "Will another country win the 46th FIDE Chess Olympiad Open Tournament?",
+  "yes": 0.5,
+  "vol24": 43681,
+  "end": "2026-09-28",
+  "slug": "46th-fide-chess-olympiad-open-tournament-winner-20260716211453703",
+  "desc": "This market will resolve according to the winner of the 46th FIDE Chess Olympiad Open Tournament, currently scheduled for September 15, 2026 to September 28, 2026.\n\nIf this tournament is postponed after October 12, 2026, 11:59 PM ET, canceled, or a winner has not been declared within this timeframe, this market will resolve to \"Other.\"\n\nIf multiple teams are declared winner, this market will resolve in favor of the team whose listed team name comes first alphabetically.\n\nThe resolution source fo"
+ },
+ {
+  "question": "Will Company A have the best AI model at the end of September 2026?",
+  "yes": 0.5,
+  "vol24": 43616,
+  "end": "2026-09-30",
+  "slug": "which-company-has-the-best-ai-model-end-of-september-20260717143435868",
+  "desc": "This market will resolve according to the company which owns the model which has the highest arena rank based on the arena.ai Text Arena (Overall) when the table under the \"Leaderboard\" tab is checked on September 30, 2026, 12:00 PM ET.\n\nResults from the \"Rank\" column under the \"Text Arena | Overall\" Leaderboard tab at https://arena.ai/leaderboard/text/overall-no-style-control with style control off (Adjustments: None) and filtered for \"Models\" will be used to resolve this market.\n\nModels will b"
+ },
+ {
+  "question": "Will Company B have the best AI model at the end of September 2026?",
+  "yes": 0.5,
+  "vol24": 43616,
+  "end": "2026-09-30",
+  "slug": "which-company-has-the-best-ai-model-end-of-september-20260717143435868",
+  "desc": "This market will resolve according to the company which owns the model which has the highest arena rank based on the arena.ai Text Arena (Overall) when the table under the \"Leaderboard\" tab is checked on September 30, 2026, 12:00 PM ET.\n\nResults from the \"Rank\" column under the \"Text Arena | Overall\" Leaderboard tab at https://arena.ai/leaderboard/text/overall-no-style-control with style control off (Adjustments: None) and filtered for \"Models\" will be used to resolve this market.\n\nModels will b"
+ },
+ {
+  "question": "Will Company C have the best AI model at the end of September 2026?",
+  "yes": 0.5,
+  "vol24": 43616,
+  "end": "2026-09-30",
+  "slug": "which-company-has-the-best-ai-model-end-of-september-20260717143435868",
+  "desc": "This market will resolve according to the company which owns the model which has the highest arena rank based on the arena.ai Text Arena (Overall) when the table under the \"Leaderboard\" tab is checked on September 30, 2026, 12:00 PM ET.\n\nResults from the \"Rank\" column under the \"Text Arena | Overall\" Leaderboard tab at https://arena.ai/leaderboard/text/overall-no-style-control with style control off (Adjustments: None) and filtered for \"Models\" will be used to resolve this market.\n\nModels will b"
+ },
+ {
+  "question": "Will Company D have the best AI model at the end of September 2026?",
+  "yes": 0.5,
+  "vol24": 43616,
+  "end": "2026-09-30",
+  "slug": "which-company-has-the-best-ai-model-end-of-september-20260717143435868",
+  "desc": "This market will resolve according to the company which owns the model which has the highest arena rank based on the arena.ai Text Arena (Overall) when the table under the \"Leaderboard\" tab is checked on September 30, 2026, 12:00 PM ET.\n\nResults from the \"Rank\" column under the \"Text Arena | Overall\" Leaderboard tab at https://arena.ai/leaderboard/text/overall-no-style-control with style control off (Adjustments: None) and filtered for \"Models\" will be used to resolve this market.\n\nModels will b"
+ },
+ {
+  "question": "Will Company E have the best AI model at the end of September 2026?",
+  "yes": 0.5,
+  "vol24": 43616,
+  "end": "2026-09-30",
+  "slug": "which-company-has-the-best-ai-model-end-of-september-20260717143435868",
+  "desc": "This market will resolve according to the company which owns the model which has the highest arena rank based on the arena.ai Text Arena (Overall) when the table under the \"Leaderboard\" tab is checked on September 30, 2026, 12:00 PM ET.\n\nResults from the \"Rank\" column under the \"Text Arena | Overall\" Leaderboard tab at https://arena.ai/leaderboard/text/overall-no-style-control with style control off (Adjustments: None) and filtered for \"Models\" will be used to resolve this market.\n\nModels will b"
+ },
+ {
+  "question": "Will Company F have the best AI model at the end of September 2026?",
+  "yes": 0.5,
+  "vol24": 43616,
+  "end": "2026-09-30",
+  "slug": "which-company-has-the-best-ai-model-end-of-september-20260717143435868",
+  "desc": "This market will resolve according to the company which owns the model which has the highest arena rank based on the arena.ai Text Arena (Overall) when the table under the \"Leaderboard\" tab is checked on September 30, 2026, 12:00 PM ET.\n\nResults from the \"Rank\" column under the \"Text Arena | Overall\" Leaderboard tab at https://arena.ai/leaderboard/text/overall-no-style-control with style control off (Adjustments: None) and filtered for \"Models\" will be used to resolve this market.\n\nModels will b"
+ },
+ {
+  "question": "Will Company G have the best AI model at the end of September 2026?",
+  "yes": 0.5,
+  "vol24": 43616,
+  "end": "2026-09-30",
+  "slug": "which-company-has-the-best-ai-model-end-of-september-20260717143435868",
+  "desc": "This market will resolve according to the company which owns the model which has the highest arena rank based on the arena.ai Text Arena (Overall) when the table under the \"Leaderboard\" tab is checked on September 30, 2026, 12:00 PM ET.\n\nResults from the \"Rank\" column under the \"Text Arena | Overall\" Leaderboard tab at https://arena.ai/leaderboard/text/overall-no-style-control with style control off (Adjustments: None) and filtered for \"Models\" will be used to resolve this market.\n\nModels will b"
+ },
+ {
+  "question": "Will Company H have the best AI model at the end of September 2026?",
+  "yes": 0.5,
+  "vol24": 43616,
+  "end": "2026-09-30",
+  "slug": "which-company-has-the-best-ai-model-end-of-september-20260717143435868",
+  "desc": "This market will resolve according to the company which owns the model which has the highest arena rank based on the arena.ai Text Arena (Overall) when the table under the \"Leaderboard\" tab is checked on September 30, 2026, 12:00 PM ET.\n\nResults from the \"Rank\" column under the \"Text Arena | Overall\" Leaderboard tab at https://arena.ai/leaderboard/text/overall-no-style-control with style control off (Adjustments: None) and filtered for \"Models\" will be used to resolve this market.\n\nModels will b"
+ },
+ {
+  "question": "Will Company I have the best AI model at the end of September 2026?",
+  "yes": 0.5,
+  "vol24": 43616,
+  "end": "2026-09-30",
+  "slug": "which-company-has-the-best-ai-model-end-of-september-20260717143435868",
+  "desc": "This market will resolve according to the company which owns the model which has the highest arena rank based on the arena.ai Text Arena (Overall) when the table under the \"Leaderboard\" tab is checked on September 30, 2026, 12:00 PM ET.\n\nResults from the \"Rank\" column under the \"Text Arena | Overall\" Leaderboard tab at https://arena.ai/leaderboard/text/overall-no-style-control with style control off (Adjustments: None) and filtered for \"Models\" will be used to resolve this market.\n\nModels will b"
+ },
+ {
+  "question": "Will Company K have the best AI model at the end of September 2026?",
+  "yes": 0.5,
+  "vol24": 43616,
+  "end": "2026-09-30",
+  "slug": "which-company-has-the-best-ai-model-end-of-september-20260717143435868",
+  "desc": "This market will resolve according to the company which owns the model which has the highest arena rank based on the arena.ai Text Arena (Overall) when the table under the \"Leaderboard\" tab is checked on September 30, 2026, 12:00 PM ET.\n\nResults from the \"Rank\" column under the \"Text Arena | Overall\" Leaderboard tab at https://arena.ai/leaderboard/text/overall-no-style-control with style control off (Adjustments: None) and filtered for \"Models\" will be used to resolve this market.\n\nModels will b"
+ },
+ {
+  "question": "Will any other company have the best AI model at the end of September 2026?",
+  "yes": 0.5,
+  "vol24": 43616,
+  "end": "2026-09-30",
+  "slug": "which-company-has-the-best-ai-model-end-of-september-20260717143435868",
+  "desc": "This market will resolve according to the company which owns the model which has the highest arena rank based on the arena.ai Text Arena (Overall) when the table under the \"Leaderboard\" tab is checked on September 30, 2026, 12:00 PM ET.\n\nResults from the \"Rank\" column under the \"Text Arena | Overall\" Leaderboard tab at https://arena.ai/leaderboard/text/overall-no-style-control with style control off (Adjustments: None) and filtered for \"Models\" will be used to resolve this market.\n\nModels will b"
+ },
+ {
+  "question": "2026 Balance of Power: D Senate, D House",
+  "yes": 0.585,
+  "vol24": 42613,
+  "end": "2026-11-03",
+  "slug": "balance-of-power-2026-midterms",
+  "desc": "This market will resolve according to the party that wins control of the United States Senate and the party that wins control of the United States House of Representatives in the 2026 United States midterm election.\n\nA party wins control of the United States Senate if it wins a majority of the chamber\u2019s voting seats. If no party wins a majority of voting seats, the party that wins control of the chamber is the party that wins half of the voting seats and holds the Vice Presidency. If the outcome"
+ },
+ {
+  "question": "Will Benjamin Netanyahu be the next Prime Minister of Israel?",
+  "yes": 0.295,
+  "vol24": 42466,
+  "end": "2026-12-31",
+  "slug": "who-will-be-the-next-prime-minister-of-israel-after-the-next-election",
+  "desc": "Legislative elections are schedule to be held in Israel on October 27, 2026. \n\nThis market will resolve to the next individual who is officially appointed and sworn in as Prime Minister of Israel following the 2026 parliamentary election. If an election is called early, this market will immediately resolve to the individual who is officially appointed and sworn in after that election.\n\nTo count for resolution, the individual must be formally sworn in. Any interim or caretaker Prime Minister will"
+ },
+ {
+  "question": "Will A Win the StarLadder StarSeries Fall 2026?",
+  "yes": 0.5,
+  "vol24": 41918,
+  "end": "2026-10-05",
+  "slug": "starladder-starseries-fall-2026-winner-1788882991655",
+  "desc": "This market will resolve according to the winner of StarLadder StarSeries Fall 2026, currently scheduled for September 17, 2026 to September 20, 2026.\n\nIf this tournament is postponed after October 4, 2026, 11:59 PM ET, canceled, or a winner has not been declared within this timeframe, this market will resolve to \"Other.\"\n\nIf multiple teams are declared winner, this market will resolve in favor of the team whose listed team name comes first alphabetically.\n\nThe resolution source for this market "
+ },
+ {
+  "question": "Will B Win the StarLadder StarSeries Fall 2026?",
+  "yes": 0.5,
+  "vol24": 41918,
+  "end": "2026-10-05",
+  "slug": "starladder-starseries-fall-2026-winner-1788882991655",
+  "desc": "This market will resolve according to the winner of StarLadder StarSeries Fall 2026, currently scheduled for September 17, 2026 to September 20, 2026.\n\nIf this tournament is postponed after October 4, 2026, 11:59 PM ET, canceled, or a winner has not been declared within this timeframe, this market will resolve to \"Other.\"\n\nIf multiple teams are declared winner, this market will resolve in favor of the team whose listed team name comes first alphabetically.\n\nThe resolution source for this market "
+ },
+ {
+  "question": "Will C Win the StarLadder StarSeries Fall 2026?",
+  "yes": 0.5,
+  "vol24": 41918,
+  "end": "2026-10-05",
+  "slug": "starladder-starseries-fall-2026-winner-1788882991655",
+  "desc": "This market will resolve according to the winner of StarLadder StarSeries Fall 2026, currently scheduled for September 17, 2026 to September 20, 2026.\n\nIf this tournament is postponed after October 4, 2026, 11:59 PM ET, canceled, or a winner has not been declared within this timeframe, this market will resolve to \"Other.\"\n\nIf multiple teams are declared winner, this market will resolve in favor of the team whose listed team name comes first alphabetically.\n\nThe resolution source for this market "
+ },
+ {
+  "question": "Will D Win the StarLadder StarSeries Fall 2026?",
+  "yes": 0.5,
+  "vol24": 41918,
+  "end": "2026-10-05",
+  "slug": "starladder-starseries-fall-2026-winner-1788882991655",
+  "desc": "This market will resolve according to the winner of StarLadder StarSeries Fall 2026, currently scheduled for September 17, 2026 to September 20, 2026.\n\nIf this tournament is postponed after October 4, 2026, 11:59 PM ET, canceled, or a winner has not been declared within this timeframe, this market will resolve to \"Other.\"\n\nIf multiple teams are declared winner, this market will resolve in favor of the team whose listed team name comes first alphabetically.\n\nThe resolution source for this market "
+ },
+ {
+  "question": "Will E Win the StarLadder StarSeries Fall 2026?",
+  "yes": 0.5,
+  "vol24": 41918,
+  "end": "2026-10-05",
+  "slug": "starladder-starseries-fall-2026-winner-1788882991655",
+  "desc": "This market will resolve according to the winner of StarLadder StarSeries Fall 2026, currently scheduled for September 17, 2026 to September 20, 2026.\n\nIf this tournament is postponed after October 4, 2026, 11:59 PM ET, canceled, or a winner has not been declared within this timeframe, this market will resolve to \"Other.\"\n\nIf multiple teams are declared winner, this market will resolve in favor of the team whose listed team name comes first alphabetically.\n\nThe resolution source for this market "
+ },
+ {
+  "question": "Will another team Win the StarLadder StarSeries Fall 2026?",
+  "yes": 0.5,
+  "vol24": 41918,
+  "end": "2026-10-05",
+  "slug": "starladder-starseries-fall-2026-winner-1788882991655",
+  "desc": "This market will resolve according to the winner of StarLadder StarSeries Fall 2026, currently scheduled for September 17, 2026 to September 20, 2026.\n\nIf this tournament is postponed after October 4, 2026, 11:59 PM ET, canceled, or a winner has not been declared within this timeframe, this market will resolve to \"Other.\"\n\nIf multiple teams are declared winner, this market will resolve in favor of the team whose listed team name comes first alphabetically.\n\nThe resolution source for this market "
+ },
+ {
+  "question": "Will Vitality Win the StarLadder StarSeries Fall 2026?",
+  "yes": 0.4,
+  "vol24": 39500,
+  "end": "2026-10-05",
+  "slug": "starladder-starseries-fall-2026-winner-1788882991655",
+  "desc": "This market will resolve according to the winner of StarLadder StarSeries Fall 2026, currently scheduled for September 17, 2026 to September 20, 2026.\n\nIf this tournament is postponed after October 4, 2026, 11:59 PM ET, canceled, or a winner has not been declared within this timeframe, this market will resolve to \"Other.\"\n\nIf multiple teams are declared winner, this market will resolve in favor of the team whose listed team name comes first alphabetically.\n\nThe resolution source for this market "
+ },
+ {
+  "question": "Will WTI Crude Oil (WTI) hit (HIGH) $120 in September?",
+  "yes": 0.1085,
+  "vol24": 38286,
+  "end": "2026-10-01",
+  "slug": "what-price-will-wti-hit-in-september-2026",
+  "desc": "This market will resolve to \"Yes\" if, at any point after market creation and during a trading session of September 2026, any 1-minute candle for the Active Month of WTI Crude Oil futures has a final \"High\" or \"Low\" price equal to or beyond (above for \u2191 High Prices, below for \u2193 Low Prices) the listed price. Otherwise, this market will resolve to \"No\".\n\nPrices will be used exactly as published by Pyth, without rounding.\n\nIf the Active Month contract does not trade at all during the listed time fra"
+ },
+ {
+  "question": "Saudi Oil Pipeline (East-West) restarts by September 30?",
+  "yes": 0.505,
+  "vol24": 38125,
+  "end": "2026-10-01",
+  "slug": "saudi-oil-pipeline-east-west-restarts-byptptpt",
+  "desc": "On September 11, 2026, Saudi Arabia's Ministry of Energy announced that the East-West oil pipeline has been shut down.\n\nThis market will resolve to \u201cYes\u201d if the government of Saudi Arabia announces that the East-West oil pipeline is operational or no longer shut down between market creation and the specified date, 11:59 PM ET. Otherwise, this market will resolve to \u201cNo\u201d.\n\nA qualifying announcement must express that the pipeline is presently operating; operation at partial or reduced capacity qua"
+ },
+ {
+  "question": "Will SPD win the most seats in the 2026 Mecklenburg-Vorpommern parliamentary elections?",
+  "yes": 0.22,
+  "vol24": 35484,
+  "end": "2026-09-20",
+  "slug": "mecklenburg-vorpommern-parliamentary-election-winner",
+  "desc": "Parliamentary elections to elect the Landtag of Mecklenburg-Vorpommern are scheduled to take place on September 20, 2026.\n\nThis market will resolve to the political party that wins the greatest number of seats in the state parliament of Mecklenburg-Vorpommern (Landtag) as a result of this election.\n\nIf voting in the Mecklenburg-Vorpommern election for the Landtag does not occur by January 31, 2027, this market will resolve to \"Other\".\n\nIn the event of a tie between multiple parties for the most "
+ },
+ {
+  "question": "Will Elon Musk post 200-219 tweets from September 11 to September 18, 2026?",
+  "yes": 0.425,
+  "vol24": 35479,
+  "end": "2026-09-18",
+  "slug": "elon-musk-of-tweets-september-11-september-18-2026",
+  "desc": "This market will resolve according to the number of times Elon Musk (@elonmusk), posts on X from September 11 12:00 PM ET to September 18, 2026 12:00 PM ET.\n\nFor the purposes of this market, only main feed posts, quote posts and reposts will count.\n\nReplies will NOT count towards the total - however, replies on the main feed such as https://x.com/elonmusk/status/1786073478711353576 will be counted by the tracker.\n\nDeleted posts will count as long as they remain available long enough to be captur"
+ },
+ {
+  "question": "Iran charges Hormuz fees by October 31?",
+  "yes": 0.145,
+  "vol24": 35051,
+  "end": "2026-11-01",
+  "slug": "iran-charges-hormuz-fees-byptptpt-20260625175035466",
+  "desc": "This market resolves to \u201cYes\u201d if the Iranian government officially announces and begins collecting fees, tolls, charges, tariffs, or similar payments from commercial vessels which are mandatory for passage through or access to the Strait of Hormuz between market creation and the specified date, 11:59 PM ET. Otherwise, this market resolves to \u201cNo.\u201d\n\nA qualifying fee must be an announced policy which applies generally to all commercial vessels, or a defined subcategory of commercial vessels (e.g.,"
+ },
+ {
+  "question": "Will WTI Crude Oil (WTI) hit (HIGH) $130 in September?",
+  "yes": 0.0455,
+  "vol24": 34899,
+  "end": "2026-10-01",
+  "slug": "what-price-will-wti-hit-in-september-2026",
+  "desc": "This market will resolve to \"Yes\" if, at any point after market creation and during a trading session of September 2026, any 1-minute candle for the Active Month of WTI Crude Oil futures has a final \"High\" or \"Low\" price equal to or beyond (above for \u2191 High Prices, below for \u2193 Low Prices) the listed price. Otherwise, this market will resolve to \"No\".\n\nPrices will be used exactly as published by Pyth, without rounding.\n\nIf the Active Month contract does not trade at all during the listed time fra"
+ },
+ {
+  "question": "Will Elon Musk post 180-199 tweets from September 11 to September 18, 2026?",
+  "yes": 0.245,
+  "vol24": 34598,
+  "end": "2026-09-18",
+  "slug": "elon-musk-of-tweets-september-11-september-18-2026",
+  "desc": "This market will resolve according to the number of times Elon Musk (@elonmusk), posts on X from September 11 12:00 PM ET to September 18, 2026 12:00 PM ET.\n\nFor the purposes of this market, only main feed posts, quote posts and reposts will count.\n\nReplies will NOT count towards the total - however, replies on the main feed such as https://x.com/elonmusk/status/1786073478711353576 will be counted by the tracker.\n\nDeleted posts will count as long as they remain available long enough to be captur"
+ },
+ {
+  "question": "Will Ulf Kristersson be the next Prime Minister of Sweden?",
+  "yes": 0.085,
+  "vol24": 32054,
+  "end": "2026-09-13",
+  "slug": "next-prime-minister-of-sweden",
+  "desc": "Parliamentary elections are scheduled to be held in Sweden on September 13, 2026. \n\nThis market will resolve to the next individual who is officially appointed and assumes office as Prime Minister of Sweden following the next parliamentary election.\n\nTo count for resolution, the individual must officially assume office. Any interim or caretaker Prime Minister will not count toward the resolution of this market.\n\nIf no such Prime Minister assumes office by June 30, 2027, 11:59 PM ET, this market "
+ },
+ {
+  "question": "Will NVIDIA be the largest company in the world by market cap on September 30?",
+  "yes": 0.9105,
+  "vol24": 30697,
+  "end": "2026-09-30",
+  "slug": "largest-company-end-of-september-1785358369147",
+  "desc": "This market will resolve to the largest company in the world by market cap on September 30, 2026, as of market close.\n\nThe resolution source for this market will be a consensus of credible reporting."
+ },
+ {
+  "question": "Bab el-Mandeb Strait effectively closed by October 31?",
+  "yes": 0.165,
+  "vol24": 28452,
+  "end": "2026-11-01",
+  "slug": "bab-el-mandeb-strait-effectively-closed-by",
+  "desc": "This market will resolve to \u201cYes\u201d if IMF PortWatch publishes a 7-day moving average of transit calls (\u201cArrivals of Ships\u201d) for the Bab el-Mandeb Strait less than or equal to 10 for any date between market creation and the listed date. Otherwise, this market will resolve to \u201cNo\u201d.\n\nThis market will resolve as soon as IMF PortWatch publishes a 7-day moving average of transit calls for the Bab el-Mandeb Strait equal to or below 10, or once data has been published for the listed date and no such valu"
+ },
+ {
+  "question": "Will the Democratic Party control the Senate after the 2026 Midterm elections?",
+  "yes": 0.585,
+  "vol24": 28026,
+  "end": "2026-11-03",
+  "slug": "which-party-will-win-the-senate-in-2026",
+  "desc": "This market will resolve according to the party that wins control of the United States Senate in the 2026 United States midterm election.\n\nA party wins control of the United States Senate if it wins a majority of the chamber\u2019s voting seats. If no party wins a majority of voting seats, the party that wins control of the chamber is the party that wins half of the voting seats and holds the Vice Presidency. If the outcome remains ambiguous after applying the above criteria, the chamber will be deem"
+ },
+ {
+  "question": "Will Elon Musk post 220-239 tweets from September 11 to September 18, 2026?",
+  "yes": 0.215,
+  "vol24": 26379,
+  "end": "2026-09-18",
+  "slug": "elon-musk-of-tweets-september-11-september-18-2026",
+  "desc": "This market will resolve according to the number of times Elon Musk (@elonmusk), posts on X from September 11 12:00 PM ET to September 18, 2026 12:00 PM ET.\n\nFor the purposes of this market, only main feed posts, quote posts and reposts will count.\n\nReplies will NOT count towards the total - however, replies on the main feed such as https://x.com/elonmusk/status/1786073478711353576 will be counted by the tracker.\n\nDeleted posts will count as long as they remain available long enough to be captur"
+ },
+ {
+  "question": "Israel x Iran ceasefire continues through November 30?",
+  "yes": 0.675,
+  "vol24": 24770,
+  "end": "2026-11-30",
+  "slug": "israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963",
+  "desc": "This market will resolve to \"Yes\" if a state of ceasefire remains in effect between Israel and Iran through the listed date, 11:59 PM Iran Standard Time (IRST). Otherwise this market will resolve to \u201cNo\u201d. \n\nA state of ceasefire will be considered to no longer be in effect between Israel and Iran if either Israel or Iran takes a qualifying military action against the other country between market creation and the listed date, 11:59 PM IRST.\n\nA qualifying military action refers to an air strike or "
+ },
+ {
+  "question": "Will no Fed rate cuts happen in 2026?",
+  "yes": 0.9335,
+  "vol24": 24544,
+  "end": "2026-12-31",
+  "slug": "how-many-fed-rate-cuts-in-2026",
+  "desc": "This market will resolve according to the exact amount of cuts of 25 basis points in 2026 by the Fed (including any cuts made during the December meeting).\n\nEmergency rate cuts outside of scheduled FOMC meetings will also count toward the total number of cuts in 2026. This market will remain open until December 31, 2026, 11:59 PM ET, to account for any such emergency actions.\n\nFor example, if the Fed cuts rates by 50 bps after a meeting, it would be considered 2 cuts (of 25 bps each).\n\nThis mark"
+ },
+ {
+  "question": "Will Harry Kane win the 2026 Ballon d'Or?",
+  "yes": 0.555,
+  "vol24": 23777,
+  "end": "2026-10-31",
+  "slug": "ballon-dor-winner-2026",
+  "desc": "This market will resolve according to the winner of the 2026 Ballon d\u2019Or.\n\nIf no 2026 Ballon d\u2019Or winner is declared by December 31, 2026, 11:59 PM ET, this market will resolve to \"Other\".\n\nThe primary resolution source for this market is official information from France Football (https://www.francefootball.fr/)."
+ },
+ {
+  "question": "Will United Russia win fewer than 280 seats in the next Russian State Duma election?",
+  "yes": 0.036,
+  "vol24": 23734,
+  "end": "2026-09-20",
+  "slug": "how-many-seats-will-united-russia-win-in-the-next-russian-legislative-election",
+  "desc": "Legislative elections are scheduled to be held in Russia in September 2026.\n\nThis market will resolve according to the number of seats held by United Russia in the State Duma as a result of the next Russian legislative election.\n\nIf results are not known definitively by May 31, 2027, 11:59 PM ET, this market will resolve to the lowest bracket.\n\nThis market\u2019s resolution will be based solely on the number of seats won by the named party in the State Duma.\n\nThis market will resolve based on the res"
+ },
+ {
+  "question": "Will Elon Musk post 240-259 tweets from September 11 to September 18, 2026?",
+  "yes": 0.051,
+  "vol24": 23364,
+  "end": "2026-09-18",
+  "slug": "elon-musk-of-tweets-september-11-september-18-2026",
+  "desc": "This market will resolve according to the number of times Elon Musk (@elonmusk), posts on X from September 11 12:00 PM ET to September 18, 2026 12:00 PM ET.\n\nFor the purposes of this market, only main feed posts, quote posts and reposts will count.\n\nReplies will NOT count towards the total - however, replies on the main feed such as https://x.com/elonmusk/status/1786073478711353576 will be counted by the tracker.\n\nDeleted posts will count as long as they remain available long enough to be captur"
+ },
+ {
+  "question": "Will the Fed increase interest rates by 25 bps after the December 2026 meeting?",
+  "yes": 0.605,
+  "vol24": 22512,
+  "end": "2026-12-09",
+  "slug": "fed-decision-in-december-20260729232808632",
+  "desc": "The FED interest rates are defined in this market by the upper bound of the target federal funds range. The decisions on the target federal funds range are made by the Federal Open Market Committee (FOMC) meetings.\n\nThis market will resolve to the amount of basis points the upper bound of the target federal funds rate is changed by versus the level it was prior to the Federal Reserve's December 2026 meeting.\n\nIf the target federal funds rate is changed to a level not expressed in the displayed o"
+ },
+ {
+  "question": "Will Luiz In\u00e1cio Lula da Silva finish in second place in the first round of the 2026 Brazilian presidential election?",
+  "yes": 0.243,
+  "vol24": 22389,
+  "end": "2026-10-04",
+  "slug": "brazil-presidential-election-first-round-2nd-place",
+  "desc": "A presidential election is scheduled to take place in Brazil on October 4, 2026.\n\nThis market will resolve according to the listed candidate who receives the second-most valid votes in the first round of this election.\n\nThe named candidates will be primarily ranked by the number of valid votes received in the specified election. If two or more candidates are tied on valid votes, ties will be broken by alphabetical order of the candidates' last names. This market will resolve to the candidate tha"
+ },
+ {
+  "question": "Will United Russia win between 295 and 309 seats in the next Russian State Duma election?",
+  "yes": 0.062,
+  "vol24": 22314,
+  "end": "2026-09-20",
+  "slug": "how-many-seats-will-united-russia-win-in-the-next-russian-legislative-election",
+  "desc": "Legislative elections are scheduled to be held in Russia in September 2026.\n\nThis market will resolve according to the number of seats held by United Russia in the State Duma as a result of the next Russian legislative election.\n\nIf results are not known definitively by May 31, 2027, 11:59 PM ET, this market will resolve to the lowest bracket.\n\nThis market\u2019s resolution will be based solely on the number of seats won by the named party in the State Duma.\n\nThis market will resolve based on the res"
+ },
+ {
+  "question": "Will AfD win the most seats in the 2026 Mecklenburg-Vorpommern parliamentary elections?",
+  "yes": 0.785,
+  "vol24": 22289,
+  "end": "2026-09-20",
+  "slug": "mecklenburg-vorpommern-parliamentary-election-winner",
+  "desc": "Parliamentary elections to elect the Landtag of Mecklenburg-Vorpommern are scheduled to take place on September 20, 2026.\n\nThis market will resolve to the political party that wins the greatest number of seats in the state parliament of Mecklenburg-Vorpommern (Landtag) as a result of this election.\n\nIf voting in the Mecklenburg-Vorpommern election for the Landtag does not occur by January 31, 2027, this market will resolve to \"Other\".\n\nIn the event of a tie between multiple parties for the most "
+ },
+ {
+  "question": "Will WTI Crude Oil (WTI) hit (LOW) $100 Week of September 14 2026?",
+  "yes": 0.79,
+  "vol24": 21968,
+  "end": "2026-09-18",
+  "slug": "will-wti-hit-week-of-september-14-2026",
+  "desc": "This market will resolve to \"Yes\" if, at any point after market creation and during a trading session of the week of September 14 2026, any 1-minute candle for the Active Month of WTI Crude Oil futures has a final \"High\" or \"Low\" price equal to or beyond (above for \u2191 High Prices, below for \u2193 Low Prices) the listed price. Otherwise, this market will resolve to \"No\".\n\nPrices will be used exactly as published by Pyth, without rounding.\n\nIf the Active Month contract does not trade at all during the "
+ },
+ {
+  "question": "Will MrBeast Gaming's next video get between 45 and 50 million views in week 1?",
+  "yes": 0.35,
+  "vol24": 21897,
+  "end": "2026-09-20",
+  "slug": "of-views-of-mrbeast-gaming-video-week-1-20260910",
+  "desc": "This market will resolve according to the number of views the next YouTube video posted by MrBeast Gaming gets in the first 168 hours after being posted. This market may not resolve until the 168 hours are complete, regardless of whether a strike is reached earlier.\n\nIf MrBeast Gaming does not post a YouTube video by September 30, 2026, 11:59 PM ET, this market will resolve to the lowest range bracket.\n\nIf the reported value falls exactly between two brackets, then this market will resolve to th"
+ },
+ {
+  "question": "Will WTI Crude Oil (WTI) hit (LOW) $95 in September?",
+  "yes": 0.68,
+  "vol24": 21518,
+  "end": "2026-10-01",
+  "slug": "what-price-will-wti-hit-in-september-2026",
+  "desc": "This market will resolve to \"Yes\" if, at any point after market creation and during a trading session of September 2026, any 1-minute candle for the Active Month of WTI Crude Oil futures has a final \"High\" or \"Low\" price equal to or beyond (above for \u2191 High Prices, below for \u2193 Low Prices) the listed price. Otherwise, this market will resolve to \"No\".\n\nPrices will be used exactly as published by Pyth, without rounding.\n\nIf the Active Month contract does not trade at all during the listed time fra"
+ },
+ {
+  "question": "Will Lionel Messi win the 2026 Ballon d'Or?",
+  "yes": 0.0325,
+  "vol24": 20721,
+  "end": "2026-10-31",
+  "slug": "ballon-dor-winner-2026",
+  "desc": "This market will resolve according to the winner of the 2026 Ballon d\u2019Or.\n\nIf no 2026 Ballon d\u2019Or winner is declared by December 31, 2026, 11:59 PM ET, this market will resolve to \"Other\".\n\nThe primary resolution source for this market is official information from France Football (https://www.francefootball.fr/)."
+ },
+ {
+  "question": "Will the Republican Party control the Senate after the 2026 Midterm elections?",
+  "yes": 0.425,
+  "vol24": 20619,
+  "end": "2026-11-03",
+  "slug": "which-party-will-win-the-senate-in-2026",
+  "desc": "This market will resolve according to the party that wins control of the United States Senate in the 2026 United States midterm election.\n\nA party wins control of the United States Senate if it wins a majority of the chamber\u2019s voting seats. If no party wins a majority of voting seats, the party that wins control of the chamber is the party that wins half of the voting seats and holds the Vice Presidency. If the outcome remains ambiguous after applying the above criteria, the chamber will be deem"
+ },
+ {
+  "question": "Will United Russia win between 280 and 294 seats in the next Russian State Duma election?",
+  "yes": 0.0645,
+  "vol24": 20460,
+  "end": "2026-09-20",
+  "slug": "how-many-seats-will-united-russia-win-in-the-next-russian-legislative-election",
+  "desc": "Legislative elections are scheduled to be held in Russia in September 2026.\n\nThis market will resolve according to the number of seats held by United Russia in the State Duma as a result of the next Russian legislative election.\n\nIf results are not known definitively by May 31, 2027, 11:59 PM ET, this market will resolve to the lowest bracket.\n\nThis market\u2019s resolution will be based solely on the number of seats won by the named party in the State Duma.\n\nThis market will resolve based on the res"
+ },
+ {
+  "question": "Will WTI Crude Oil (WTI) hit (LOW) $95 Week of September 14 2026?",
+  "yes": 0.29,
+  "vol24": 19449,
+  "end": "2026-09-18",
+  "slug": "will-wti-hit-week-of-september-14-2026",
+  "desc": "This market will resolve to \"Yes\" if, at any point after market creation and during a trading session of the week of September 14 2026, any 1-minute candle for the Active Month of WTI Crude Oil futures has a final \"High\" or \"Low\" price equal to or beyond (above for \u2191 High Prices, below for \u2193 Low Prices) the listed price. Otherwise, this market will resolve to \"No\".\n\nPrices will be used exactly as published by Pyth, without rounding.\n\nIf the Active Month contract does not trade at all during the "
+ },
+ {
+  "question": "Will there be no change in Fed interest rates after the December 2026 meeting?",
+  "yes": 0.345,
+  "vol24": 19353,
+  "end": "2026-12-09",
+  "slug": "fed-decision-in-december-20260729232808632",
+  "desc": "The FED interest rates are defined in this market by the upper bound of the target federal funds range. The decisions on the target federal funds range are made by the Federal Open Market Committee (FOMC) meetings.\n\nThis market will resolve to the amount of basis points the upper bound of the target federal funds rate is changed by versus the level it was prior to the Federal Reserve's December 2026 meeting.\n\nIf the target federal funds rate is changed to a level not expressed in the displayed o"
+ },
+ {
+  "question": "Israel x Iran ceasefire continues through December 31?",
+  "yes": 0.645,
+  "vol24": 19244,
+  "end": "2026-12-31",
+  "slug": "israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963",
+  "desc": "This market will resolve to \"Yes\" if a state of ceasefire remains in effect between Israel and Iran through the listed date, 11:59 PM Iran Standard Time (IRST). Otherwise this market will resolve to \u201cNo\u201d. \n\nA state of ceasefire will be considered to no longer be in effect between Israel and Iran if either Israel or Iran takes a qualifying military action against the other country between market creation and the listed date, 11:59 PM IRST.\n\nA qualifying military action refers to an air strike or "
+ },
+ {
+  "question": "Will WTI Crude Oil (WTI) hit (LOW) $90 in September?",
+  "yes": 0.4545,
+  "vol24": 18979,
+  "end": "2026-10-01",
+  "slug": "what-price-will-wti-hit-in-september-2026",
+  "desc": "This market will resolve to \"Yes\" if, at any point after market creation and during a trading session of September 2026, any 1-minute candle for the Active Month of WTI Crude Oil futures has a final \"High\" or \"Low\" price equal to or beyond (above for \u2191 High Prices, below for \u2193 Low Prices) the listed price. Otherwise, this market will resolve to \"No\".\n\nPrices will be used exactly as published by Pyth, without rounding.\n\nIf the Active Month contract does not trade at all during the listed time fra"
+ },
+ {
+  "question": "Will WTI Crude Oil (WTI) hit (LOW) $100 in September?",
+  "yes": 0.9535,
+  "vol24": 18364,
+  "end": "2026-10-01",
+  "slug": "what-price-will-wti-hit-in-september-2026",
+  "desc": "This market will resolve to \"Yes\" if, at any point after market creation and during a trading session of September 2026, any 1-minute candle for the Active Month of WTI Crude Oil futures has a final \"High\" or \"Low\" price equal to or beyond (above for \u2191 High Prices, below for \u2193 Low Prices) the listed price. Otherwise, this market will resolve to \"No\".\n\nPrices will be used exactly as published by Pyth, without rounding.\n\nIf the Active Month contract does not trade at all during the listed time fra"
+ },
+ {
+  "question": "Will Kylian Mbapp\u00e9 win the 2026 Ballon d'Or?",
+  "yes": 0.1175,
+  "vol24": 18136,
+  "end": "2026-10-31",
+  "slug": "ballon-dor-winner-2026",
+  "desc": "This market will resolve according to the winner of the 2026 Ballon d\u2019Or.\n\nIf no 2026 Ballon d\u2019Or winner is declared by December 31, 2026, 11:59 PM ET, this market will resolve to \"Other\".\n\nThe primary resolution source for this market is official information from France Football (https://www.francefootball.fr/)."
+ },
+ {
+  "question": "Will Anthropic have the best AI model at the end of September 2026?",
+  "yes": 0.962,
+  "vol24": 17816,
+  "end": "2026-10-01",
+  "slug": "which-company-has-the-best-ai-model-end-of-september-20260717143435868",
+  "desc": "This market will resolve according to the company which owns the model which has the highest arena rank based on the arena.ai Text Arena (Overall) when the table under the \"Leaderboard\" tab is checked on September 30, 2026, 12:00 PM ET.\n\nResults from the \"Rank\" column under the \"Text Arena | Overall\" Leaderboard tab at https://arena.ai/leaderboard/text/overall-no-style-control with style control off (Adjustments: None) and filtered for \"Models\" will be used to resolve this market.\n\nModels will b"
+ },
+ {
+  "question": "Will India win the 46th FIDE Chess Olympiad Open Tournament?",
+  "yes": 0.26,
+  "vol24": 16301,
+  "end": "2026-09-28",
+  "slug": "46th-fide-chess-olympiad-open-tournament-winner-20260716211453703",
+  "desc": "This market will resolve according to the winner of the 46th FIDE Chess Olympiad Open Tournament, currently scheduled for September 15, 2026 to September 28, 2026.\n\nIf this tournament is postponed after October 12, 2026, 11:59 PM ET, canceled, or a winner has not been declared within this timeframe, this market will resolve to \"Other.\"\n\nIf multiple teams are declared winner, this market will resolve in favor of the team whose listed team name comes first alphabetically.\n\nThe resolution source fo"
+ },
+ {
+  "question": "Will MrBeast Gaming's next video get between 40 and 45 million views in week 1?",
+  "yes": 0.6315,
+  "vol24": 15882,
+  "end": "2026-09-20",
+  "slug": "of-views-of-mrbeast-gaming-video-week-1-20260910",
+  "desc": "This market will resolve according to the number of views the next YouTube video posted by MrBeast Gaming gets in the first 168 hours after being posted. This market may not resolve until the 168 hours are complete, regardless of whether a strike is reached earlier.\n\nIf MrBeast Gaming does not post a YouTube video by September 30, 2026, 11:59 PM ET, this market will resolve to the lowest range bracket.\n\nIf the reported value falls exactly between two brackets, then this market will resolve to th"
+ },
+ {
+  "question": "Will Lamine Yamal win the 2026 Ballon d'Or?",
+  "yes": 0.2215,
+  "vol24": 15795,
+  "end": "2026-10-31",
+  "slug": "ballon-dor-winner-2026",
+  "desc": "This market will resolve according to the winner of the 2026 Ballon d\u2019Or.\n\nIf no 2026 Ballon d\u2019Or winner is declared by December 31, 2026, 11:59 PM ET, this market will resolve to \"Other\".\n\nThe primary resolution source for this market is official information from France Football (https://www.francefootball.fr/)."
+ },
+ {
+  "question": "Will CDU win the most seats in the 2026 Berlin state elections?",
+  "yes": 0.265,
+  "vol24": 14594,
+  "end": "2026-09-20",
+  "slug": "berlin-state-election-winner",
+  "desc": "Parliamentary elections to elect the Abgeordnetehaus of Berlin are scheduled to take place in Berlin on September 20, 2026.\n\nThis market will resolve to the political party that wins the greatest number of seats in the formal deliberative assembly of Berlin (Abgeordnetenhaus) as a result of this election.\n\nIf voting in the Berlin election for the Abgeordnetenhaus does not occur by December 31, 2026, this market will resolve to \"Other\".\n\nIn the case of a tie between this party or coalition and an"
+ },
+ {
+  "question": "Will AfD win the most seats in the 2026 Berlin state elections?",
+  "yes": 0.069,
+  "vol24": 13592,
+  "end": "2026-09-20",
+  "slug": "berlin-state-election-winner",
+  "desc": "Parliamentary elections to elect the Abgeordnetehaus of Berlin are scheduled to take place in Berlin on September 20, 2026.\n\nThis market will resolve to the political party that wins the greatest number of seats in the formal deliberative assembly of Berlin (Abgeordnetenhaus) as a result of this election.\n\nIf voting in the Berlin election for the Abgeordnetenhaus does not occur by December 31, 2026, this market will resolve to \"Other\".\n\nIn the case of a tie between this party or coalition and an"
+ },
+ {
+  "question": "Will WTI Crude Oil (WTI) hit (HIGH) $125 in September?",
+  "yes": 0.0865,
+  "vol24": 12573,
+  "end": "2026-10-01",
+  "slug": "what-price-will-wti-hit-in-september-2026",
+  "desc": "This market will resolve to \"Yes\" if, at any point after market creation and during a trading session of September 2026, any 1-minute candle for the Active Month of WTI Crude Oil futures has a final \"High\" or \"Low\" price equal to or beyond (above for \u2191 High Prices, below for \u2193 Low Prices) the listed price. Otherwise, this market will resolve to \"No\".\n\nPrices will be used exactly as published by Pyth, without rounding.\n\nIf the Active Month contract does not trade at all during the listed time fra"
+ },
+ {
+  "question": "Will Naftali Bennett be the next Prime Minister of Israel?",
+  "yes": 0.095,
+  "vol24": 12454,
+  "end": "2026-12-31",
+  "slug": "who-will-be-the-next-prime-minister-of-israel-after-the-next-election",
+  "desc": "Legislative elections are schedule to be held in Israel on October 27, 2026. \n\nThis market will resolve to the next individual who is officially appointed and sworn in as Prime Minister of Israel following the 2026 parliamentary election. If an election is called early, this market will immediately resolve to the individual who is officially appointed and sworn in after that election.\n\nTo count for resolution, the individual must be formally sworn in. Any interim or caretaker Prime Minister will"
+ },
+ {
+  "question": "Will Rodri win the 2026 Ballon d'Or?",
+  "yes": 0.045,
+  "vol24": 12032,
+  "end": "2026-10-31",
+  "slug": "ballon-dor-winner-2026",
+  "desc": "This market will resolve according to the winner of the 2026 Ballon d\u2019Or.\n\nIf no 2026 Ballon d\u2019Or winner is declared by December 31, 2026, 11:59 PM ET, this market will resolve to \"Other\".\n\nThe primary resolution source for this market is official information from France Football (https://www.francefootball.fr/)."
+ },
+ {
+  "question": "Will the total domestic gross for Spider-Man: Brand New Day be between 940m and 950m by September 30?",
+  "yes": 0.645,
+  "vol24": 12021,
+  "end": "2026-10-01",
+  "slug": "spider-man-brand-new-day-total-domestic-gross-by-september-30",
+  "desc": "This market will resolve according to how much \"Spider-Man: Brand New Day\" box office will gross domestically by September 30, 2026. The \"Daily Box Office Performance\" figures found on the \"Box Office\" tab on this movie's The Numbers (https://www.the-numbers.com/) page will be used to resolve this market once the values for all dates between opening (July 31, 2026) and September 30, 2026 are final (i.e., not studio estimates).\n\nIf the reported value falls exactly between two brackets, then this "
+ },
+ {
+  "question": "Will Apple be the largest company in the world by market cap on September 30?",
+  "yes": 0.0855,
+  "vol24": 11584,
+  "end": "2026-09-30",
+  "slug": "largest-company-end-of-september-1785358369147",
+  "desc": "This market will resolve to the largest company in the world by market cap on September 30, 2026, as of market close.\n\nThe resolution source for this market will be a consensus of credible reporting."
+ },
+ {
+  "question": "Will 1 Fed rate cut happen in 2026?",
+  "yes": 0.0505,
+  "vol24": 11513,
+  "end": "2026-12-31",
+  "slug": "how-many-fed-rate-cuts-in-2026",
+  "desc": "This market will resolve according to the exact amount of cuts of 25 basis points in 2026 by the Fed (including any cuts made during the December meeting).\n\nEmergency rate cuts outside of scheduled FOMC meetings will also count toward the total number of cuts in 2026. This market will remain open until December 31, 2026, 11:59 PM ET, to account for any such emergency actions.\n\nFor example, if the Fed cuts rates by 50 bps after a meeting, it would be considered 2 cuts (of 25 bps each).\n\nThis mark"
+ },
+ {
+  "question": "US x Iran diplomatic meeting by October 31, 2026?",
+  "yes": 0.205,
+  "vol24": 11098,
+  "end": "2026-10-31",
+  "slug": "next-round-of-us-iran-peace-talks-byptptpt-20260623022722982",
+  "desc": "On June 22, the first round of U.S.-Iran diplomatic talks in Switzerland concluded, with mediators reporting progress toward a roadmap for a final deal and follow-on technical talks expected to continue.(see: https://www.aljazeera.com/news/2026/6/22/us-iran-agree-on-roadmap-towards-final-deal-in-switzerland-talks). \n\nThis market will resolve to \u201cYes\u201d if the next formal senior-level round of peace talks between representatives of the United States and Iran begins by the listed date, 11:59 PM ET. "
+ },
+ {
+  "question": "Will Avigdor Lieberman be the next Prime Minister of Israel?",
+  "yes": 0.0565,
+  "vol24": 10041,
+  "end": "2026-12-31",
+  "slug": "who-will-be-the-next-prime-minister-of-israel-after-the-next-election",
+  "desc": "Legislative elections are schedule to be held in Israel on October 27, 2026. \n\nThis market will resolve to the next individual who is officially appointed and sworn in as Prime Minister of Israel following the 2026 parliamentary election. If an election is called early, this market will immediately resolve to the individual who is officially appointed and sworn in after that election.\n\nTo count for resolution, the individual must be formally sworn in. Any interim or caretaker Prime Minister will"
+ },
+ {
+  "question": "2026 Balance of Power: R Senate, D House",
+  "yes": 0.305,
+  "vol24": 10039,
+  "end": "2026-11-03",
+  "slug": "balance-of-power-2026-midterms",
+  "desc": "This market will resolve according to the party that wins control of the United States Senate and the party that wins control of the United States House of Representatives in the 2026 United States midterm election.\n\nA party wins control of the United States Senate if it wins a majority of the chamber\u2019s voting seats. If no party wins a majority of voting seats, the party that wins control of the chamber is the party that wins half of the voting seats and holds the Vice Presidency. If the outcome"
+ },
+ {
+  "question": "Will Gadi Eizenkot be the next Prime Minister of Israel?",
+  "yes": 0.5285,
+  "vol24": 10023,
+  "end": "2026-12-31",
+  "slug": "who-will-be-the-next-prime-minister-of-israel-after-the-next-election",
+  "desc": "Legislative elections are schedule to be held in Israel on October 27, 2026. \n\nThis market will resolve to the next individual who is officially appointed and sworn in as Prime Minister of Israel following the 2026 parliamentary election. If an election is called early, this market will immediately resolve to the individual who is officially appointed and sworn in after that election.\n\nTo count for resolution, the individual must be formally sworn in. Any interim or caretaker Prime Minister will"
+ },
+ {
+  "question": "Will Elon Musk post 120-139 tweets from September 18 to September 25, 2026?",
+  "yes": 0.033,
+  "vol24": 10003,
+  "end": "2026-09-25",
+  "slug": "elon-musk-of-tweets-september-18-september-25-2026",
+  "desc": "This market will resolve according to the number of times Elon Musk (@elonmusk), posts on X from September 18 12:00 PM ET to September 25, 2026 12:00 PM ET.\n\nFor the purposes of this market, only main feed posts, quote posts and reposts will count.\n\nReplies will NOT count towards the total - however, replies on the main feed such as https://x.com/elonmusk/status/1786073478711353576 will be counted by the tracker.\n\nDeleted posts will count as long as they remain available long enough to be captur"
+ },
+ {
+  "question": "Will Warsh say \"Trump\" during September Press Conference?",
+  "yes": 0.085,
+  "vol24": 9969,
+  "end": "2026-09-16",
+  "slug": "what-will-kevin-warsh-say-during-september-press-conference-20260909",
+  "desc": "Kevin Warsh is currently scheduled to give an FOMC Introductory Statement and press conference on September 16, 2026, at 2:30 PM ET. This market pertains to his Introductory Statement as well as the following Q&A session.\n\nThis market will resolve to \"Yes\" if Warsh says the listed term during the FOMC Press Conference. Otherwise, this market will resolve to \"No\".\n\nIf no such statement by Warsh happens by September 17, 2026, 11:59 PM ET, \"-No Qualifying Event-\" will resolve to \"Yes\" and all other"
+ },
+ {
+  "question": "Will the Republican Party control the House after the 2026 Midterm elections?",
+  "yes": 0.135,
+  "vol24": 9780,
+  "end": "2026-11-03",
+  "slug": "which-party-will-win-the-house-in-2026",
+  "desc": "This market will resolve according to the party that wins control of the United States House of Representatives in the 2026 United States midterm election.\n\nA party wins control of the United States House of Representatives if it wins a majority of the chamber\u2019s voting seats. If no party wins a majority of voting seats, the chamber will be deemed controlled by the party with which the first elected Speaker of the House of the Congress that convenes after the 2026 midterm election is affiliated.\n"
+ },
+ {
+  "question": "Will the total domestic gross for Spider-Man: Brand New Day be between 950m and 960m by September 30?",
+  "yes": 0.365,
+  "vol24": 8411,
+  "end": "2026-10-01",
+  "slug": "spider-man-brand-new-day-total-domestic-gross-by-september-30",
+  "desc": "This market will resolve according to how much \"Spider-Man: Brand New Day\" box office will gross domestically by September 30, 2026. The \"Daily Box Office Performance\" figures found on the \"Box Office\" tab on this movie's The Numbers (https://www.the-numbers.com/) page will be used to resolve this market once the values for all dates between opening (July 31, 2026) and September 30, 2026 are final (i.e., not studio estimates).\n\nIf the reported value falls exactly between two brackets, then this "
+ },
+ {
+  "question": "US x Iran diplomatic meeting by September 30, 2026?",
+  "yes": 0.055,
+  "vol24": 7971,
+  "end": "2026-09-30",
+  "slug": "next-round-of-us-iran-peace-talks-byptptpt-20260623022722982",
+  "desc": "On June 22, the first round of U.S.-Iran diplomatic talks in Switzerland concluded, with mediators reporting progress toward a roadmap for a final deal and follow-on technical talks expected to continue.(see: https://www.aljazeera.com/news/2026/6/22/us-iran-agree-on-roadmap-towards-final-deal-in-switzerland-talks). \n\nThis market will resolve to \u201cYes\u201d if the next formal senior-level round of peace talks between representatives of the United States and Iran begins by the listed date, 11:59 PM ET. "
+ },
+ {
+  "question": "Will the Fed decrease interest rates by 25 bps after the December 2026 meeting?",
+  "yes": 0.038,
+  "vol24": 7681,
+  "end": "2026-12-09",
+  "slug": "fed-decision-in-december-20260729232808632",
+  "desc": "The FED interest rates are defined in this market by the upper bound of the target federal funds range. The decisions on the target federal funds range are made by the Federal Open Market Committee (FOMC) meetings.\n\nThis market will resolve to the amount of basis points the upper bound of the target federal funds rate is changed by versus the level it was prior to the Federal Reserve's December 2026 meeting.\n\nIf the target federal funds rate is changed to a level not expressed in the displayed o"
+ },
+ {
+  "question": "Will Warsh say \"Gas\" or \"Gasoline\" or \"Natural Gas\" during September Press Conference?",
+  "yes": 0.385,
+  "vol24": 7525,
+  "end": "2026-09-16",
+  "slug": "what-will-kevin-warsh-say-during-september-press-conference-20260909",
+  "desc": "Kevin Warsh is currently scheduled to give an FOMC Introductory Statement and press conference on September 16, 2026, at 2:30 PM ET. This market pertains to his Introductory Statement as well as the following Q&A session.\n\nThis market will resolve to \"Yes\" if Warsh says the listed term during the FOMC Press Conference. Otherwise, this market will resolve to \"No\".\n\nIf no such statement by Warsh happens by September 17, 2026, 11:59 PM ET, \"-No Qualifying Event-\" will resolve to \"Yes\" and all other"
+ },
+ {
+  "question": "Will Elon Musk post 160-179 tweets from September 18 to September 25, 2026?",
+  "yes": 0.135,
+  "vol24": 7515,
+  "end": "2026-09-25",
+  "slug": "elon-musk-of-tweets-september-18-september-25-2026",
+  "desc": "This market will resolve according to the number of times Elon Musk (@elonmusk), posts on X from September 18 12:00 PM ET to September 25, 2026 12:00 PM ET.\n\nFor the purposes of this market, only main feed posts, quote posts and reposts will count.\n\nReplies will NOT count towards the total - however, replies on the main feed such as https://x.com/elonmusk/status/1786073478711353576 will be counted by the tracker.\n\nDeleted posts will count as long as they remain available long enough to be captur"
+ },
+ {
+  "question": "US x Iran diplomatic meeting by December 31, 2026?",
+  "yes": 0.375,
+  "vol24": 7323,
+  "end": "2026-12-31",
+  "slug": "next-round-of-us-iran-peace-talks-byptptpt-20260623022722982",
+  "desc": "This market will resolve to \"Yes\" if there is a diplomatic meeting between representatives of the United States and Iran by the listed date, 11:59 PM ET. Otherwise, this market will resolve to \u201cNo\u201d.\n\nA diplomatic meeting refers to a deliberate meeting between representatives of the listed countries who are acting in an official capacity and are authorized to engage in negotiation or diplomacy regarding US-Iranian relations on behalf of their governments. Meetings conducted indirectly, for exampl"
+ },
+ {
+  "question": "Will Elon Musk post 140-159 tweets from September 18 to September 25, 2026?",
+  "yes": 0.065,
+  "vol24": 7194,
+  "end": "2026-09-25",
+  "slug": "elon-musk-of-tweets-september-18-september-25-2026",
+  "desc": "This market will resolve according to the number of times Elon Musk (@elonmusk), posts on X from September 18 12:00 PM ET to September 25, 2026 12:00 PM ET.\n\nFor the purposes of this market, only main feed posts, quote posts and reposts will count.\n\nReplies will NOT count towards the total - however, replies on the main feed such as https://x.com/elonmusk/status/1786073478711353576 will be counted by the tracker.\n\nDeleted posts will count as long as they remain available long enough to be captur"
+ },
+ {
+  "question": "Will Warsh say \"Good Day\" during September Press Conference?",
+  "yes": 0.88,
+  "vol24": 6141,
+  "end": "2026-09-16",
+  "slug": "what-will-kevin-warsh-say-during-september-press-conference-20260909",
+  "desc": "Kevin Warsh is currently scheduled to give an FOMC Introductory Statement and press conference on September 16, 2026, at 2:30 PM ET. This market pertains to his Introductory Statement as well as the following Q&A session.\n\nThis market will resolve to \"Yes\" if Warsh says the listed term during the FOMC Press Conference. Otherwise, this market will resolve to \"No\".\n\nIf no such statement by Warsh happens by September 17, 2026, 11:59 PM ET, \"-No Qualifying Event-\" will resolve to \"Yes\" and all other"
+ },
+ {
+  "question": "Will WTI Crude Oil (WTI) hit (LOW) $85 in September?",
+  "yes": 0.205,
+  "vol24": 5660,
+  "end": "2026-10-01",
+  "slug": "what-price-will-wti-hit-in-september-2026",
+  "desc": "This market will resolve to \"Yes\" if, at any point after market creation and during a trading session of September 2026, any 1-minute candle for the Active Month of WTI Crude Oil futures has a final \"High\" or \"Low\" price equal to or beyond (above for \u2191 High Prices, below for \u2193 Low Prices) the listed price. Otherwise, this market will resolve to \"No\".\n\nPrices will be used exactly as published by Pyth, without rounding.\n\nIf the Active Month contract does not trade at all during the listed time fra"
+ },
+ {
+  "question": "Will Elon Musk post 180-199 tweets from September 15 to September 22, 2026?",
+  "yes": 0.235,
+  "vol24": 5578,
+  "end": "2026-09-22",
+  "slug": "elon-musk-of-tweets-september-15-september-22-2026",
+  "desc": "This market will resolve according to the number of times Elon Musk (@elonmusk), posts on X from September 15 12:00 PM ET to September 22, 2026 12:00 PM ET.\n\nFor the purposes of this market, only main feed posts, quote posts and reposts will count.\n\nReplies will NOT count towards the total - however, replies on the main feed such as https://x.com/elonmusk/status/1786073478711353576 will be counted by the tracker.\n\nDeleted posts will count as long as they remain available long enough to be captur"
+ },
+ {
+  "question": "Will WTI Crude Oil (WTI) hit (LOW) $80 in September?",
+  "yes": 0.09,
+  "vol24": 5342,
+  "end": "2026-10-01",
+  "slug": "what-price-will-wti-hit-in-september-2026",
+  "desc": "This market will resolve to \"Yes\" if, at any point after market creation and during a trading session of September 2026, any 1-minute candle for the Active Month of WTI Crude Oil futures has a final \"High\" or \"Low\" price equal to or beyond (above for \u2191 High Prices, below for \u2193 Low Prices) the listed price. Otherwise, this market will resolve to \"No\".\n\nPrices will be used exactly as published by Pyth, without rounding.\n\nIf the Active Month contract does not trade at all during the listed time fra"
+ },
+ {
+  "question": "Will Warsh say \"Pandemic\" during September Press Conference?",
+  "yes": 0.395,
+  "vol24": 4757,
+  "end": "2026-09-16",
+  "slug": "what-will-kevin-warsh-say-during-september-press-conference-20260909",
+  "desc": "Kevin Warsh is currently scheduled to give an FOMC Introductory Statement and press conference on September 16, 2026, at 2:30 PM ET. This market pertains to his Introductory Statement as well as the following Q&A session.\n\nThis market will resolve to \"Yes\" if Warsh says the listed term during the FOMC Press Conference. Otherwise, this market will resolve to \"No\".\n\nIf no such statement by Warsh happens by September 17, 2026, 11:59 PM ET, \"-No Qualifying Event-\" will resolve to \"Yes\" and all other"
+ },
+ {
+  "question": "Will Elon Musk post 160-179 tweets from September 15 to September 22, 2026?",
+  "yes": 0.145,
+  "vol24": 4568,
+  "end": "2026-09-22",
+  "slug": "elon-musk-of-tweets-september-15-september-22-2026",
+  "desc": "This market will resolve according to the number of times Elon Musk (@elonmusk), posts on X from September 15 12:00 PM ET to September 22, 2026 12:00 PM ET.\n\nFor the purposes of this market, only main feed posts, quote posts and reposts will count.\n\nReplies will NOT count towards the total - however, replies on the main feed such as https://x.com/elonmusk/status/1786073478711353576 will be counted by the tracker.\n\nDeleted posts will count as long as they remain available long enough to be captur"
+ },
+ {
+  "question": "Will Elon Musk post 140-159 tweets from September 15 to September 22, 2026?",
+  "yes": 0.075,
+  "vol24": 4441,
+  "end": "2026-09-22",
+  "slug": "elon-musk-of-tweets-september-15-september-22-2026",
+  "desc": "This market will resolve according to the number of times Elon Musk (@elonmusk), posts on X from September 15 12:00 PM ET to September 22, 2026 12:00 PM ET.\n\nFor the purposes of this market, only main feed posts, quote posts and reposts will count.\n\nReplies will NOT count towards the total - however, replies on the main feed such as https://x.com/elonmusk/status/1786073478711353576 will be counted by the tracker.\n\nDeleted posts will count as long as they remain available long enough to be captur"
+ },
+ {
+  "question": "Will Elon Musk post 200-219 tweets from September 15 to September 22, 2026?",
+  "yes": 0.205,
+  "vol24": 4293,
+  "end": "2026-09-22",
+  "slug": "elon-musk-of-tweets-september-15-september-22-2026",
+  "desc": "This market will resolve according to the number of times Elon Musk (@elonmusk), posts on X from September 15 12:00 PM ET to September 22, 2026 12:00 PM ET.\n\nFor the purposes of this market, only main feed posts, quote posts and reposts will count.\n\nReplies will NOT count towards the total - however, replies on the main feed such as https://x.com/elonmusk/status/1786073478711353576 will be counted by the tracker.\n\nDeleted posts will count as long as they remain available long enough to be captur"
+ },
+ {
+  "question": "Will Uzbekistan win the 46th FIDE Chess Olympiad Open Tournament?",
+  "yes": 0.285,
+  "vol24": 4248,
+  "end": "2026-09-28",
+  "slug": "46th-fide-chess-olympiad-open-tournament-winner-20260716211453703",
+  "desc": "This market will resolve according to the winner of the 46th FIDE Chess Olympiad Open Tournament, currently scheduled for September 15, 2026 to September 28, 2026.\n\nIf this tournament is postponed after October 12, 2026, 11:59 PM ET, canceled, or a winner has not been declared within this timeframe, this market will resolve to \"Other.\"\n\nIf multiple teams are declared winner, this market will resolve in favor of the team whose listed team name comes first alphabetically.\n\nThe resolution source fo"
+ },
+ {
+  "question": "Will United Russia win 355 or more seats in the next Russian State Duma election?",
+  "yes": 0.044,
+  "vol24": 4126,
+  "end": "2026-09-20",
+  "slug": "how-many-seats-will-united-russia-win-in-the-next-russian-legislative-election",
+  "desc": "Legislative elections are scheduled to be held in Russia in September 2026.\n\nThis market will resolve according to the number of seats held by United Russia in the State Duma as a result of the next Russian legislative election.\n\nIf results are not known definitively by May 31, 2027, 11:59 PM ET, this market will resolve to the lowest bracket.\n\nThis market\u2019s resolution will be based solely on the number of seats won by the named party in the State Duma.\n\nThis market will resolve based on the res"
+ },
+ {
+  "question": "Will Warsh say \"Anchor\" or \"Anchored\" during September Press Conference?",
+  "yes": 0.275,
+  "vol24": 3233,
+  "end": "2026-09-16",
+  "slug": "what-will-kevin-warsh-say-during-september-press-conference-20260909",
+  "desc": "Kevin Warsh is currently scheduled to give an FOMC Introductory Statement and press conference on September 16, 2026, at 2:30 PM ET. This market pertains to his Introductory Statement as well as the following Q&A session.\n\nThis market will resolve to \"Yes\" if Warsh says the listed term during the FOMC Press Conference. Otherwise, this market will resolve to \"No\".\n\nIf no such statement by Warsh happens by September 17, 2026, 11:59 PM ET, \"-No Qualifying Event-\" will resolve to \"Yes\" and all other"
+ },
+ {
+  "question": "Will Elon Musk post 220-239 tweets from September 15 to September 22, 2026?",
+  "yes": 0.155,
+  "vol24": 2890,
+  "end": "2026-09-22",
+  "slug": "elon-musk-of-tweets-september-15-september-22-2026",
+  "desc": "This market will resolve according to the number of times Elon Musk (@elonmusk), posts on X from September 15 12:00 PM ET to September 22, 2026 12:00 PM ET.\n\nFor the purposes of this market, only main feed posts, quote posts and reposts will count.\n\nReplies will NOT count towards the total - however, replies on the main feed such as https://x.com/elonmusk/status/1786073478711353576 will be counted by the tracker.\n\nDeleted posts will count as long as they remain available long enough to be captur"
+ },
+ {
+  "question": "Will WTI Crude Oil (WTI) hit (LOW) $75 in September?",
+  "yes": 0.0375,
+  "vol24": 2715,
+  "end": "2026-10-01",
+  "slug": "what-price-will-wti-hit-in-september-2026",
+  "desc": "This market will resolve to \"Yes\" if, at any point after market creation and during a trading session of September 2026, any 1-minute candle for the Active Month of WTI Crude Oil futures has a final \"High\" or \"Low\" price equal to or beyond (above for \u2191 High Prices, below for \u2193 Low Prices) the listed price. Otherwise, this market will resolve to \"No\".\n\nPrices will be used exactly as published by Pyth, without rounding.\n\nIf the Active Month contract does not trade at all during the listed time fra"
+ },
+ {
+  "question": "Will United Russia win between 340 and 354 seats in the next Russian State Duma election?",
+  "yes": 0.235,
+  "vol24": 2475,
+  "end": "2026-09-20",
+  "slug": "how-many-seats-will-united-russia-win-in-the-next-russian-legislative-election",
+  "desc": "Legislative elections are scheduled to be held in Russia in September 2026.\n\nThis market will resolve according to the number of seats held by United Russia in the State Duma as a result of the next Russian legislative election.\n\nIf results are not known definitively by May 31, 2027, 11:59 PM ET, this market will resolve to the lowest bracket.\n\nThis market\u2019s resolution will be based solely on the number of seats won by the named party in the State Duma.\n\nThis market will resolve based on the res"
+ },
+ {
+  "question": "Will Warsh say \"Good Afternoon\" during September Press Conference?",
+  "yes": 0.075,
+  "vol24": 2457,
+  "end": "2026-09-16",
+  "slug": "what-will-kevin-warsh-say-during-september-press-conference-20260909",
+  "desc": "Kevin Warsh is currently scheduled to give an FOMC Introductory Statement and press conference on September 16, 2026, at 2:30 PM ET. This market pertains to his Introductory Statement as well as the following Q&A session.\n\nThis market will resolve to \"Yes\" if Warsh says the listed term during the FOMC Press Conference. Otherwise, this market will resolve to \"No\".\n\nIf no such statement by Warsh happens by September 17, 2026, 11:59 PM ET, \"-No Qualifying Event-\" will resolve to \"Yes\" and all other"
+ },
+ {
+  "question": "Will Warsh say \"Labor Force\" during September Press Conference?",
+  "yes": 0.48,
+  "vol24": 2330,
+  "end": "2026-09-16",
+  "slug": "what-will-kevin-warsh-say-during-september-press-conference-20260909",
+  "desc": "Kevin Warsh is currently scheduled to give an FOMC Introductory Statement and press conference on September 16, 2026, at 2:30 PM ET. This market pertains to his Introductory Statement as well as the following Q&A session.\n\nThis market will resolve to \"Yes\" if Warsh says the listed term during the FOMC Press Conference. Otherwise, this market will resolve to \"No\".\n\nIf no such statement by Warsh happens by September 17, 2026, 11:59 PM ET, \"-No Qualifying Event-\" will resolve to \"Yes\" and all other"
+ },
+ {
+  "question": "Will Warsh say \"Software\" during September Press Conference?",
+  "yes": 0.3,
+  "vol24": 2311,
+  "end": "2026-09-16",
+  "slug": "what-will-kevin-warsh-say-during-september-press-conference-20260909",
+  "desc": "Kevin Warsh is currently scheduled to give an FOMC Introductory Statement and press conference on September 16, 2026, at 2:30 PM ET. This market pertains to his Introductory Statement as well as the following Q&A session.\n\nThis market will resolve to \"Yes\" if Warsh says the listed term during the FOMC Press Conference. Otherwise, this market will resolve to \"No\".\n\nIf no such statement by Warsh happens by September 17, 2026, 11:59 PM ET, \"-No Qualifying Event-\" will resolve to \"Yes\" and all other"
+ },
+ {
+  "question": "Will Warsh say \"Projection\" during September Press Conference?",
+  "yes": 0.835,
+  "vol24": 2213,
+  "end": "2026-09-16",
+  "slug": "what-will-kevin-warsh-say-during-september-press-conference-20260909",
+  "desc": "Kevin Warsh is currently scheduled to give an FOMC Introductory Statement and press conference on September 16, 2026, at 2:30 PM ET. This market pertains to his Introductory Statement as well as the following Q&A session.\n\nThis market will resolve to \"Yes\" if Warsh says the listed term during the FOMC Press Conference. Otherwise, this market will resolve to \"No\".\n\nIf no such statement by Warsh happens by September 17, 2026, 11:59 PM ET, \"-No Qualifying Event-\" will resolve to \"Yes\" and all other"
+ },
+ {
+  "question": "Will Warsh say \"AI\" or \"Artificial Intelligence\" during September Press Conference?",
+  "yes": 0.905,
+  "vol24": 2109,
+  "end": "2026-09-16",
+  "slug": "what-will-kevin-warsh-say-during-september-press-conference-20260909",
+  "desc": "Kevin Warsh is currently scheduled to give an FOMC Introductory Statement and press conference on September 16, 2026, at 2:30 PM ET. This market pertains to his Introductory Statement as well as the following Q&A session.\n\nThis market will resolve to \"Yes\" if Warsh says the listed term during the FOMC Press Conference. Otherwise, this market will resolve to \"No\".\n\nIf no such statement by Warsh happens by September 17, 2026, 11:59 PM ET, \"-No Qualifying Event-\" will resolve to \"Yes\" and all other"
+ },
+ {
+  "question": "Will United Russia win between 310 and 324 seats in the next Russian State Duma election?",
+  "yes": 0.1795,
+  "vol24": 2056,
+  "end": "2026-09-20",
+  "slug": "how-many-seats-will-united-russia-win-in-the-next-russian-legislative-election",
+  "desc": "Legislative elections are scheduled to be held in Russia in September 2026.\n\nThis market will resolve according to the number of seats held by United Russia in the State Duma as a result of the next Russian legislative election.\n\nIf results are not known definitively by May 31, 2027, 11:59 PM ET, this market will resolve to the lowest bracket.\n\nThis market\u2019s resolution will be based solely on the number of seats won by the named party in the State Duma.\n\nThis market will resolve based on the res"
+ },
+ {
+  "question": "Will United States of America win the 46th FIDE Chess Olympiad Open Tournament?",
+  "yes": 0.275,
+  "vol24": 2045,
+  "end": "2026-09-28",
+  "slug": "46th-fide-chess-olympiad-open-tournament-winner-20260716211453703",
+  "desc": "This market will resolve according to the winner of the 46th FIDE Chess Olympiad Open Tournament, currently scheduled for September 15, 2026 to September 28, 2026.\n\nIf this tournament is postponed after October 12, 2026, 11:59 PM ET, canceled, or a winner has not been declared within this timeframe, this market will resolve to \"Other.\"\n\nIf multiple teams are declared winner, this market will resolve in favor of the team whose listed team name comes first alphabetically.\n\nThe resolution source fo"
+ },
+ {
+  "question": "Will Elon Musk post 240-259 tweets from September 15 to September 22, 2026?",
+  "yes": 0.105,
+  "vol24": 1969,
+  "end": "2026-09-22",
+  "slug": "elon-musk-of-tweets-september-15-september-22-2026",
+  "desc": "This market will resolve according to the number of times Elon Musk (@elonmusk), posts on X from September 15 12:00 PM ET to September 22, 2026 12:00 PM ET.\n\nFor the purposes of this market, only main feed posts, quote posts and reposts will count.\n\nReplies will NOT count towards the total - however, replies on the main feed such as https://x.com/elonmusk/status/1786073478711353576 will be counted by the tracker.\n\nDeleted posts will count as long as they remain available long enough to be captur"
+ },
+ {
+  "question": "Will Elon Musk post 260-279 tweets from September 15 to September 22, 2026?",
+  "yes": 0.065,
+  "vol24": 1905,
+  "end": "2026-09-22",
+  "slug": "elon-musk-of-tweets-september-15-september-22-2026",
+  "desc": "This market will resolve according to the number of times Elon Musk (@elonmusk), posts on X from September 15 12:00 PM ET to September 22, 2026 12:00 PM ET.\n\nFor the purposes of this market, only main feed posts, quote posts and reposts will count.\n\nReplies will NOT count towards the total - however, replies on the main feed such as https://x.com/elonmusk/status/1786073478711353576 will be counted by the tracker.\n\nDeleted posts will count as long as they remain available long enough to be captur"
+ },
+ {
+  "question": "Will Elon Musk post 200-219 tweets from September 18 to September 25, 2026?",
+  "yes": 0.175,
+  "vol24": 1855,
+  "end": "2026-09-25",
+  "slug": "elon-musk-of-tweets-september-18-september-25-2026",
+  "desc": "This market will resolve according to the number of times Elon Musk (@elonmusk), posts on X from September 18 12:00 PM ET to September 25, 2026 12:00 PM ET.\n\nFor the purposes of this market, only main feed posts, quote posts and reposts will count.\n\nReplies will NOT count towards the total - however, replies on the main feed such as https://x.com/elonmusk/status/1786073478711353576 will be counted by the tracker.\n\nDeleted posts will count as long as they remain available long enough to be captur"
+ },
+ {
+  "question": "Will United Russia win between 325 and 339 seats in the next Russian State Duma election?",
+  "yes": 0.41,
+  "vol24": 1855,
+  "end": "2026-09-20",
+  "slug": "how-many-seats-will-united-russia-win-in-the-next-russian-legislative-election",
+  "desc": "Legislative elections are scheduled to be held in Russia in September 2026.\n\nThis market will resolve according to the number of seats held by United Russia in the State Duma as a result of the next Russian legislative election.\n\nIf results are not known definitively by May 31, 2027, 11:59 PM ET, this market will resolve to the lowest bracket.\n\nThis market\u2019s resolution will be based solely on the number of seats won by the named party in the State Duma.\n\nThis market will resolve based on the res"
+ },
+ {
+  "question": "Will Warsh say \"Echo\" during September Press Conference?",
+  "yes": 0.475,
+  "vol24": 1684,
+  "end": "2026-09-16",
+  "slug": "what-will-kevin-warsh-say-during-september-press-conference-20260909",
+  "desc": "Kevin Warsh is currently scheduled to give an FOMC Introductory Statement and press conference on September 16, 2026, at 2:30 PM ET. This market pertains to his Introductory Statement as well as the following Q&A session.\n\nThis market will resolve to \"Yes\" if Warsh says the listed term during the FOMC Press Conference. Otherwise, this market will resolve to \"No\".\n\nIf no such statement by Warsh happens by September 17, 2026, 11:59 PM ET, \"-No Qualifying Event-\" will resolve to \"Yes\" and all other"
+ },
+ {
+  "question": "Will UNRWA win the Nobel Peace Prize in 2026?",
+  "yes": 0.0525,
+  "vol24": 1554,
+  "end": "2026-10-10",
+  "slug": "nobel-peace-prize-winner-2026-139",
+  "desc": "This market will resolve according to the winner of the 2026 Nobel Peace Prize, as announced by the Norwegian Nobel Committee.\n\nIf multiple listed individuals or entities jointly receive the prize, the market will resolve to a single winner. If Donald Trump, Volodymyr Zelenskyy,  Benjamin Netanyahu, Vladimir Putin, or Elon Musk are among the recipients, the market will resolve to the highest-ranked among them in that exact order of precedence. If none of those five are among the winners and the "
+ },
+ {
+  "question": "Will Elon Musk post 180-199 tweets from September 18 to September 25, 2026?",
+  "yes": 0.185,
+  "vol24": 1521,
+  "end": "2026-09-25",
+  "slug": "elon-musk-of-tweets-september-18-september-25-2026",
+  "desc": "This market will resolve according to the number of times Elon Musk (@elonmusk), posts on X from September 18 12:00 PM ET to September 25, 2026 12:00 PM ET.\n\nFor the purposes of this market, only main feed posts, quote posts and reposts will count.\n\nReplies will NOT count towards the total - however, replies on the main feed such as https://x.com/elonmusk/status/1786073478711353576 will be counted by the tracker.\n\nDeleted posts will count as long as they remain available long enough to be captur"
+ },
+ {
+  "question": "Will Warsh say \"Bet\" or \"Betting\" during September Press Conference?",
+  "yes": 0.6,
+  "vol24": 1451,
+  "end": "2026-09-16",
+  "slug": "what-will-kevin-warsh-say-during-september-press-conference-20260909",
+  "desc": "Kevin Warsh is currently scheduled to give an FOMC Introductory Statement and press conference on September 16, 2026, at 2:30 PM ET. This market pertains to his Introductory Statement as well as the following Q&A session.\n\nThis market will resolve to \"Yes\" if Warsh says the listed term during the FOMC Press Conference. Otherwise, this market will resolve to \"No\".\n\nIf no such statement by Warsh happens by September 17, 2026, 11:59 PM ET, \"-No Qualifying Event-\" will resolve to \"Yes\" and all other"
+ },
+ {
+  "question": "Will Germany win the 46th FIDE Chess Olympiad Open Tournament?",
+  "yes": 0.0315,
+  "vol24": 1428,
+  "end": "2026-09-28",
+  "slug": "46th-fide-chess-olympiad-open-tournament-winner-20260716211453703",
+  "desc": "This market will resolve according to the winner of the 46th FIDE Chess Olympiad Open Tournament, currently scheduled for September 15, 2026 to September 28, 2026.\n\nIf this tournament is postponed after October 12, 2026, 11:59 PM ET, canceled, or a winner has not been declared within this timeframe, this market will resolve to \"Other.\"\n\nIf multiple teams are declared winner, this market will resolve in favor of the team whose listed team name comes first alphabetically.\n\nThe resolution source fo"
+ },
+ {
+  "question": "Will Warsh say \"Task Force\" 10+ times during September Press Conference?",
+  "yes": 0.315,
+  "vol24": 1427,
+  "end": "2026-09-16",
+  "slug": "what-will-kevin-warsh-say-during-september-press-conference-20260909",
+  "desc": "Kevin Warsh is currently scheduled to give an FOMC Introductory Statement and press conference on September 16, 2026, at 2:30 PM ET. This market pertains to his Introductory Statement as well as the following Q&A session.\n\nThis market will resolve to \"Yes\" if Warsh says the listed term during the FOMC Press Conference. Otherwise, this market will resolve to \"No\".\n\nIf no such statement by Warsh happens by September 17, 2026, 11:59 PM ET, \"-No Qualifying Event-\" will resolve to \"Yes\" and all other"
+ },
+ {
+  "question": "Will WTI Crude Oil (WTI) hit (LOW) $90 Week of September 14 2026?",
+  "yes": 0.125,
+  "vol24": 1372,
+  "end": "2026-09-18",
+  "slug": "will-wti-hit-week-of-september-14-2026",
+  "desc": "This market will resolve to \"Yes\" if, at any point after market creation and during a trading session of the week of September 14 2026, any 1-minute candle for the Active Month of WTI Crude Oil futures has a final \"High\" or \"Low\" price equal to or beyond (above for \u2191 High Prices, below for \u2193 Low Prices) the listed price. Otherwise, this market will resolve to \"No\".\n\nPrices will be used exactly as published by Pyth, without rounding.\n\nIf the Active Month contract does not trade at all during the "
+ },
+ {
+  "question": "Will Warsh say \"Pressure\" during September Press Conference?",
+  "yes": 0.455,
+  "vol24": 1349,
+  "end": "2026-09-16",
+  "slug": "what-will-kevin-warsh-say-during-september-press-conference-20260909",
+  "desc": "Kevin Warsh is currently scheduled to give an FOMC Introductory Statement and press conference on September 16, 2026, at 2:30 PM ET. This market pertains to his Introductory Statement as well as the following Q&A session.\n\nThis market will resolve to \"Yes\" if Warsh says the listed term during the FOMC Press Conference. Otherwise, this market will resolve to \"No\".\n\nIf no such statement by Warsh happens by September 17, 2026, 11:59 PM ET, \"-No Qualifying Event-\" will resolve to \"Yes\" and all other"
+ },
+ {
+  "question": "Will China win the 46th FIDE Chess Olympiad Open Tournament?",
+  "yes": 0.065,
+  "vol24": 1314,
+  "end": "2026-09-28",
+  "slug": "46th-fide-chess-olympiad-open-tournament-winner-20260716211453703",
+  "desc": "This market will resolve according to the winner of the 46th FIDE Chess Olympiad Open Tournament, currently scheduled for September 15, 2026 to September 28, 2026.\n\nIf this tournament is postponed after October 12, 2026, 11:59 PM ET, canceled, or a winner has not been declared within this timeframe, this market will resolve to \"Other.\"\n\nIf multiple teams are declared winner, this market will resolve in favor of the team whose listed team name comes first alphabetically.\n\nThe resolution source fo"
+ },
+ {
+  "question": "Will Warsh say \"Dissent\" during September Press Conference?",
+  "yes": 0.095,
+  "vol24": 1293,
+  "end": "2026-09-16",
+  "slug": "what-will-kevin-warsh-say-during-september-press-conference-20260909",
+  "desc": "Kevin Warsh is currently scheduled to give an FOMC Introductory Statement and press conference on September 16, 2026, at 2:30 PM ET. This market pertains to his Introductory Statement as well as the following Q&A session.\n\nThis market will resolve to \"Yes\" if Warsh says the listed term during the FOMC Press Conference. Otherwise, this market will resolve to \"No\".\n\nIf no such statement by Warsh happens by September 17, 2026, 11:59 PM ET, \"-No Qualifying Event-\" will resolve to \"Yes\" and all other"
+ },
+ {
+  "question": "Iran charges Hormuz fees by September 30?",
+  "yes": 0.045,
+  "vol24": 1043,
+  "end": "2026-10-01",
+  "slug": "iran-charges-hormuz-fees-byptptpt-20260625175035466",
+  "desc": "This market resolves to \u201cYes\u201d if the Iranian government officially announces and begins collecting fees, tolls, charges, tariffs, or similar payments from commercial vessels which are mandatory for passage through or access to the Strait of Hormuz between market creation and the specified date, 11:59 PM ET. Otherwise, this market resolves to \u201cNo.\u201d\n\nA qualifying fee must be an announced policy which applies generally to all commercial vessels, or a defined subcategory of commercial vessels (e.g.,"
+ },
+ {
+  "question": "Will Elon Musk post 260-279 tweets from September 18 to September 25, 2026?",
+  "yes": 0.055,
+  "vol24": 921,
+  "end": "2026-09-25",
+  "slug": "elon-musk-of-tweets-september-18-september-25-2026",
+  "desc": "This market will resolve according to the number of times Elon Musk (@elonmusk), posts on X from September 18 12:00 PM ET to September 25, 2026 12:00 PM ET.\n\nFor the purposes of this market, only main feed posts, quote posts and reposts will count.\n\nReplies will NOT count towards the total - however, replies on the main feed such as https://x.com/elonmusk/status/1786073478711353576 will be counted by the tracker.\n\nDeleted posts will count as long as they remain available long enough to be captur"
+ },
+ {
+  "question": "Will Elon Musk post 280-299 tweets from September 18 to September 25, 2026?",
+  "yes": 0.038,
+  "vol24": 822,
+  "end": "2026-09-25",
+  "slug": "elon-musk-of-tweets-september-18-september-25-2026",
+  "desc": "This market will resolve according to the number of times Elon Musk (@elonmusk), posts on X from September 18 12:00 PM ET to September 25, 2026 12:00 PM ET.\n\nFor the purposes of this market, only main feed posts, quote posts and reposts will count.\n\nReplies will NOT count towards the total - however, replies on the main feed such as https://x.com/elonmusk/status/1786073478711353576 will be counted by the tracker.\n\nDeleted posts will count as long as they remain available long enough to be captur"
+ },
+ {
+  "question": "Will Warsh say \"Scenario\" during September Press Conference?",
+  "yes": 0.465,
+  "vol24": 787,
+  "end": "2026-09-16",
+  "slug": "what-will-kevin-warsh-say-during-september-press-conference-20260909",
+  "desc": "Kevin Warsh is currently scheduled to give an FOMC Introductory Statement and press conference on September 16, 2026, at 2:30 PM ET. This market pertains to his Introductory Statement as well as the following Q&A session.\n\nThis market will resolve to \"Yes\" if Warsh says the listed term during the FOMC Press Conference. Otherwise, this market will resolve to \"No\".\n\nIf no such statement by Warsh happens by September 17, 2026, 11:59 PM ET, \"-No Qualifying Event-\" will resolve to \"Yes\" and all other"
+ },
+ {
+  "question": "Will Elon Musk post 240-259 tweets from September 18 to September 25, 2026?",
+  "yes": 0.085,
+  "vol24": 764,
+  "end": "2026-09-25",
+  "slug": "elon-musk-of-tweets-september-18-september-25-2026",
+  "desc": "This market will resolve according to the number of times Elon Musk (@elonmusk), posts on X from September 18 12:00 PM ET to September 25, 2026 12:00 PM ET.\n\nFor the purposes of this market, only main feed posts, quote posts and reposts will count.\n\nReplies will NOT count towards the total - however, replies on the main feed such as https://x.com/elonmusk/status/1786073478711353576 will be counted by the tracker.\n\nDeleted posts will count as long as they remain available long enough to be captur"
+ },
+ {
+  "question": "Will WTI Crude Oil (WTI) hit (HIGH) $110 Week of September 14 2026?",
+  "yes": 0.045,
+  "vol24": 761,
+  "end": "2026-09-18",
+  "slug": "will-wti-hit-week-of-september-14-2026",
+  "desc": "This market will resolve to \"Yes\" if, at any point after market creation and during a trading session of the week of September 14 2026, any 1-minute candle for the Active Month of WTI Crude Oil futures has a final \"High\" or \"Low\" price equal to or beyond (above for \u2191 High Prices, below for \u2193 Low Prices) the listed price. Otherwise, this market will resolve to \"No\".\n\nPrices will be used exactly as published by Pyth, without rounding.\n\nIf the Active Month contract does not trade at all during the "
+ },
+ {
+  "question": "Will Elon Musk post 220-239 tweets from September 18 to September 25, 2026?",
+  "yes": 0.115,
+  "vol24": 544,
+  "end": "2026-09-25",
+  "slug": "elon-musk-of-tweets-september-18-september-25-2026",
+  "desc": "This market will resolve according to the number of times Elon Musk (@elonmusk), posts on X from September 18 12:00 PM ET to September 25, 2026 12:00 PM ET.\n\nFor the purposes of this market, only main feed posts, quote posts and reposts will count.\n\nReplies will NOT count towards the total - however, replies on the main feed such as https://x.com/elonmusk/status/1786073478711353576 will be counted by the tracker.\n\nDeleted posts will count as long as they remain available long enough to be captur"
+ },
+ {
+  "question": "Will Save the Children win the Nobel Peace Prize in 2026?",
+  "yes": 0.0695,
+  "vol24": 544,
+  "end": "2026-10-10",
+  "slug": "nobel-peace-prize-winner-2026-139",
+  "desc": "This market will resolve according to the winner of the 2026 Nobel Peace Prize, as announced by the Norwegian Nobel Committee.\n\nIf multiple listed individuals or entities jointly receive the prize, the market will resolve to a single winner. If Donald Trump, Volodymyr Zelenskyy,  Benjamin Netanyahu, Vladimir Putin, or Elon Musk are among the recipients, the market will resolve to the highest-ranked among them in that exact order of precedence. If none of those five are among the winners and the "
+ },
+ {
+  "question": "Will Warsh say \"Productivity\" during September Press Conference?",
+  "yes": 0.905,
+  "vol24": 329,
+  "end": "2026-09-16",
+  "slug": "what-will-kevin-warsh-say-during-september-press-conference-20260909",
+  "desc": "Kevin Warsh is currently scheduled to give an FOMC Introductory Statement and press conference on September 16, 2026, at 2:30 PM ET. This market pertains to his Introductory Statement as well as the following Q&A session.\n\nThis market will resolve to \"Yes\" if Warsh says the listed term during the FOMC Press Conference. Otherwise, this market will resolve to \"No\".\n\nIf no such statement by Warsh happens by September 17, 2026, 11:59 PM ET, \"-No Qualifying Event-\" will resolve to \"Yes\" and all other"
+ },
+ {
+  "question": "Will MOUZ Win the StarLadder StarSeries Fall 2026?",
+  "yes": 0.285,
+  "vol24": 290,
+  "end": "2026-10-05",
+  "slug": "starladder-starseries-fall-2026-winner-1788882991655",
+  "desc": "This market will resolve according to the winner of StarLadder StarSeries Fall 2026, currently scheduled for September 17, 2026 to September 20, 2026.\n\nIf this tournament is postponed after October 4, 2026, 11:59 PM ET, canceled, or a winner has not been declared within this timeframe, this market will resolve to \"Other.\"\n\nIf multiple teams are declared winner, this market will resolve in favor of the team whose listed team name comes first alphabetically.\n\nThe resolution source for this market "
+ },
+ {
+  "question": "Will Warsh say \"Luck\" or \"Lucky\" during September Press Conference?",
+  "yes": 0.365,
+  "vol24": 262,
+  "end": "2026-09-16",
+  "slug": "what-will-kevin-warsh-say-during-september-press-conference-20260909",
+  "desc": "Kevin Warsh is currently scheduled to give an FOMC Introductory Statement and press conference on September 16, 2026, at 2:30 PM ET. This market pertains to his Introductory Statement as well as the following Q&A session.\n\nThis market will resolve to \"Yes\" if Warsh says the listed term during the FOMC Press Conference. Otherwise, this market will resolve to \"No\".\n\nIf no such statement by Warsh happens by September 17, 2026, 11:59 PM ET, \"-No Qualifying Event-\" will resolve to \"Yes\" and all other"
+ },
+ {
+  "question": "Will Warsh say \"Balance Sheet\" during September Press Conference?",
+  "yes": 0.875,
+  "vol24": 232,
+  "end": "2026-09-16",
+  "slug": "what-will-kevin-warsh-say-during-september-press-conference-20260909",
+  "desc": "Kevin Warsh is currently scheduled to give an FOMC Introductory Statement and press conference on September 16, 2026, at 2:30 PM ET. This market pertains to his Introductory Statement as well as the following Q&A session.\n\nThis market will resolve to \"Yes\" if Warsh says the listed term during the FOMC Press Conference. Otherwise, this market will resolve to \"No\".\n\nIf no such statement by Warsh happens by September 17, 2026, 11:59 PM ET, \"-No Qualifying Event-\" will resolve to \"Yes\" and all other"
+ },
+ {
+  "question": "Will Natus Vincere Win the StarLadder StarSeries Fall 2026?",
+  "yes": 0.095,
+  "vol24": 149,
+  "end": "2026-10-05",
+  "slug": "starladder-starseries-fall-2026-winner-1788882991655",
+  "desc": "This market will resolve according to the winner of StarLadder StarSeries Fall 2026, currently scheduled for September 17, 2026 to September 20, 2026.\n\nIf this tournament is postponed after October 4, 2026, 11:59 PM ET, canceled, or a winner has not been declared within this timeframe, this market will resolve to \"Other.\"\n\nIf multiple teams are declared winner, this market will resolve in favor of the team whose listed team name comes first alphabetically.\n\nThe resolution source for this market "
+ },
+ {
+  "question": "Will the International Court of Justice win the Nobel Peace Prize in 2026?",
+  "yes": 0.0535,
+  "vol24": 139,
+  "end": "2026-10-10",
+  "slug": "nobel-peace-prize-winner-2026-139",
+  "desc": "This market will resolve according to the winner of the 2026 Nobel Peace Prize, as announced by the Norwegian Nobel Committee.\n\nIf multiple listed individuals or entities jointly receive the prize, the market will resolve to a single winner. If Donald Trump, Volodymyr Zelenskyy,  Benjamin Netanyahu, Vladimir Putin, or Elon Musk are among the recipients, the market will resolve to the highest-ranked among them in that exact order of precedence. If none of those five are among the winners and the "
+ },
+ {
+  "question": "Will FURIA Win the StarLadder StarSeries Fall 2026?",
+  "yes": 0.17,
+  "vol24": 128,
+  "end": "2026-10-05",
+  "slug": "starladder-starseries-fall-2026-winner-1788882991655",
+  "desc": "This market will resolve according to the winner of StarLadder StarSeries Fall 2026, currently scheduled for September 17, 2026 to September 20, 2026.\n\nIf this tournament is postponed after October 4, 2026, 11:59 PM ET, canceled, or a winner has not been declared within this timeframe, this market will resolve to \"Other.\"\n\nIf multiple teams are declared winner, this market will resolve in favor of the team whose listed team name comes first alphabetically.\n\nThe resolution source for this market "
+ },
+ {
+  "question": "Will Aurora Win the StarLadder StarSeries Fall 2026?",
+  "yes": 0.08,
+  "vol24": 108,
+  "end": "2026-10-05",
+  "slug": "starladder-starseries-fall-2026-winner-1788882991655",
+  "desc": "This market will resolve according to the winner of StarLadder StarSeries Fall 2026, currently scheduled for September 17, 2026 to September 20, 2026.\n\nIf this tournament is postponed after October 4, 2026, 11:59 PM ET, canceled, or a winner has not been declared within this timeframe, this market will resolve to \"Other.\"\n\nIf multiple teams are declared winner, this market will resolve in favor of the team whose listed team name comes first alphabetically.\n\nThe resolution source for this market "
+ },
+ {
+  "question": "Will Sudan's Emergency Response Rooms win the Nobel Peace Prize in 2026?",
+  "yes": 0.0905,
+  "vol24": 90,
+  "end": "2026-10-10",
+  "slug": "nobel-peace-prize-winner-2026-139",
+  "desc": "This market will resolve according to the winner of the 2026 Nobel Peace Prize, as announced by the Norwegian Nobel Committee.\n\nIf multiple listed individuals or entities jointly receive the prize, the market will resolve to a single winner. If Donald Trump, Volodymyr Zelenskyy,  Benjamin Netanyahu, Vladimir Putin, or Elon Musk are among the recipients, the market will resolve to the highest-ranked among them in that exact order of precedence. If none of those five are among the winners and the "
+ },
+ {
+  "question": "Will any AI model reach 1530 Overall Arena Score by September 30, 2026?",
+  "yes": 0.036,
+  "vol24": 47,
+  "end": "2026-10-01",
+  "slug": "will-any-ai-model-reach-overall-arena-score-by-september-30",
+  "desc": "This market will resolve to \"Yes\" if any model on the Arena.AI Leaderboard (arena.ai/leaderboard/text) reaches at least the specified Arena Score by September 30, 2026, 11:59 PM ET. Otherwise, this market will resolve to \"No\".\n\nResults from the \"Score\" column under the \"Text Arena | Overall\" Leaderboard tab at https://lmarena.ai/leaderboard/text with style control off will be used to resolve this market.\n\nThe resolution source for this market is the Chatbot Arena LLM Leaderboard found at arena.a"
+ },
+ {
+  "question": "Will Yulia Navalnaya win the Nobel Peace Prize in 2026?",
+  "yes": 0.075,
+  "vol24": 20,
+  "end": "2026-10-10",
+  "slug": "nobel-peace-prize-winner-2026-139",
+  "desc": "This market will resolve according to the winner of the 2026 Nobel Peace Prize, as announced by the Norwegian Nobel Committee.\n\nIf multiple listed individuals or entities jointly receive the prize, the market will resolve to a single winner. If Donald Trump, Volodymyr Zelenskyy,  Benjamin Netanyahu, Vladimir Putin, or Elon Musk are among the recipients, the market will resolve to the highest-ranked among them in that exact order of precedence. If none of those five are among the winners and the "
+ },
+ {
+  "question": "Will WTI Crude Oil (WTI) hit (LOW) $85 Week of September 14 2026?",
+  "yes": 0.0305,
+  "vol24": 11,
+  "end": "2026-09-18",
+  "slug": "will-wti-hit-week-of-september-14-2026",
+  "desc": "This market will resolve to \"Yes\" if, at any point after market creation and during a trading session of the week of September 14 2026, any 1-minute candle for the Active Month of WTI Crude Oil futures has a final \"High\" or \"Low\" price equal to or beyond (above for \u2191 High Prices, below for \u2193 Low Prices) the listed price. Otherwise, this market will resolve to \"No\".\n\nPrices will be used exactly as published by Pyth, without rounding.\n\nIf the Active Month contract does not trade at all during the "
+ }
+]

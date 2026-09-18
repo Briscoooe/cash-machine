@@ -1,0 +1,1378 @@
+[
+ {
+  "q": "Will there be no change in Fed interest rates after the September 2026 meeting?",
+  "yes": 0.115,
+  "vol24": 21529113.848722,
+  "end": "2026-09-16",
+  "slug": "fed-decision-in-september-762",
+  "cond": "0xa3b36b2d6104d34af4e6c6215fc818e43352e78a748fbfb0b85e3a35f71dec9a"
+ },
+ {
+  "q": "Will the Fed increase interest rates by 25 bps after the September 2026 meeting?",
+  "yes": 0.875,
+  "vol24": 21529113.848722,
+  "end": "2026-09-16",
+  "slug": "fed-decision-in-september-762",
+  "cond": "0x876506d8b2bd7a0d3fa4fe18c024eee6e1dd81ee24c26795dadd6cfe4a7b5d0d"
+ },
+ {
+  "q": "Will United Russia (ER) gain the most seats in the next Russian parliamentary election?",
+  "yes": 0.755,
+  "vol24": 1127011.553751,
+  "end": "2026-09-30",
+  "slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election",
+  "cond": "0x502a94e5c525766d5ee7f16c6568131ba1b2cbadb69c703af05a6ef00336ed64"
+ },
+ {
+  "q": "Will New People (NL) gain the most seats in the next Russian parliamentary election?",
+  "yes": 0.207,
+  "vol24": 1127011.553751,
+  "end": "2026-09-30",
+  "slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election",
+  "cond": "0xc9615bb82d6535d630ff98e8094060bc767d8b9446516e98f84d2001a35e50e7"
+ },
+ {
+  "q": "Will WTI Crude Oil (WTI) hit (HIGH) $130 in September?",
+  "yes": 0.0465,
+  "vol24": 579454.398608,
+  "end": "2026-10-01",
+  "slug": "what-price-will-wti-hit-in-september-2026",
+  "cond": "0x4fff0816578447a11fba1fa044f82b7af092e68a1e97943c61e7e1ce7d4f6f86"
+ },
+ {
+  "q": "Will WTI Crude Oil (WTI) hit (HIGH) $120 in September?",
+  "yes": 0.133,
+  "vol24": 579454.398608,
+  "end": "2026-10-01",
+  "slug": "what-price-will-wti-hit-in-september-2026",
+  "cond": "0x2371ca77fc832c1dbb15274fd22ca0c47b9440b83a0eda040b603cf7b6d356c6"
+ },
+ {
+  "q": "Will WTI Crude Oil (WTI) hit (HIGH) $110 in September?",
+  "yes": 0.445,
+  "vol24": 579454.398608,
+  "end": "2026-10-01",
+  "slug": "what-price-will-wti-hit-in-september-2026",
+  "cond": "0x1cadccc29386c1913644c6197f92a7147d1db345ccfa3cab1429da293c9e7524"
+ },
+ {
+  "q": "Will WTI Crude Oil (WTI) hit (LOW) $80 in September?",
+  "yes": 0.095,
+  "vol24": 579454.398608,
+  "end": "2026-10-01",
+  "slug": "what-price-will-wti-hit-in-september-2026",
+  "cond": "0xc102a040f2842be662d0544d0b68f048e805d0210fe2a3b1cb83521d29584f2d"
+ },
+ {
+  "q": "Will WTI Crude Oil (WTI) hit (LOW) $75 in September?",
+  "yes": 0.0375,
+  "vol24": 579454.398608,
+  "end": "2026-10-01",
+  "slug": "what-price-will-wti-hit-in-september-2026",
+  "cond": "0x27b1c6c2bf872d5c3f1f549a7d4a144acb3964e26a2c372042dffd5f5471aaca"
+ },
+ {
+  "q": "Will WTI Crude Oil (WTI) hit (HIGH) $115 in September?",
+  "yes": 0.2105,
+  "vol24": 579454.398608,
+  "end": "2026-10-01",
+  "slug": "what-price-will-wti-hit-in-september-2026",
+  "cond": "0x774f7f3919ba2a94229d889bccf1c9c88347e21790c3d9d66d604c5be616c224"
+ },
+ {
+  "q": "Will WTI Crude Oil (WTI) hit (LOW) $85 in September?",
+  "yes": 0.15,
+  "vol24": 579454.398608,
+  "end": "2026-10-01",
+  "slug": "what-price-will-wti-hit-in-september-2026",
+  "cond": "0xa1c436770d0eab2961940d7320b769c57bd0c2fd6ef8387207de99a20c821702"
+ },
+ {
+  "q": "Will WTI Crude Oil (WTI) hit (LOW) $90 in September?",
+  "yes": 0.3295,
+  "vol24": 579454.398608,
+  "end": "2026-10-01",
+  "slug": "what-price-will-wti-hit-in-september-2026",
+  "cond": "0x62cf9f20cd870e990e8f369e96d3a57b82caa931e248355e843239a7ee7fd211"
+ },
+ {
+  "q": "Will WTI Crude Oil (WTI) hit (LOW) $95 in September?",
+  "yes": 0.565,
+  "vol24": 579454.398608,
+  "end": "2026-10-01",
+  "slug": "what-price-will-wti-hit-in-september-2026",
+  "cond": "0xc0fff3b5ed4d7c82647b11050d56629450902b05c1562d8476df1452ae46510a"
+ },
+ {
+  "q": "Will WTI Crude Oil (WTI) hit (HIGH) $125 in September?",
+  "yes": 0.0755,
+  "vol24": 579454.398608,
+  "end": "2026-10-01",
+  "slug": "what-price-will-wti-hit-in-september-2026",
+  "cond": "0x003d7bceaf2c8285495fc0bfad80c008016238dc119e873b4feb279d840bfca6"
+ },
+ {
+  "q": "Will WTI Crude Oil (WTI) hit (LOW) $100 in September?",
+  "yes": 0.83,
+  "vol24": 579454.398608,
+  "end": "2026-10-01",
+  "slug": "what-price-will-wti-hit-in-september-2026",
+  "cond": "0x3db052315d8e06325af1cc1009f33d4f2174bc7795c68b46f01b4ef34b2a06e0"
+ },
+ {
+  "q": "Will Luiz In\u00e1cio Lula da Silva win the 2026 Brazilian presidential election?",
+  "yes": 0.445,
+  "vol24": 405711.899065,
+  "end": "2026-10-04",
+  "slug": "brazil-presidential-election",
+  "cond": "0xdf8e2dc5860027decbe6164555c3c1c9645c3bd33e16b9dc57ca87125047d4a8"
+ },
+ {
+  "q": "Will Fl\u00e1vio Bolsonaro win the 2026 Brazilian presidential election?",
+  "yes": 0.5445,
+  "vol24": 405711.899065,
+  "end": "2026-10-04",
+  "slug": "brazil-presidential-election",
+  "cond": "0x1a01bf78f56a507fcb666d564d8c8b91b0750679163ed6e96746102c9b7d285d"
+ },
+ {
+  "q": "Will Elon Musk post 160-179 tweets from September 11 to September 18, 2026?",
+  "yes": 0.0465,
+  "vol24": 389875.457897,
+  "end": "2026-09-18",
+  "slug": "elon-musk-of-tweets-september-11-september-18-2026",
+  "cond": "0xc80307dfabb96cffbdd615abf23082104fdb777015e76c5779a10fab9f1c5dbc"
+ },
+ {
+  "q": "Will Elon Musk post 180-199 tweets from September 11 to September 18, 2026?",
+  "yes": 0.265,
+  "vol24": 389875.457897,
+  "end": "2026-09-18",
+  "slug": "elon-musk-of-tweets-september-11-september-18-2026",
+  "cond": "0xc9edea0ed9ea7ac560b2231302e153f64a059e09c08d8ed14b496305728d0770"
+ },
+ {
+  "q": "Will Elon Musk post 200-219 tweets from September 11 to September 18, 2026?",
+  "yes": 0.4,
+  "vol24": 389875.457897,
+  "end": "2026-09-18",
+  "slug": "elon-musk-of-tweets-september-11-september-18-2026",
+  "cond": "0x5899cb29acd77c44c2c832b031f4d3db09991cbee9441dcbfc78ae3733f12e7c"
+ },
+ {
+  "q": "Will Elon Musk post 220-239 tweets from September 11 to September 18, 2026?",
+  "yes": 0.205,
+  "vol24": 389875.457897,
+  "end": "2026-09-18",
+  "slug": "elon-musk-of-tweets-september-11-september-18-2026",
+  "cond": "0x628bee7486266ad03b6d7c0e64667c60d6d73a5d22b113747be2a77c4e26c580"
+ },
+ {
+  "q": "Will Elon Musk post 240-259 tweets from September 11 to September 18, 2026?",
+  "yes": 0.0755,
+  "vol24": 389875.457897,
+  "end": "2026-09-18",
+  "slug": "elon-musk-of-tweets-september-11-september-18-2026",
+  "cond": "0x967c7742cdf23f843b4aca4ca36abd466e30f93b355c943adfee8221f7ef4b7f"
+ },
+ {
+  "q": "Fed rate hike in 2026?",
+  "yes": 0.956,
+  "vol24": 315374.4514330002,
+  "end": "2026-12-09",
+  "slug": "fed-rate-hike-in-2026",
+  "cond": "0x80b3af88cb991980e8da1ce86b9794a0957f96ec98c29319dd7ba65e9744d82b"
+ },
+ {
+  "q": "Will there be no change in Fed interest rates after the October 2026 meeting?",
+  "yes": 0.625,
+  "vol24": 306897.783717,
+  "end": "2026-10-28",
+  "slug": "fed-decision-in-october-20260617190323537",
+  "cond": "0xdf9bf27ee5757c55b44b8b9826ddc9ec3a8809aa3278634c45edbb7fc8f1a3e3"
+ },
+ {
+  "q": "Will the Fed increase interest rates by 25 bps after the October 2026 meeting?",
+  "yes": 0.365,
+  "vol24": 306897.783717,
+  "end": "2026-10-28",
+  "slug": "fed-decision-in-october-20260617190323537",
+  "cond": "0x12aa13b3da17ceae1b0a59b5d5b77121e91bb79b4bb0b52bf6543ed3f8d0953b"
+ },
+ {
+  "q": "Will Elon Musk post 40-64 tweets from September 14 to September 16, 2026?",
+  "yes": 0.77,
+  "vol24": 273920.09806799993,
+  "end": "2026-09-16",
+  "slug": "elon-musk-of-tweets-september-14-september-16-2026",
+  "cond": "0xb449b234b55fa7c2f05567de73d626e43f984e00cb37286310324dd97a4d983a"
+ },
+ {
+  "q": "Will Elon Musk post 65-89 tweets from September 14 to September 16, 2026?",
+  "yes": 0.235,
+  "vol24": 273920.09806799993,
+  "end": "2026-09-16",
+  "slug": "elon-musk-of-tweets-september-14-september-16-2026",
+  "cond": "0x56aee94bd863662d3e59bdd9758dd53f51f00022f729708f88387501d9ceb4eb"
+ },
+ {
+  "q": "Israel x Iran ceasefire continues through September 30?",
+  "yes": 0.865,
+  "vol24": 256701.3915,
+  "end": "2026-09-30",
+  "slug": "israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963",
+  "cond": "0x524ce344b80a160c237d91a33efdd8b82468b0dc0d33f60d500f8bf69b80b8bb"
+ },
+ {
+  "q": "Israel x Iran ceasefire continues through October 31?",
+  "yes": 0.755,
+  "vol24": 256701.3915,
+  "end": "2026-10-31",
+  "slug": "israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963",
+  "cond": "0xc3d5708780de5528998aeb53ca90e7ade64804f9f2386392a681435d5c42b44d"
+ },
+ {
+  "q": "Israel x Iran ceasefire continues through December 31?",
+  "yes": 0.63,
+  "vol24": 256701.3915,
+  "end": "2026-12-31",
+  "slug": "israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963",
+  "cond": "0x1c4c6a698f0591ddf0c96e1beb56f8c75112ef849331bf3b0388f14830a7421d"
+ },
+ {
+  "q": "Israel x Iran ceasefire continues through November 30?",
+  "yes": 0.675,
+  "vol24": 256701.3915,
+  "end": "2026-11-30",
+  "slug": "israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963",
+  "cond": "0x2dcbc71a3f8108936e768b503d565fbda7a644b2a0bd9ed45f74982a2bb11fba"
+ },
+ {
+  "q": "Will Kylian Mbapp\u00e9 win the 2026 Ballon d'Or?",
+  "yes": 0.1155,
+  "vol24": 238364.138869,
+  "end": "2026-10-31",
+  "slug": "ballon-dor-winner-2026",
+  "cond": "0x87091dc5932f015d80c40e71e47cb043c3f8b6098484eb5bc3943cf35ee9afc1"
+ },
+ {
+  "q": "Will Lamine Yamal win the 2026 Ballon d'Or?",
+  "yes": 0.2215,
+  "vol24": 238364.138869,
+  "end": "2026-10-31",
+  "slug": "ballon-dor-winner-2026",
+  "cond": "0xa34edb6c898232378a9cc08744842df2cd89d278ba45b012bed3ac10c7241c4d"
+ },
+ {
+  "q": "Will Harry Kane win the 2026 Ballon d'Or?",
+  "yes": 0.5505,
+  "vol24": 238364.138869,
+  "end": "2026-10-31",
+  "slug": "ballon-dor-winner-2026",
+  "cond": "0x12dc2b61723b2a54fc1947a307389b5f32038e7a29a0e936ad1fe410b969d06a"
+ },
+ {
+  "q": "Will Rodri win the 2026 Ballon d'Or?",
+  "yes": 0.045,
+  "vol24": 238364.138869,
+  "end": "2026-10-31",
+  "slug": "ballon-dor-winner-2026",
+  "cond": "0x30f729ef18553d8956bfd7ae7a1e96dbad07e2476160239b23ec10e6cdc5f01b"
+ },
+ {
+  "q": "US announces end of Iranian blockade by September 30, 2026?",
+  "yes": 0.145,
+  "vol24": 223476.751214,
+  "end": "2026-10-01",
+  "slug": "us-announces-end-of-iranian-blockade-byptptpt-20260713152715080",
+  "cond": "0x30174f3f46398e37c96a07b45916e01eab9a8a854ecb624ac73a91a8490fd074"
+ },
+ {
+  "q": "US announces end of Iranian blockade by October 31, 2026?",
+  "yes": 0.325,
+  "vol24": 223476.751214,
+  "end": "2026-11-01",
+  "slug": "us-announces-end-of-iranian-blockade-byptptpt-20260713152715080",
+  "cond": "0xcee04ba47d02f6c64642369b34193c355f64de1b9ae425c71ea4efef1989d271"
+ },
+ {
+  "q": "US announces end of Iranian blockade by September 21, 2026?",
+  "yes": 0.0505,
+  "vol24": 223476.751214,
+  "end": "2026-09-22",
+  "slug": "us-announces-end-of-iranian-blockade-byptptpt-20260713152715080",
+  "cond": "0x71dd44fa5059fbed28a279172185d3623aa34ce86be1936281df26b5d1b87200"
+ },
+ {
+  "q": "Fed Rate Hike by September 2026 Meeting?",
+  "yes": 0.88,
+  "vol24": 187703.222363,
+  "end": "2026-12-09",
+  "slug": "fed-rate-hike-by",
+  "cond": "0x73d8a8208d23a74937d114a713d6a56cd4161a1068056c52ac74c8419c99da7c"
+ },
+ {
+  "q": "Fed Rate Hike by October 2026 Meeting?",
+  "yes": 0.915,
+  "vol24": 187703.222363,
+  "end": "2026-12-09",
+  "slug": "fed-rate-hike-by",
+  "cond": "0x059db22dae2d735516017d47d1def0ea43e5d7221259c3aaa60c090d32566d4e"
+ },
+ {
+  "q": "Will Benjamin Netanyahu be the next Prime Minister of Israel?",
+  "yes": 0.295,
+  "vol24": 175160.7151849999,
+  "end": "2026-12-31",
+  "slug": "who-will-be-the-next-prime-minister-of-israel-after-the-next-election",
+  "cond": "0x7586a96520578acaaaa4ea84a2582f197f84255da1f3392a7aa300386c187b37"
+ },
+ {
+  "q": "Will Naftali Bennett be the next Prime Minister of Israel?",
+  "yes": 0.095,
+  "vol24": 175160.7151849999,
+  "end": "2026-12-31",
+  "slug": "who-will-be-the-next-prime-minister-of-israel-after-the-next-election",
+  "cond": "0x9ed0ecc8b8589e67967d44c4420944a41b6a6806419019a1581d514174eee9b1"
+ },
+ {
+  "q": "Will Gadi Eizenkot be the next Prime Minister of Israel?",
+  "yes": 0.5275,
+  "vol24": 175160.7151849999,
+  "end": "2026-12-31",
+  "slug": "who-will-be-the-next-prime-minister-of-israel-after-the-next-election",
+  "cond": "0xdbe93b5a701f36076a560fa4b9ba59e365a6e8e2ea6a83764640010657277ca4"
+ },
+ {
+  "q": "Will Avigdor Lieberman be the next Prime Minister of Israel?",
+  "yes": 0.0565,
+  "vol24": 175160.7151849999,
+  "end": "2026-12-31",
+  "slug": "who-will-be-the-next-prime-minister-of-israel-after-the-next-election",
+  "cond": "0xadffc96f54f350b3655f72fe2853c81bfd705e9703f62469e6a14782ad5d4ec0"
+ },
+ {
+  "q": "Will the Democratic Party control the House after the 2026 Midterm elections?",
+  "yes": 0.875,
+  "vol24": 165640.34713499996,
+  "end": "2026-11-03",
+  "slug": "which-party-will-win-the-house-in-2026",
+  "cond": "0xd5d9fc47718bd553592d126b1fa5e87183d27f3936975b0c04cc0f2dec1f1bb4"
+ },
+ {
+  "q": "Will the Republican Party control the House after the 2026 Midterm elections?",
+  "yes": 0.135,
+  "vol24": 165640.34713499996,
+  "end": "2026-11-03",
+  "slug": "which-party-will-win-the-house-in-2026",
+  "cond": "0x4e4f77e7dbf4cab666e9a1943674d7ae66348e862df03ea6f44b11eb95731928"
+ },
+ {
+  "q": "Will Elon Musk post 140-159 tweets from September 15 to September 22, 2026?",
+  "yes": 0.065,
+  "vol24": 145795.831515,
+  "end": "2026-09-22",
+  "slug": "elon-musk-of-tweets-september-15-september-22-2026",
+  "cond": "0xa7c55e3018132fc97c7ed7567e5b37eeed4ff22e286d06dc21464489cc62ad64"
+ },
+ {
+  "q": "Will Elon Musk post 160-179 tweets from September 15 to September 22, 2026?",
+  "yes": 0.135,
+  "vol24": 145795.831515,
+  "end": "2026-09-22",
+  "slug": "elon-musk-of-tweets-september-15-september-22-2026",
+  "cond": "0xc16ac59786736604862ea53d792482da8024eb1c2a51e0771ccb7ec7b5083e02"
+ },
+ {
+  "q": "Will Elon Musk post 180-199 tweets from September 15 to September 22, 2026?",
+  "yes": 0.215,
+  "vol24": 145795.831515,
+  "end": "2026-09-22",
+  "slug": "elon-musk-of-tweets-september-15-september-22-2026",
+  "cond": "0x7d13ee633f71e62f2232e5d55cc8607b8fd90d3b1d2e5ca9fdf6738ee8d41f77"
+ },
+ {
+  "q": "Will Elon Musk post 200-219 tweets from September 15 to September 22, 2026?",
+  "yes": 0.195,
+  "vol24": 145795.831515,
+  "end": "2026-09-22",
+  "slug": "elon-musk-of-tweets-september-15-september-22-2026",
+  "cond": "0x9227f6d5f9d954b8a9aceee4c468e5161db234628d37988a798af16b4f94a326"
+ },
+ {
+  "q": "Will Elon Musk post 220-239 tweets from September 15 to September 22, 2026?",
+  "yes": 0.165,
+  "vol24": 145795.831515,
+  "end": "2026-09-22",
+  "slug": "elon-musk-of-tweets-september-15-september-22-2026",
+  "cond": "0xe3576c82a43b9b4f70d6818b9a91655b313f34f7a1cebb5a01c3f3b05430258e"
+ },
+ {
+  "q": "Will Elon Musk post 240-259 tweets from September 15 to September 22, 2026?",
+  "yes": 0.105,
+  "vol24": 145795.831515,
+  "end": "2026-09-22",
+  "slug": "elon-musk-of-tweets-september-15-september-22-2026",
+  "cond": "0x75f547fe13b9eebd68a868b8699b76d1e938d6641dd24b94979771d9ca304d50"
+ },
+ {
+  "q": "Will Elon Musk post 260-279 tweets from September 15 to September 22, 2026?",
+  "yes": 0.065,
+  "vol24": 145795.831515,
+  "end": "2026-09-22",
+  "slug": "elon-musk-of-tweets-september-15-september-22-2026",
+  "cond": "0x9c72e293d765a52527c65d44b773642860e7acdc58697f0aaa08fc1cfdd8f078"
+ },
+ {
+  "q": "Bab el-Mandeb Strait effectively closed by September 30?",
+  "yes": 0.0505,
+  "vol24": 140865.28153500002,
+  "end": "2026-10-01",
+  "slug": "bab-el-mandeb-strait-effectively-closed-by",
+  "cond": "0x95fc6a4ed7f6856d26aa7f21b9f902d05c9cf76b616fd3463de4d147f7a9126b"
+ },
+ {
+  "q": "Bab el-Mandeb Strait effectively closed by October 31?",
+  "yes": 0.165,
+  "vol24": 140865.28153500002,
+  "end": "2026-11-01",
+  "slug": "bab-el-mandeb-strait-effectively-closed-by",
+  "cond": "0x9bb80411fb159d9f3798fe125672a61af141f7dc7d5465c14a5936e4ba878e49"
+ },
+ {
+  "q": "2026 Balance of Power: D Senate, D House",
+  "yes": 0.585,
+  "vol24": 128054.638154,
+  "end": "2026-11-03",
+  "slug": "balance-of-power-2026-midterms",
+  "cond": "0x16c63b7cc37f012b9f59ee164ec03877914c701d06d48291ae8d6fc08a088b0d"
+ },
+ {
+  "q": "2026 Balance of Power: R Senate, D House",
+  "yes": 0.325,
+  "vol24": 128054.638154,
+  "end": "2026-11-03",
+  "slug": "balance-of-power-2026-midterms",
+  "cond": "0x998bc71817b2d76921d1999ce0f3431cfd5945583667a371280ca2b430b0c06e"
+ },
+ {
+  "q": "2026 Balance of Power: R Senate, R House",
+  "yes": 0.105,
+  "vol24": 128054.638154,
+  "end": "2026-11-03",
+  "slug": "balance-of-power-2026-midterms",
+  "cond": "0xc5eae79d1ffe716572353962eb926b1e3964c500a4880a7a94f58408218ee76b"
+ },
+ {
+  "q": "Saudi Oil Pipeline (East-West) restarts by September 30?",
+  "yes": 0.445,
+  "vol24": 107228.874954,
+  "end": "2026-10-01",
+  "slug": "saudi-oil-pipeline-east-west-restarts-byptptpt",
+  "cond": "0x2a25f3fd54fd0b18fee936f7f6b701e119c86f08f6d2a621b995193851014fb3"
+ },
+ {
+  "q": "Will Ulf Kristersson be the next Prime Minister of Sweden?",
+  "yes": 0.105,
+  "vol24": 93329.45855300003,
+  "end": "2026-09-13",
+  "slug": "next-prime-minister-of-sweden",
+  "cond": "0x8a42bb4cb9b9f157b539611f6a8c122388f652570cfc3c07d538e7df2bb78894"
+ },
+ {
+  "q": "Will Magdalena Andersson be the next Prime Minister of Sweden?",
+  "yes": 0.875,
+  "vol24": 93329.45855300003,
+  "end": "2026-09-13",
+  "slug": "next-prime-minister-of-sweden",
+  "cond": "0x58d5cc2bf06a3289b127049239aee051f3b941f219efebbca02d3f50f0eb2a64"
+ },
+ {
+  "q": "Will CDU win the most seats in the 2026 Berlin state elections?",
+  "yes": 0.265,
+  "vol24": 91736.76906299999,
+  "end": "2026-09-20",
+  "slug": "berlin-state-election-winner",
+  "cond": "0x71a21eab87c301a53f2f33fad4dca7a1e7da8911b847c82ca37ed49d859a17a0"
+ },
+ {
+  "q": "Will AfD win the most seats in the 2026 Berlin state elections?",
+  "yes": 0.0745,
+  "vol24": 91736.76906299999,
+  "end": "2026-09-20",
+  "slug": "berlin-state-election-winner",
+  "cond": "0x8aaaca6ea5c037d3cdfe85272ab9029b7165694dcae8af0de5071f01a1a944f0"
+ },
+ {
+  "q": "Will Linke win the most seats in the 2026 Berlin state elections?",
+  "yes": 0.655,
+  "vol24": 91736.76906299999,
+  "end": "2026-09-20",
+  "slug": "berlin-state-election-winner",
+  "cond": "0xda4fbe6eec3d6cc6f6d14785f25f86823514b0b4b37c63227af5b2670f2627f4"
+ },
+ {
+  "q": "Iran charges Hormuz fees by October 31?",
+  "yes": 0.155,
+  "vol24": 88739.219164,
+  "end": "2026-11-01",
+  "slug": "iran-charges-hormuz-fees-byptptpt-20260625175035466",
+  "cond": "0xb818eb1084fdbc85161dda72c93e1e2da6eb3cc675aa815becb69f45f30683c9"
+ },
+ {
+  "q": "Iran charges Hormuz fees by September 30?",
+  "yes": 0.045,
+  "vol24": 88739.219164,
+  "end": "2026-10-01",
+  "slug": "iran-charges-hormuz-fees-byptptpt-20260625175035466",
+  "cond": "0x6b6fc067a481ea2426eab480e4041751f2d21b3af575e08be54d20f6dcdfe783"
+ },
+ {
+  "q": "Will Luiz In\u00e1cio Lula da Silva finish in second place in the first round of the 2026 Brazilian presidential election?",
+  "yes": 0.2355,
+  "vol24": 84209.73966500004,
+  "end": "2026-10-04",
+  "slug": "brazil-presidential-election-first-round-2nd-place",
+  "cond": "0x8ee27c276a1bee094293751285d8a6697674b023196cb21fdd14bf3ca12f6ec0"
+ },
+ {
+  "q": "Will Fl\u00e1vio Bolsonaro finish in second place in the first round of the 2026 Brazilian presidential election?",
+  "yes": 0.755,
+  "vol24": 84209.73966500004,
+  "end": "2026-10-04",
+  "slug": "brazil-presidential-election-first-round-2nd-place",
+  "cond": "0x6114306f724135bd1db2f5f3169386decf18f618653c196ef0a6c1afd27f4c73"
+ },
+ {
+  "q": "Will the Fed decrease interest rates by 25 bps after the December 2026 meeting?",
+  "yes": 0.039,
+  "vol24": 82504.50749199999,
+  "end": "2026-12-09",
+  "slug": "fed-decision-in-december-20260729232808632",
+  "cond": "0xf17ad24eb4ad57926495b114149c765b9b95bc286eadc91cbbfa901ceb10d0b8"
+ },
+ {
+  "q": "Will there be no change in Fed interest rates after the December 2026 meeting?",
+  "yes": 0.36,
+  "vol24": 82504.50749199999,
+  "end": "2026-12-09",
+  "slug": "fed-decision-in-december-20260729232808632",
+  "cond": "0x723822eb2b143cee54c0bd7c1efba322b21f0051984c266df8879c394f1011c0"
+ },
+ {
+  "q": "Will the Fed increase interest rates by 25 bps after the December 2026 meeting?",
+  "yes": 0.585,
+  "vol24": 82504.50749199999,
+  "end": "2026-12-09",
+  "slug": "fed-decision-in-december-20260729232808632",
+  "cond": "0x8a4196617dcb703e49d9bb36d3847bf6a75fd364dbd19f8d408ac944bf1a03d8"
+ },
+ {
+  "q": "Will no Fed rate cuts happen in 2026?",
+  "yes": 0.9295,
+  "vol24": 76993.078042,
+  "end": "2026-12-31",
+  "slug": "how-many-fed-rate-cuts-in-2026",
+  "cond": "0xd4e77ba6f29fc093509d24f508631abd445ecf506bbdc9c4c80e60256a318527"
+ },
+ {
+  "q": "Will 1 Fed rate cut happen in 2026?",
+  "yes": 0.0575,
+  "vol24": 76993.078042,
+  "end": "2026-12-31",
+  "slug": "how-many-fed-rate-cuts-in-2026",
+  "cond": "0x5e082f0b57f47a29044aa35b4c5658393122e659d5feae521c06b57cdd7f905c"
+ },
+ {
+  "q": "Will Yulia Navalnaya win the Nobel Peace Prize in 2026?",
+  "yes": 0.075,
+  "vol24": 73172.99144500004,
+  "end": "2026-10-10",
+  "slug": "nobel-peace-prize-winner-2026-139",
+  "cond": "0xae76ef049f09b109cfb0a9bfa2335d7c9fde5bd262c64548b43308c810c314ec"
+ },
+ {
+  "q": "Will UNRWA win the Nobel Peace Prize in 2026?",
+  "yes": 0.0705,
+  "vol24": 73172.99144500004,
+  "end": "2026-10-10",
+  "slug": "nobel-peace-prize-winner-2026-139",
+  "cond": "0xb3fefe9667acca5ca31a8e330219dc67a01b374331d9bf4875357655a5508815"
+ },
+ {
+  "q": "Will the International Court of Justice win the Nobel Peace Prize in 2026?",
+  "yes": 0.0525,
+  "vol24": 73172.99144500004,
+  "end": "2026-10-10",
+  "slug": "nobel-peace-prize-winner-2026-139",
+  "cond": "0x36081a32ac369bad207447fa2bc5d6d663fb576e935178a4a297931ec571f5d1"
+ },
+ {
+  "q": "Will Sudan's Emergency Response Rooms win the Nobel Peace Prize in 2026?",
+  "yes": 0.0915,
+  "vol24": 73172.99144500004,
+  "end": "2026-10-10",
+  "slug": "nobel-peace-prize-winner-2026-139",
+  "cond": "0xf43c1ec924a35e1f55453c31b662ea65e623ca9d21aeec1b2af24844567f15c9"
+ },
+ {
+  "q": "Will Save the Children win the Nobel Peace Prize in 2026?",
+  "yes": 0.0695,
+  "vol24": 73172.99144500004,
+  "end": "2026-10-10",
+  "slug": "nobel-peace-prize-winner-2026-139",
+  "cond": "0x203d265db32b42e82c6d5152fe16498e995d7696ce6de64643bbca4318e2b325"
+ },
+ {
+  "q": "Will Sara Al-Saqqa win the Nobel Peace Prize in 2026?",
+  "yes": 0.032,
+  "vol24": 73172.99144500004,
+  "end": "2026-10-10",
+  "slug": "nobel-peace-prize-winner-2026-139",
+  "cond": "0x5ac101a0e4d46ce341b9740c05c70c70541abaec7a9174360c9e73416abf7ba3"
+ },
+ {
+  "q": "Will the Democratic Party control the Senate after the 2026 Midterm elections?",
+  "yes": 0.585,
+  "vol24": 67571.300555,
+  "end": "2026-11-03",
+  "slug": "which-party-will-win-the-senate-in-2026",
+  "cond": "0x307a1ed89d60b61002dd5bbf00e1408c5ed2ab3fcdb056191ca7ef9bc34d38f3"
+ },
+ {
+  "q": "Will the Republican Party control the Senate after the 2026 Midterm elections?",
+  "yes": 0.425,
+  "vol24": 67571.300555,
+  "end": "2026-11-03",
+  "slug": "which-party-will-win-the-senate-in-2026",
+  "cond": "0x86bfb53af7250a40928975c551d12c185b762fa4ce0b40c6a64a50c946d72587"
+ },
+ {
+  "q": "Will Anthropic have the best AI model at the end of September 2026?",
+  "yes": 0.959,
+  "vol24": 57404.36116000001,
+  "end": "2026-10-01",
+  "slug": "which-company-has-the-best-ai-model-end-of-september-20260717143435868",
+  "cond": "0x537df24dbae425e973a421983b6ee570d582cac06b5fdbebef099d3d07913985"
+ },
+ {
+  "q": "Will Company A have the best AI model at the end of September 2026?",
+  "yes": 0.5,
+  "vol24": 57404.36116000001,
+  "end": "2026-09-30",
+  "slug": "which-company-has-the-best-ai-model-end-of-september-20260717143435868",
+  "cond": "0x3bea5aaf508416672c56966766a5199d6a73f53555d9e15ad33ffc07c332fda3"
+ },
+ {
+  "q": "Will Company B have the best AI model at the end of September 2026?",
+  "yes": 0.5,
+  "vol24": 57404.36116000001,
+  "end": "2026-09-30",
+  "slug": "which-company-has-the-best-ai-model-end-of-september-20260717143435868",
+  "cond": "0xda23b3a58f484db79cb3c081d5ab26347415be17469457cc2f91d700839cccf7"
+ },
+ {
+  "q": "Will Company C have the best AI model at the end of September 2026?",
+  "yes": 0.5,
+  "vol24": 57404.36116000001,
+  "end": "2026-09-30",
+  "slug": "which-company-has-the-best-ai-model-end-of-september-20260717143435868",
+  "cond": "0x6dc791b15b723f81767e675759f1d50deb1b1e8d3631580e8837a2fc01ca650c"
+ },
+ {
+  "q": "Will Company D have the best AI model at the end of September 2026?",
+  "yes": 0.5,
+  "vol24": 57404.36116000001,
+  "end": "2026-09-30",
+  "slug": "which-company-has-the-best-ai-model-end-of-september-20260717143435868",
+  "cond": "0x72b30aae95365ff15ac5df19c847d4bce9600c8ffe48516a4bba196b1374dbd8"
+ },
+ {
+  "q": "Will Company E have the best AI model at the end of September 2026?",
+  "yes": 0.5,
+  "vol24": 57404.36116000001,
+  "end": "2026-09-30",
+  "slug": "which-company-has-the-best-ai-model-end-of-september-20260717143435868",
+  "cond": "0xafc6b198da07b59a2b7a21b1cac6cb35a496b9d098c265cd0482259220147878"
+ },
+ {
+  "q": "Will Company F have the best AI model at the end of September 2026?",
+  "yes": 0.5,
+  "vol24": 57404.36116000001,
+  "end": "2026-09-30",
+  "slug": "which-company-has-the-best-ai-model-end-of-september-20260717143435868",
+  "cond": "0x7d2ffdfbc853a71889d64c1d09c96777c6596ffc325f78238c485f10bd9c3fe5"
+ },
+ {
+  "q": "Will Company G have the best AI model at the end of September 2026?",
+  "yes": 0.5,
+  "vol24": 57404.36116000001,
+  "end": "2026-09-30",
+  "slug": "which-company-has-the-best-ai-model-end-of-september-20260717143435868",
+  "cond": "0x13d5b3de9c77c70bb15128d27c77d70fe9610f95b997561d0962e674a140037a"
+ },
+ {
+  "q": "Will Company H have the best AI model at the end of September 2026?",
+  "yes": 0.5,
+  "vol24": 57404.36116000001,
+  "end": "2026-09-30",
+  "slug": "which-company-has-the-best-ai-model-end-of-september-20260717143435868",
+  "cond": "0xf001dfb642f6f1524b8cdc3bd5ed1ecbe68ba9ab0e5db9c71d1395c77e6836a4"
+ },
+ {
+  "q": "Will Company I have the best AI model at the end of September 2026?",
+  "yes": 0.5,
+  "vol24": 57404.36116000001,
+  "end": "2026-09-30",
+  "slug": "which-company-has-the-best-ai-model-end-of-september-20260717143435868",
+  "cond": "0x5ad92e46ef2fadbfbb3e0214edd866627bc7ad8bb80295756fe6f92bea10ce04"
+ },
+ {
+  "q": "Will Company K have the best AI model at the end of September 2026?",
+  "yes": 0.5,
+  "vol24": 57404.36116000001,
+  "end": "2026-09-30",
+  "slug": "which-company-has-the-best-ai-model-end-of-september-20260717143435868",
+  "cond": "0x3d3664575d6a0778a49d350d6358279ea4fdbcc327a4557a1210214d58747842"
+ },
+ {
+  "q": "Will any other company have the best AI model at the end of September 2026?",
+  "yes": 0.5,
+  "vol24": 57404.36116000001,
+  "end": "2026-09-30",
+  "slug": "which-company-has-the-best-ai-model-end-of-september-20260717143435868",
+  "cond": "0x937ae0110c417fa6e6019ae8bb76ed17d9d45d05d2795690f7e1fbd2c8c05eec"
+ },
+ {
+  "q": "Strait of Hormuz traffic returns to normal by December 31?",
+  "yes": 0.175,
+  "vol24": 57295.12461,
+  "end": "2026-12-31",
+  "slug": "strait-of-hormuz-traffic-returns-to-normal-by-december-31",
+  "cond": "0x5c79dfde05559b79a9cb9f7c4187e4d49632dd042572ae676952f812732591cc"
+ },
+ {
+  "q": "Will Moderate Party (M) win between 18% and 20% of all valid votes?",
+  "yes": 0.94,
+  "vol24": 56636.023139000004,
+  "end": "2026-09-13",
+  "slug": "sweden-parliamentary-election-m-vote-share-20260812172636430",
+  "cond": "0xdf4a741cdcd3c26e34d80c33cddab6968db8411e1b97bf255e50dd42e54bdd41"
+ },
+ {
+  "q": "Will Moderate Party (M) win at least 20% of all valid votes?",
+  "yes": 0.063,
+  "vol24": 56636.023139000004,
+  "end": "2026-09-13",
+  "slug": "sweden-parliamentary-election-m-vote-share-20260812172636430",
+  "cond": "0xdd725685718b2d500be6f5dd469a405c8ccc24dcde8c8ff9e372a42567c9905d"
+ },
+ {
+  "q": "Will Elon Musk post 120-139 tweets from September 18 to September 25, 2026?",
+  "yes": 0.0375,
+  "vol24": 55418.010747,
+  "end": "2026-09-25",
+  "slug": "elon-musk-of-tweets-september-18-september-25-2026",
+  "cond": "0x077a9db2f8914e1cf268ba5a267aeb7ae9ba460ba11f95c42419173e305ac91b"
+ },
+ {
+  "q": "Will Elon Musk post 140-159 tweets from September 18 to September 25, 2026?",
+  "yes": 0.095,
+  "vol24": 55418.010747,
+  "end": "2026-09-25",
+  "slug": "elon-musk-of-tweets-september-18-september-25-2026",
+  "cond": "0x70cc67833f54404868b92c076d48a4f426eb2e21974c29c9c54a74cef44bf298"
+ },
+ {
+  "q": "Will Elon Musk post 160-179 tweets from September 18 to September 25, 2026?",
+  "yes": 0.175,
+  "vol24": 55418.010747,
+  "end": "2026-09-25",
+  "slug": "elon-musk-of-tweets-september-18-september-25-2026",
+  "cond": "0xcbccd87e8ec895eb8ffccdbf76df9a3bd17944c81398f0922a4b7a9afd0ef2d8"
+ },
+ {
+  "q": "Will Elon Musk post 180-199 tweets from September 18 to September 25, 2026?",
+  "yes": 0.185,
+  "vol24": 55418.010747,
+  "end": "2026-09-25",
+  "slug": "elon-musk-of-tweets-september-18-september-25-2026",
+  "cond": "0xe5ad1c47dfd07eafb4f8b7ae8d1e9d978e6b9510393f244de8bce50a4a98017e"
+ },
+ {
+  "q": "Will Elon Musk post 200-219 tweets from September 18 to September 25, 2026?",
+  "yes": 0.175,
+  "vol24": 55418.010747,
+  "end": "2026-09-25",
+  "slug": "elon-musk-of-tweets-september-18-september-25-2026",
+  "cond": "0x4fc25fee8664951e58b6d7521abdedeff951ee697b43bf61af8fe731812b050e"
+ },
+ {
+  "q": "Will Elon Musk post 220-239 tweets from September 18 to September 25, 2026?",
+  "yes": 0.115,
+  "vol24": 55418.010747,
+  "end": "2026-09-25",
+  "slug": "elon-musk-of-tweets-september-18-september-25-2026",
+  "cond": "0xd6bf2f10f9f81192dd87540b6d4a3ae856cf2cf8d810fe9060f018ecf13af793"
+ },
+ {
+  "q": "Will Elon Musk post 240-259 tweets from September 18 to September 25, 2026?",
+  "yes": 0.085,
+  "vol24": 55418.010747,
+  "end": "2026-09-25",
+  "slug": "elon-musk-of-tweets-september-18-september-25-2026",
+  "cond": "0x61bc3e6995ed66ea0c8e6d2e3c796de191c77dfbb7b82de8f178bb0246352362"
+ },
+ {
+  "q": "Will Elon Musk post 260-279 tweets from September 18 to September 25, 2026?",
+  "yes": 0.055,
+  "vol24": 55418.010747,
+  "end": "2026-09-25",
+  "slug": "elon-musk-of-tweets-september-18-september-25-2026",
+  "cond": "0x312d21c6cdbddf26c51697ddcd8d06ad063d06fb2d4ea34befb0c260142f8a76"
+ },
+ {
+  "q": "Will Elon Musk post 280-299 tweets from September 18 to September 25, 2026?",
+  "yes": 0.0405,
+  "vol24": 55418.010747,
+  "end": "2026-09-25",
+  "slug": "elon-musk-of-tweets-september-18-september-25-2026",
+  "cond": "0x433e8cd3728bd5e4a5f7e5d77ad4f134aa8cc04c1352c2c9f82039dc1f6a8bcb"
+ },
+ {
+  "q": "Will United Russia win fewer than 280 seats in the next Russian State Duma election?",
+  "yes": 0.0355,
+  "vol24": 53923.004088999995,
+  "end": "2026-09-20",
+  "slug": "how-many-seats-will-united-russia-win-in-the-next-russian-legislative-election",
+  "cond": "0x430751274480232547064a75eb29ceead00b95cf3e21709911a147cfada04e16"
+ },
+ {
+  "q": "Will United Russia win between 295 and 309 seats in the next Russian State Duma election?",
+  "yes": 0.0415,
+  "vol24": 53923.004088999995,
+  "end": "2026-09-20",
+  "slug": "how-many-seats-will-united-russia-win-in-the-next-russian-legislative-election",
+  "cond": "0x0a9bb5f9c32f57b1683bec4170da0a1116876f2bf0665a1ec9bf6c6db76d2f57"
+ },
+ {
+  "q": "Will United Russia win between 310 and 324 seats in the next Russian State Duma election?",
+  "yes": 0.174,
+  "vol24": 53923.004088999995,
+  "end": "2026-09-20",
+  "slug": "how-many-seats-will-united-russia-win-in-the-next-russian-legislative-election",
+  "cond": "0x8e41c5c2c887553ea7cce7f3644b50c62c8ab55238b50e939048f6d71aae6d4c"
+ },
+ {
+  "q": "Will United Russia win between 325 and 339 seats in the next Russian State Duma election?",
+  "yes": 0.425,
+  "vol24": 53923.004088999995,
+  "end": "2026-09-20",
+  "slug": "how-many-seats-will-united-russia-win-in-the-next-russian-legislative-election",
+  "cond": "0xe62ab836381dd820968f6b58ab546958aaa63de184c48bc6e0522d551807e1b1"
+ },
+ {
+  "q": "Will United Russia win between 340 and 354 seats in the next Russian State Duma election?",
+  "yes": 0.245,
+  "vol24": 53923.004088999995,
+  "end": "2026-09-20",
+  "slug": "how-many-seats-will-united-russia-win-in-the-next-russian-legislative-election",
+  "cond": "0x5ee38949a4ba69f716052e5139b03953e2ecf79e8130d583f92acd87e3c1ca68"
+ },
+ {
+  "q": "Will United Russia win 355 or more seats in the next Russian State Duma election?",
+  "yes": 0.045,
+  "vol24": 53923.004088999995,
+  "end": "2026-09-20",
+  "slug": "how-many-seats-will-united-russia-win-in-the-next-russian-legislative-election",
+  "cond": "0x2421eb7f6db120f7fa8a4bac72805d412a397b3d99bcb1202a05cf9b35f63176"
+ },
+ {
+  "q": "NATO x Russia military clash by October 31, 2026?",
+  "yes": 0.135,
+  "vol24": 53740.612845999996,
+  "end": "2026-11-01",
+  "slug": "nato-x-russia-military-clash-in-2025",
+  "cond": "0x2a4fcda5c1598fc8621cf96cabc410f9f23a2d0336c3bff5070a37a663d39e94"
+ },
+ {
+  "q": "US x Iran diplomatic meeting by September 30, 2026?",
+  "yes": 0.065,
+  "vol24": 52259.07709,
+  "end": "2026-09-30",
+  "slug": "next-round-of-us-iran-peace-talks-byptptpt-20260623022722982",
+  "cond": "0xed5a9e7831ee363d92cb102f2c21e2465b09196ef5beb7c8e23671851a1c3ca4"
+ },
+ {
+  "q": "US x Iran diplomatic meeting by December 31, 2026?",
+  "yes": 0.365,
+  "vol24": 52259.07709,
+  "end": "2026-12-31",
+  "slug": "next-round-of-us-iran-peace-talks-byptptpt-20260623022722982",
+  "cond": "0x7a833b2745bc6911db3ef244e37287c9ab1be1e63ee71266d2c79326cafbe285"
+ },
+ {
+  "q": "US x Iran diplomatic meeting by October 31, 2026?",
+  "yes": 0.205,
+  "vol24": 52259.07709,
+  "end": "2026-10-31",
+  "slug": "next-round-of-us-iran-peace-talks-byptptpt-20260623022722982",
+  "cond": "0xf59c65f8c75e1140bdda92fc572fa421137b11d690106a3665888cfc391a1265"
+ },
+ {
+  "q": "Will the highest temperature in Chengdu be 25\u00b0C on September 16?",
+  "yes": 0.63,
+  "vol24": 51824.482929,
+  "end": "2026-09-16",
+  "slug": "highest-temperature-in-chengdu-on-september-16-2026",
+  "cond": "0xac2c07509640e4266e846c5c56f09b9ee65fdba2b9ecb4f0e6c94eac29a02516"
+ },
+ {
+  "q": "Will the highest temperature in Chengdu be 26\u00b0C on September 16?",
+  "yes": 0.28,
+  "vol24": 51824.482929,
+  "end": "2026-09-16",
+  "slug": "highest-temperature-in-chengdu-on-september-16-2026",
+  "cond": "0x4dcffd1f1fe6697830ca67a6821e2bf9046ac6053858e8ec3ddc4d7ebfd63209"
+ },
+ {
+  "q": "Will the highest temperature in Chengdu be 27\u00b0C on September 16?",
+  "yes": 0.04,
+  "vol24": 51824.482929,
+  "end": "2026-09-16",
+  "slug": "highest-temperature-in-chengdu-on-september-16-2026",
+  "cond": "0x831df76b909af82eb37e33c94cc8446dcdb85c305aeea8abdcae9513ce3ad401"
+ },
+ {
+  "q": "Will AfD win the most seats in the 2026 Mecklenburg-Vorpommern parliamentary elections?",
+  "yes": 0.785,
+  "vol24": 49778.964924,
+  "end": "2026-09-20",
+  "slug": "mecklenburg-vorpommern-parliamentary-election-winner",
+  "cond": "0x6c9bd12ca2dded7eb4c688a3200e94f143cc95984eb1952ab71f7ec31e07cf8c"
+ },
+ {
+  "q": "Will SPD win the most seats in the 2026 Mecklenburg-Vorpommern parliamentary elections?",
+  "yes": 0.215,
+  "vol24": 49778.964924,
+  "end": "2026-09-20",
+  "slug": "mecklenburg-vorpommern-parliamentary-election-winner",
+  "cond": "0x7742a04b33fb5a5b15474a7c70f3c073922c1f471bddc66ceb01c1ffd1841829"
+ },
+ {
+  "q": "Will XRP reach $2.00 in September?",
+  "yes": 0.033,
+  "vol24": 47744.934551,
+  "end": "2026-10-01",
+  "slug": "what-price-will-xrp-hit-in-september-2026",
+  "cond": "0x44dbb8bf87924f72315532b9faffc1857fa3a9a0383fd3c01aa2f38d2eac37a2"
+ },
+ {
+  "q": "Will XRP reach $1.80 in September?",
+  "yes": 0.047,
+  "vol24": 47744.934551,
+  "end": "2026-10-01",
+  "slug": "what-price-will-xrp-hit-in-september-2026",
+  "cond": "0x6a5bcf9ba4631be62942a81bc1e32eb757fdacb65480e75fcd973bfed35feadb"
+ },
+ {
+  "q": "Will XRP reach $1.60 in September?",
+  "yes": 0.14,
+  "vol24": 47744.934551,
+  "end": "2026-10-01",
+  "slug": "what-price-will-xrp-hit-in-september-2026",
+  "cond": "0x68ccbd06115828a02f956c7eaa909be90afb7c40270de27c7da6d3e3b8057056"
+ },
+ {
+  "q": "Will XRP dip to $1.20 in September?",
+  "yes": 0.63,
+  "vol24": 47744.934551,
+  "end": "2026-10-01",
+  "slug": "what-price-will-xrp-hit-in-september-2026",
+  "cond": "0x2902fa2c3bce56acf7022951de5da5bca0d4ba8afa471af3d2a2f1d8a311f4bd"
+ },
+ {
+  "q": "Will XRP dip to $1.00 in September?",
+  "yes": 0.111,
+  "vol24": 47744.934551,
+  "end": "2026-10-01",
+  "slug": "what-price-will-xrp-hit-in-september-2026",
+  "cond": "0x28a8d175d508a71c4d25f7b3895f111c8c43a608d7afd4cf025e7c23f18bf642"
+ },
+ {
+  "q": "Will MrBeast Gaming's next video get between 40 and 45 million views in week 1?",
+  "yes": 0.7575,
+  "vol24": 44103.791637,
+  "end": "2026-09-20",
+  "slug": "of-views-of-mrbeast-gaming-video-week-1-20260910",
+  "cond": "0xd5c97186630b4e22940586f42b3587e69229ac0bbe6cdffd7d58397a085c407f"
+ },
+ {
+  "q": "Will MrBeast Gaming's next video get between 45 and 50 million views in week 1?",
+  "yes": 0.225,
+  "vol24": 44103.791637,
+  "end": "2026-09-20",
+  "slug": "of-views-of-mrbeast-gaming-video-week-1-20260910",
+  "cond": "0x272cb1ccdfd646b13c9556c68a11c37bd04c55aab65e9fc9bd14e40787bc3449"
+ },
+ {
+  "q": "Will the total domestic gross for Spider-Man: Brand New Day be between 940m and 950m by September 30?",
+  "yes": 0.635,
+  "vol24": 43336.197836,
+  "end": "2026-10-01",
+  "slug": "spider-man-brand-new-day-total-domestic-gross-by-september-30",
+  "cond": "0x5eb0d321154b4eeea0a92af0ab86426e0217b9f068574f5baf2226df57dab90e"
+ },
+ {
+  "q": "Will the total domestic gross for Spider-Man: Brand New Day be between 950m and 960m by September 30?",
+  "yes": 0.375,
+  "vol24": 43336.197836,
+  "end": "2026-10-01",
+  "slug": "spider-man-brand-new-day-total-domestic-gross-by-september-30",
+  "cond": "0xcce65f93aa0eaeb1ceed4fef2093894e8a1c92309f9a7b8ce38852bd12f2790a"
+ },
+ {
+  "q": "Will United States of America win the 46th FIDE Chess Olympiad Open Tournament?",
+  "yes": 0.245,
+  "vol24": 41415.682973999996,
+  "end": "2026-09-28",
+  "slug": "46th-fide-chess-olympiad-open-tournament-winner-20260716211453703",
+  "cond": "0xb1a67b00d51ba602459c39b64f6a6798fcc03c03a634af9fa3febe584b6d0d2d"
+ },
+ {
+  "q": "Will India win the 46th FIDE Chess Olympiad Open Tournament?",
+  "yes": 0.19,
+  "vol24": 41415.682973999996,
+  "end": "2026-09-28",
+  "slug": "46th-fide-chess-olympiad-open-tournament-winner-20260716211453703",
+  "cond": "0xa0b06a52af7e4e9dac91b4d538da0c705c84d7b211cf5adaedae6080c61164be"
+ },
+ {
+  "q": "Will Uzbekistan win the 46th FIDE Chess Olympiad Open Tournament?",
+  "yes": 0.305,
+  "vol24": 41415.682973999996,
+  "end": "2026-09-28",
+  "slug": "46th-fide-chess-olympiad-open-tournament-winner-20260716211453703",
+  "cond": "0xb19a95b81af946052b313b0f48318ddaba0244ee096ca4f3b0d344e0191d6a6f"
+ },
+ {
+  "q": "Will China win the 46th FIDE Chess Olympiad Open Tournament?",
+  "yes": 0.065,
+  "vol24": 41415.682973999996,
+  "end": "2026-09-28",
+  "slug": "46th-fide-chess-olympiad-open-tournament-winner-20260716211453703",
+  "cond": "0xd4117a71c5bad2a3b1de049d4b139bf251962e07b8b95e635815c102242534be"
+ },
+ {
+  "q": "Will Azerbaijan win the 46th FIDE Chess Olympiad Open Tournament?",
+  "yes": 0.0305,
+  "vol24": 41415.682973999996,
+  "end": "2026-09-28",
+  "slug": "46th-fide-chess-olympiad-open-tournament-winner-20260716211453703",
+  "cond": "0x49dea207c090bc9033dbc039c30d5189109f471cbbf9cc995059a4e624c4a575"
+ },
+ {
+  "q": "Will Germany win the 46th FIDE Chess Olympiad Open Tournament?",
+  "yes": 0.0315,
+  "vol24": 41415.682973999996,
+  "end": "2026-09-28",
+  "slug": "46th-fide-chess-olympiad-open-tournament-winner-20260716211453703",
+  "cond": "0xc6e8591ea596f395d740327c936940fd16c244f6f3ba31c26b67895d2120bf0b"
+ },
+ {
+  "q": "Will A win the 46th FIDE Chess Olympiad Open Tournament?",
+  "yes": 0.5,
+  "vol24": 41415.682973999996,
+  "end": "2026-09-28",
+  "slug": "46th-fide-chess-olympiad-open-tournament-winner-20260716211453703",
+  "cond": "0x054e40d27aa7ed42ed93f68b18b7b7c8f5492b22dab058524d1830486421b6da"
+ },
+ {
+  "q": "Will B win the 46th FIDE Chess Olympiad Open Tournament?",
+  "yes": 0.5,
+  "vol24": 41415.682973999996,
+  "end": "2026-09-28",
+  "slug": "46th-fide-chess-olympiad-open-tournament-winner-20260716211453703",
+  "cond": "0xd00af117c2e907b56933881c6e8a3fdd57efa9ed75a857c8fd095829b83e69a5"
+ },
+ {
+  "q": "Will C win the 46th FIDE Chess Olympiad Open Tournament?",
+  "yes": 0.5,
+  "vol24": 41415.682973999996,
+  "end": "2026-09-28",
+  "slug": "46th-fide-chess-olympiad-open-tournament-winner-20260716211453703",
+  "cond": "0x62e0c3ecea8ce309b457b2b401db9e97badaca4cf129b673c4ad5ceb52bf1c82"
+ },
+ {
+  "q": "Will another country win the 46th FIDE Chess Olympiad Open Tournament?",
+  "yes": 0.5,
+  "vol24": 41415.682973999996,
+  "end": "2026-09-28",
+  "slug": "46th-fide-chess-olympiad-open-tournament-winner-20260716211453703",
+  "cond": "0xb93abe8615357aa736bc613bb4b1c8a0fa6cb888a3e9afd71210cf784f95b727"
+ },
+ {
+  "q": "Will the highest temperature in Shenzhen be 30\u00b0C on September 16?",
+  "yes": 0.97,
+  "vol24": 41297.768891,
+  "end": "2026-09-16",
+  "slug": "highest-temperature-in-shenzhen-on-september-16-2026",
+  "cond": "0x223cfa65b5c09571ff571cb330f2e00542dfc518c21a9d5275041bf289bc261c"
+ },
+ {
+  "q": "Will the highest temperature in Shenzhen be 31\u00b0C on September 16?",
+  "yes": 0.04,
+  "vol24": 41297.768891,
+  "end": "2026-09-16",
+  "slug": "highest-temperature-in-shenzhen-on-september-16-2026",
+  "cond": "0x6f729eb9e6c388d468ae03e853ef18e34cc2ca57b37a0035a88bdf4314462dc0"
+ },
+ {
+  "q": "Will Warsh say \"Task Force\" 10+ times during September Press Conference?",
+  "yes": 0.41,
+  "vol24": 40635.013696999995,
+  "end": "2026-09-16",
+  "slug": "what-will-kevin-warsh-say-during-september-press-conference-20260909",
+  "cond": "0x7aabe51ed38973af390486bb796a3e267f16e1be8d311d41afefed0791c62829"
+ },
+ {
+  "q": "Will Warsh say \"Good Day\" during September Press Conference?",
+  "yes": 0.91,
+  "vol24": 40635.013696999995,
+  "end": "2026-09-16",
+  "slug": "what-will-kevin-warsh-say-during-september-press-conference-20260909",
+  "cond": "0xf343556e49060a40173ab0bd9dd4ef625bf17b254274c349841da031846db9e2"
+ },
+ {
+  "q": "Will Warsh say \"Good Afternoon\" during September Press Conference?",
+  "yes": 0.055,
+  "vol24": 40635.013696999995,
+  "end": "2026-09-16",
+  "slug": "what-will-kevin-warsh-say-during-september-press-conference-20260909",
+  "cond": "0x9df5f4c2fd14e92c6235d1630a7924a10fba83f1a8ba360eafbd101d71a972e3"
+ },
+ {
+  "q": "Will Warsh say \"AI\" or \"Artificial Intelligence\" during September Press Conference?",
+  "yes": 0.91,
+  "vol24": 40635.013696999995,
+  "end": "2026-09-16",
+  "slug": "what-will-kevin-warsh-say-during-september-press-conference-20260909",
+  "cond": "0xb3b89ae02b8a319a979d7dad4e30e050abee9a551af2612d78ac90358aecc42a"
+ },
+ {
+  "q": "Will Warsh say \"Labor Force\" during September Press Conference?",
+  "yes": 0.355,
+  "vol24": 40635.013696999995,
+  "end": "2026-09-16",
+  "slug": "what-will-kevin-warsh-say-during-september-press-conference-20260909",
+  "cond": "0x65d6ebd5a1327ee2912c11292b3422c4fd5c25848866dbd4ce86fd6b2cd62e47"
+ },
+ {
+  "q": "Will Warsh say \"Scenario\" during September Press Conference?",
+  "yes": 0.455,
+  "vol24": 40635.013696999995,
+  "end": "2026-09-16",
+  "slug": "what-will-kevin-warsh-say-during-september-press-conference-20260909",
+  "cond": "0xf7b98ea0c2188acb50b97d3260b6fd79d183219e447b8c60956cb99dee33428b"
+ },
+ {
+  "q": "Will Warsh say \"Echo\" during September Press Conference?",
+  "yes": 0.495,
+  "vol24": 40635.013696999995,
+  "end": "2026-09-16",
+  "slug": "what-will-kevin-warsh-say-during-september-press-conference-20260909",
+  "cond": "0x194591237a9e25762696852030c507e779135bbac009aedeecb859977271c1ae"
+ },
+ {
+  "q": "Will Warsh say \"Software\" during September Press Conference?",
+  "yes": 0.36,
+  "vol24": 40635.013696999995,
+  "end": "2026-09-16",
+  "slug": "what-will-kevin-warsh-say-during-september-press-conference-20260909",
+  "cond": "0x3f7f3a9788b434f142a2a1495e92728939561fd4f7d9247200e73c038f06ff72"
+ },
+ {
+  "q": "Will Warsh say \"Pressure\" during September Press Conference?",
+  "yes": 0.45,
+  "vol24": 40635.013696999995,
+  "end": "2026-09-16",
+  "slug": "what-will-kevin-warsh-say-during-september-press-conference-20260909",
+  "cond": "0xe9b0192eccd0330cf9d71d3c1605e94cfcd5f67e85c33883896c64cc2c80c777"
+ },
+ {
+  "q": "Will Warsh say \"Luck\" or \"Lucky\" during September Press Conference?",
+  "yes": 0.395,
+  "vol24": 40635.013696999995,
+  "end": "2026-09-16",
+  "slug": "what-will-kevin-warsh-say-during-september-press-conference-20260909",
+  "cond": "0x56c716c56711d281447dca0755d1330dfba104fe5e10fbc695194597a24bb254"
+ },
+ {
+  "q": "Will Warsh say \"Dissent\" during September Press Conference?",
+  "yes": 0.145,
+  "vol24": 40635.013696999995,
+  "end": "2026-09-16",
+  "slug": "what-will-kevin-warsh-say-during-september-press-conference-20260909",
+  "cond": "0x487292956f286c176881a7b2d09f1a675e712f234478315dda6bbe7f2cf4a3d8"
+ },
+ {
+  "q": "Will Warsh say \"Trump\" during September Press Conference?",
+  "yes": 0.08,
+  "vol24": 40635.013696999995,
+  "end": "2026-09-16",
+  "slug": "what-will-kevin-warsh-say-during-september-press-conference-20260909",
+  "cond": "0x73e64d239d009c397ba766be3b5a94a2b36d35ad733975138492d489c2514bb6"
+ },
+ {
+  "q": "Will Warsh say \"Productivity\" during September Press Conference?",
+  "yes": 0.895,
+  "vol24": 40635.013696999995,
+  "end": "2026-09-16",
+  "slug": "what-will-kevin-warsh-say-during-september-press-conference-20260909",
+  "cond": "0x8748c8204fda0b18cc8e1fa7f205aefec7366bc1beac43902e3b5a940add8908"
+ },
+ {
+  "q": "Will Warsh say \"Bet\" or \"Betting\" during September Press Conference?",
+  "yes": 0.66,
+  "vol24": 40635.013696999995,
+  "end": "2026-09-16",
+  "slug": "what-will-kevin-warsh-say-during-september-press-conference-20260909",
+  "cond": "0xea9f8a506594868a567b6693a6531f476968b0422e08274299605f6966da73ff"
+ },
+ {
+  "q": "Will Warsh say \"Projection\" during September Press Conference?",
+  "yes": 0.835,
+  "vol24": 40635.013696999995,
+  "end": "2026-09-16",
+  "slug": "what-will-kevin-warsh-say-during-september-press-conference-20260909",
+  "cond": "0xd7aa8b7f75018a641b3eafcc88721780847455c92f4d5a7b73611451069b24d2"
+ },
+ {
+  "q": "Will Warsh say \"Balance Sheet\" during September Press Conference?",
+  "yes": 0.87,
+  "vol24": 40635.013696999995,
+  "end": "2026-09-16",
+  "slug": "what-will-kevin-warsh-say-during-september-press-conference-20260909",
+  "cond": "0xc6b3c2cff5ff2448fa313d4991a834a62a16a3e55ae0993b86b8006bd7bcd8ff"
+ },
+ {
+  "q": "Will Warsh say \"Pandemic\" during September Press Conference?",
+  "yes": 0.425,
+  "vol24": 40635.013696999995,
+  "end": "2026-09-16",
+  "slug": "what-will-kevin-warsh-say-during-september-press-conference-20260909",
+  "cond": "0x876f3e12a82cc747add57ae71d2787d84aa3637dcb360a068c64547d65406878"
+ },
+ {
+  "q": "Will Warsh say \"Anchor\" or \"Anchored\" during September Press Conference?",
+  "yes": 0.305,
+  "vol24": 40635.013696999995,
+  "end": "2026-09-16",
+  "slug": "what-will-kevin-warsh-say-during-september-press-conference-20260909",
+  "cond": "0xcf209ec101e824a2c079e69de36f02de9104608aec4105aff42ff4592ea075fe"
+ },
+ {
+  "q": "Will Warsh say \"Gas\" or \"Gasoline\" or \"Natural Gas\" during September Press Conference?",
+  "yes": 0.475,
+  "vol24": 40635.013696999995,
+  "end": "2026-09-16",
+  "slug": "what-will-kevin-warsh-say-during-september-press-conference-20260909",
+  "cond": "0x91f6f60e4dd363fcb5bde00d8bff69cf417ffcbc8157a72636e15ad9ba860966"
+ },
+ {
+  "q": "Will SpaceX Starship Flight Test 14 launch by September 30?",
+  "yes": 0.917,
+  "vol24": 37410.012929000004,
+  "end": "2026-10-01",
+  "slug": "spacex-starship-flight-test-14",
+  "cond": "0x0eb7539d08d0ae47d3af023b3c2d243a9c230b0c035251e0d8fe347c630c8570"
+ },
+ {
+  "q": "Will SpaceX Starship Flight Test 14 launch by September 26?",
+  "yes": 0.665,
+  "vol24": 37410.012929000004,
+  "end": "2026-09-27",
+  "slug": "spacex-starship-flight-test-14",
+  "cond": "0x744a5154cd537ef81056d7a565fd54aa36ef1632af2c3f02610babd946fc4e90"
+ },
+ {
+  "q": "Fed rate cut by October 2026 meeting?",
+  "yes": 0.0305,
+  "vol24": 36514.686882,
+  "end": "2026-11-08",
+  "slug": "fed-rate-cut-by-629",
+  "cond": "0x4092815fea8f91e60586882d45fa2f61bfca8a36d595f47fdea9eec5d2893025"
+ },
+ {
+  "q": "Will the highest temperature in Guangzhou be 31\u00b0C on September 16?",
+  "yes": 0.93,
+  "vol24": 34927.083993,
+  "end": "2026-09-16",
+  "slug": "highest-temperature-in-guangzhou-on-september-16-2026",
+  "cond": "0x8d94b484e05dfb59cc4d272497f7a6c095956eb1bb435f0245f9298066e1d9d9"
+ },
+ {
+  "q": "Will the highest temperature in Guangzhou be 32\u00b0C on September 16?",
+  "yes": 0.07,
+  "vol24": 34927.083993,
+  "end": "2026-09-16",
+  "slug": "highest-temperature-in-guangzhou-on-september-16-2026",
+  "cond": "0xd19d9ac1a8a80bed8ec1ec6a9d16c3c837d188f844035b5c417a2306a4b8f501"
+ },
+ {
+  "q": "Will the highest temperature in Wuhan be 27\u00b0C on September 16?",
+  "yes": 0.97,
+  "vol24": 34315.942732999996,
+  "end": "2026-09-16",
+  "slug": "highest-temperature-in-wuhan-on-september-16-2026",
+  "cond": "0x73cceda75a98a2e37ce54dd13377fbb15dafb690ce8f2490d3395f168daa35e5"
+ },
+ {
+  "q": "Will the Democrats win the Texas Senate race in 2026?",
+  "yes": 0.56,
+  "vol24": 33881.546268,
+  "end": "",
+  "slug": "texas-senate-election-winner",
+  "cond": "0x34918035a590555ba1fb1d6a019d766ab6e557d63e7f3140b63b4550eee7f417"
+ },
+ {
+  "q": "Will the Republicans win the Texas Senate race in 2026?",
+  "yes": 0.445,
+  "vol24": 33881.546268,
+  "end": "",
+  "slug": "texas-senate-election-winner",
+  "cond": "0x94521176f57d2ce81dde01e0b7699ca4279423042d37ed53908f0c8bfefe7e14"
+ },
+ {
+  "q": "Will Artificial Inu be the first to hit a $1B FDV?",
+  "yes": 0.085,
+  "vol24": 31496.480449000002,
+  "end": "2026-12-26",
+  "slug": "first-to-hit-1b-fdv-ansem-cashcat-ai-or-net-20260902214135",
+  "cond": "0x9269181aab86b3e08b94b22b47391ec8db8d38893ebc20105e99c95361892cd7"
+ },
+ {
+  "q": "Will Cash Cat be the first to hit a $1B FDV?",
+  "yes": 0.055,
+  "vol24": 31496.480449000002,
+  "end": "2026-12-26",
+  "slug": "first-to-hit-1b-fdv-ansem-cashcat-ai-or-net-20260902214135",
+  "cond": "0x5fcbd7a2b30900eee910716c0c4df3626ba6958bd4d57d44b3eb51155ead7c0b"
+ },
+ {
+  "q": "Will none of these coins hit a $1B FDV?",
+  "yes": 0.855,
+  "vol24": 31496.480449000002,
+  "end": "2026-12-26",
+  "slug": "first-to-hit-1b-fdv-ansem-cashcat-ai-or-net-20260902214135",
+  "cond": "0x820729aadc283c1acec9aa0fab994d0aae15dd372c29df515134cd0548650d13"
+ },
+ {
+  "q": "Will OpenAI announce another Millennium Prize solution by September 30, 2026?",
+  "yes": 0.19,
+  "vol24": 30201.335317999998,
+  "end": "2026-10-01",
+  "slug": "openai-announces-another-millennium-prize-solution-by",
+  "cond": "0x825aa4592b3efdae16abb105be20cddfb02f643dd836d2f3121d1ba7e4700059"
+ }
+]

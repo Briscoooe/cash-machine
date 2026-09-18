@@ -1,0 +1,15 @@
+import json, urllib.request, time
+
+def get(url):
+    req = urllib.request.Request(url, headers={'User-Agent':'Mozilla/5.0'})
+    return json.load(urllib.request.urlopen(req, timeout=30))
+
+cid = "0xdf8e2dc5860027decbe6164555c3c1c9645c3bd33e16b9dc57ca87125047d4a8"
+now = int(time.time())
+for fid in ["1440", "4320", "8640"]:
+    try:
+        h = get("https://clob.polymarket.com/prices-history?market=%s&startTs=%d&endTs=%d&fidelity=%s" % (cid, now-45*86400, now, fid))
+        pts = h.get('history', [])
+        print(fid, len(pts), [(time.strftime('%m-%d', time.gmtime(p['t'])), round(p['p'],3)) for p in pts])
+    except Exception as ex:
+        print(fid, "ERR", ex)

@@ -1,0 +1,520 @@
+{
+ "elon-musk-of-tweets-september-14-september-16-2026": {
+  "desc": "This market will resolve according to the number of times Elon Musk (@elonmusk), posts on X from September 14 12:00 PM ET to September 16, 2026 12:00 PM ET.\n\nFor the purposes of this market, only main feed posts, quote posts and reposts will count.\n\nReplies will NOT count towards the total - however, replies on the main feed such as https://x.com/elonmusk/status/1786073478711353576 will be counted by the tracker.\n\nDeleted posts will count as long as they remain available long enough to be captured by the tracker (~5 minutes).\n\nCommunity reposts which are not counted by the tracker not count toward the total.\n\nThe resolution source for this market is the 'Post Counter' figure for posts found at https://xtracker.polymarket.com. Individual posts can be viewed by clicking \"Export Data\". If the tracker does not update correctly in accordance with the rules, X itself may be used as a secondary",
+  "markets": [
+   {
+    "q": "Will Elon Musk post <40 tweets from September 14 to September 16, 2026?",
+    "yes": "0",
+    "end": "2026-09-16"
+   },
+   {
+    "q": "Will Elon Musk post 40-64 tweets from September 14 to September 16, 2026?",
+    "yes": "0.65",
+    "end": "2026-09-16"
+   },
+   {
+    "q": "Will Elon Musk post 65-89 tweets from September 14 to September 16, 2026?",
+    "yes": "0.335",
+    "end": "2026-09-16"
+   },
+   {
+    "q": "Will Elon Musk post 90-114 tweets from September 14 to September 16, 2026?",
+    "yes": "0.0075",
+    "end": "2026-09-16"
+   },
+   {
+    "q": "Will Elon Musk post 115-139 tweets from September 14 to September 16, 2026?",
+    "yes": "0.0005",
+    "end": "2026-09-16"
+   },
+   {
+    "q": "Will Elon Musk post 140-164 tweets from September 14 to September 16, 2026?",
+    "yes": "0.0005",
+    "end": "2026-09-16"
+   },
+   {
+    "q": "Will Elon Musk post 165-189 tweets from September 14 to September 16, 2026?",
+    "yes": "0.0005",
+    "end": "2026-09-16"
+   },
+   {
+    "q": "Will Elon Musk post 190-214 tweets from September 14 to September 16, 2026?",
+    "yes": "0.0005",
+    "end": "2026-09-16"
+   },
+   {
+    "q": "Will Elon Musk post 215-239 tweets from September 14 to September 16, 2026?",
+    "yes": "0.0005",
+    "end": "2026-09-16"
+   },
+   {
+    "q": "Will Elon Musk post 240+ tweets from September 14 to September 16, 2026?",
+    "yes": "0.0005",
+    "end": "2026-09-16"
+   }
+  ],
+  "vol24": 289765.24127299996,
+  "endDate": "2026-09-16"
+ },
+ "what-price-will-wti-hit-in-september-2026": {
+  "desc": "What will WTI Crude Oil (WTI) hit in September 2026?",
+  "markets": [
+   {
+    "q": "Will WTI Crude Oil (WTI) hit (HIGH) $150 in September?",
+    "yes": "0.014",
+    "end": "2026-10-01"
+   },
+   {
+    "q": "Will WTI Crude Oil (WTI) hit (HIGH) $140 in September?",
+    "yes": "0.0265",
+    "end": "2026-10-01"
+   },
+   {
+    "q": "Will WTI Crude Oil (WTI) hit (HIGH) $130 in September?",
+    "yes": "0.046",
+    "end": "2026-10-01"
+   },
+   {
+    "q": "Will WTI Crude Oil (WTI) hit (HIGH) $120 in September?",
+    "yes": "0.144",
+    "end": "2026-10-01"
+   },
+   {
+    "q": "Will WTI Crude Oil (WTI) hit (HIGH) $110 in September?",
+    "yes": "0.46",
+    "end": "2026-10-01"
+   },
+   {
+    "q": "Will WTI Crude Oil (WTI) hit (HIGH) $100 in September?",
+    "yes": "1",
+    "end": "2026-10-01"
+   },
+   {
+    "q": "Will WTI Crude Oil (WTI) hit (HIGH) $90 in September?",
+    "yes": "1",
+    "end": "2026-10-01"
+   },
+   {
+    "q": "Will WTI Crude Oil (WTI) hit (LOW) $80 in September?",
+    "yes": "0.095",
+    "end": "2026-10-01"
+   },
+   {
+    "q": "Will WTI Crude Oil (WTI) hit (LOW) $70 in September?",
+    "yes": "0.018",
+    "end": "2026-10-01"
+   },
+   {
+    "q": "Will WTI Crude Oil (WTI) hit (LOW) $60 in September?",
+    "yes": "0.0075",
+    "end": "2026-10-01"
+   },
+   {
+    "q": "Will WTI Crude Oil (WTI) hit (LOW) $50 in September?",
+    "yes": "0.0035",
+    "end": "2026-10-01"
+   },
+   {
+    "q": "Will WTI Crude Oil (WTI) hit (LOW) $40 in September?",
+    "yes": "0.0025",
+    "end": "2026-10-01"
+   },
+   {
+    "q": "Will WTI Crude Oil (WTI) hit (LOW) $30 in September?",
+    "yes": "0.002",
+    "end": "2026-10-01"
+   },
+   {
+    "q": "Will WTI Crude Oil (WTI) hit (LOW) $20 in September?",
+    "yes": "0.0005",
+    "end": "2026-10-01"
+   },
+   {
+    "q": "Will WTI Crude Oil (WTI) hit (HIGH) $85 in September?",
+    "yes": "1",
+    "end": "2026-10-01"
+   },
+   {
+    "q": "Will WTI Crude Oil (WTI) hit (LOW) $75 in September?",
+    "yes": "0.045",
+    "end": "2026-10-01"
+   },
+   {
+    "q": "Will WTI Crude Oil (WTI) hit (HIGH) $95 in September?",
+    "yes": "1",
+    "end": "2026-10-01"
+   },
+   {
+    "q": "Will WTI Crude Oil (WTI) hit (LOW) $65 in September?",
+    "yes": "0.0125",
+    "end": "2026-10-01"
+   },
+   {
+    "q": "Will WTI Crude Oil (WTI) hit (HIGH) $105 in September?",
+    "yes": "1",
+    "end": "2026-10-01"
+   },
+   {
+    "q": "Will WTI Crude Oil (WTI) hit (LOW) $55 in September?",
+    "yes": "0.0085",
+    "end": "2026-10-01"
+   },
+   {
+    "q": "Will WTI Crude Oil (WTI) hit (HIGH) $115 in September?",
+    "yes": "0.223",
+    "end": "2026-10-01"
+   },
+   {
+    "q": "Will WTI Crude Oil (WTI) hit (LOW) $85 in September?",
+    "yes": "0.145",
+    "end": "2026-10-01"
+   },
+   {
+    "q": "Will WTI Crude Oil (WTI) hit (LOW) $90 in September?",
+    "yes": "1",
+    "end": "2026-10-01"
+   },
+   {
+    "q": "Will WTI Crude Oil (WTI) hit (LOW) $90 in September?",
+    "yes": "1",
+    "end": "2026-10-01"
+   },
+   {
+    "q": "Will WTI Crude Oil (WTI) hit (LOW) $90 in September?",
+    "yes": "0.3305",
+    "end": "2026-10-01"
+   },
+   {
+    "q": "Will WTI Crude Oil (WTI) hit (LOW) $95 in September?",
+    "yes": "0.555",
+    "end": "2026-10-01"
+   },
+   {
+    "q": "Will WTI Crude Oil (WTI) hit (HIGH) $125 in September?",
+    "yes": "0.075",
+    "end": "2026-10-01"
+   },
+   {
+    "q": "Will WTI Crude Oil (WTI) hit (LOW) $100 in September?",
+    "yes": "1",
+    "end": "2026-10-01"
+   },
+   {
+    "q": "Will WTI Crude Oil (WTI) hit (HIGH) $100 in September?",
+    "yes": "1",
+    "end": "2026-10-01"
+   },
+   {
+    "q": "Will WTI Crude Oil (WTI) hit (HIGH) $100 in September?",
+    "yes": "1",
+    "end": "2026-10-01"
+   },
+   {
+    "q": "Will WTI Crude Oil (WTI) hit (LOW) $100 in September?",
+    "yes": "0.7725",
+    "end": "2026-10-01"
+   },
+   {
+    "q": "Will WTI Crude Oil (WTI) hit (HIGH) $135 in September?",
+    "yes": "0.0225",
+    "end": "2026-10-01"
+   }
+  ],
+  "vol24": 617746.856491,
+  "endDate": "2026-10-01"
+ },
+ "israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963": {
+  "desc": "This market will resolve to \"Yes\" if a state of ceasefire remains in effect between Israel and Iran through the listed date, 11:59 PM Iran Standard Time (IRST). Otherwise this market will resolve to \u201cNo\u201d. \n\nA state of ceasefire will be considered to no longer be in effect between Israel and Iran if either Israel or Iran takes a qualifying military action against the other country between market creation and the listed date, 11:59 PM IRST.\n\nA qualifying military action refers to an air strike or a surface-to-surface missile strike, initiated by Israel or Iran, that directly impacts the other country. An air strike includes bombs, air-to-surface missiles, and air-launched drones. A surface-to-surface missile strike includes one-way attack drones and surface-to-surface missiles such as cruise or ballistic missiles.\n\nThe following actions do not constitute a qualifying military action:\nMunit",
+  "markets": [
+   {
+    "q": "Israel x Iran ceasefire continues through July 18?",
+    "yes": "1",
+    "end": "2026-07-18"
+   },
+   {
+    "q": "Israel x Iran ceasefire continues through July 20?",
+    "yes": "1",
+    "end": "2026-07-20"
+   },
+   {
+    "q": "Israel x Iran ceasefire continues through July 22?",
+    "yes": "1",
+    "end": "2026-07-22"
+   },
+   {
+    "q": "Israel x Iran ceasefire continues through July 25?",
+    "yes": "1",
+    "end": "2026-07-25"
+   },
+   {
+    "q": "Israel x Iran ceasefire continues through July 31?",
+    "yes": "1",
+    "end": "2026-07-31"
+   },
+   {
+    "q": "Israel x Iran ceasefire continues through August 15?",
+    "yes": "1",
+    "end": "2026-08-15"
+   },
+   {
+    "q": "Israel x Iran ceasefire continues through August 31?",
+    "yes": "1",
+    "end": "2026-08-31"
+   },
+   {
+    "q": "Israel x Iran ceasefire continues through July 23?",
+    "yes": "1",
+    "end": "2026-07-23"
+   },
+   {
+    "q": "Israel x Iran ceasefire continues through July 24?",
+    "yes": "1",
+    "end": "2026-07-24"
+   },
+   {
+    "q": "Israel x Iran ceasefire continues through July 26?",
+    "yes": "1",
+    "end": "2026-07-26"
+   },
+   {
+    "q": "Israel x Iran ceasefire continues through July 27?",
+    "yes": "1",
+    "end": "2026-07-27"
+   },
+   {
+    "q": "Israel x Iran ceasefire continues through July 28?",
+    "yes": "1",
+    "end": "2026-07-28"
+   },
+   {
+    "q": "Israel x Iran ceasefire continues through July 29?",
+    "yes": "1",
+    "end": "2026-07-29"
+   },
+   {
+    "q": "Israel x Iran ceasefire continues through July 30?",
+    "yes": "1",
+    "end": "2026-07-30"
+   },
+   {
+    "q": "Israel x Iran ceasefire continues through August 9?",
+    "yes": "1",
+    "end": "2026-08-09"
+   },
+   {
+    "q": "Israel x Iran ceasefire continues through August 2?",
+    "yes": "1",
+    "end": "2026-08-02"
+   },
+   {
+    "q": "Israel x Iran ceasefire continues through August 1?",
+    "yes": "1",
+    "end": "2026-08-01"
+   },
+   {
+    "q": "Israel x Iran ceasefire continues through August 3?",
+    "yes": "1",
+    "end": "2026-08-03"
+   },
+   {
+    "q": "Israel x Iran ceasefire continues through August 4?",
+    "yes": "1",
+    "end": "2026-08-04"
+   },
+   {
+    "q": "Israel x Iran ceasefire continues through September 30?",
+    "yes": "0.865",
+    "end": "2026-09-30"
+   },
+   {
+    "q": "Israel x Iran ceasefire continues through October 31?",
+    "yes": "0.745",
+    "end": "2026-10-31"
+   },
+   {
+    "q": "Israel x Iran ceasefire continues through December 31?",
+    "yes": "0.635",
+    "end": "2026-12-31"
+   },
+   {
+    "q": "Israel x Iran ceasefire continues through November 30?",
+    "yes": "0.675",
+    "end": "2026-11-30"
+   },
+   {
+    "q": "Israel x Iran ceasefire continues through September 15?",
+    "yes": "1",
+    "end": "2026-09-30"
+   }
+  ],
+  "vol24": 244504.06726399995,
+  "endDate": "2026-12-31"
+ },
+ "brazil-presidential-election": {
+  "desc": "A presidential election is scheduled to take place in Brazil on October 4, 2026.\n\nThis market will resolve according to the listed candidate that wins this election.\n\nThis market includes any potential second round. If the result of this election isn't known by June 30, 2027, 11:59 PM ET, the market will resolve to \"Other\".\n\nThis market will resolve based on the result of the election as indicated by a consensus of credible reporting. If there is ambiguity, this market will resolve based solely on the official results as reported by the Brazilian government, specifically the Superior Electoral Court (Tribunal Superior Eleitoral, TSE) (e.g., https://dadosabertos.tse.jus.br/).",
+  "markets": [
+   {
+    "q": "Will Tarcisio de Freitas win the 2026 Brazilian presidential election?",
+    "yes": "0.0005",
+    "end": "2026-10-04"
+   },
+   {
+    "q": "Will Luiz In\u00e1cio Lula da Silva win the 2026 Brazilian presidential election?",
+    "yes": "0.445",
+    "end": "2026-10-04"
+   },
+   {
+    "q": "Will Jair Bolsonaro win the 2026 Brazilian presidential election?",
+    "yes": "0.0005",
+    "end": "2026-10-04"
+   },
+   {
+    "q": "Will Fernando Haddad win the 2026 Brazilian presidential election?",
+    "yes": "0.0005",
+    "end": "2026-10-04"
+   },
+   {
+    "q": "Will Michelle Bolsonaro win the 2026 Brazilian presidential election?",
+    "yes": "0.0005",
+    "end": "2026-10-04"
+   },
+   {
+    "q": "Will Eduardo Bolsonaro win the 2026 Brazilian presidential election?",
+    "yes": "0.0005",
+    "end": "2026-10-04"
+   },
+   {
+    "q": "Will Carlos Roberto Massa J\u00fanior win the 2026 Brazilian presidential election?",
+    "yes": "0.0005",
+    "end": "2026-10-04"
+   },
+   {
+    "q": "Will Renan Santos win the 2026 Brazilian presidential election?",
+    "yes": "0.015",
+    "end": "2026-10-04"
+   },
+   {
+    "q": "Will Fl\u00e1vio Bolsonaro win the 2026 Brazilian presidential election?",
+    "yes": "0.5455",
+    "end": "2026-10-04"
+   },
+   {
+    "q": "Will Ronaldo Caiado win the 2026 Brazilian presidential election?",
+    "yes": "0.0015",
+    "end": "2026-10-04"
+   },
+   {
+    "q": "Will Romeu Zema win the 2026 Brazilian presidential election?",
+    "yes": "0.0015",
+    "end": "2026-10-04"
+   },
+   {
+    "q": "Will Camilo Santana win the 2026 Brazilian presidential election?",
+    "yes": "0.0005",
+    "end": "2026-10-04"
+   },
+   {
+    "q": "Will Geraldo Alckmin win the 2026 Brazilian presidential election?",
+    "yes": "0.0005",
+    "end": "2026-10-04"
+   },
+   {
+    "q": "Will Eduardo Leite win the 2026 Brazilian presidential election?",
+    "yes": "0.0005",
+    "end": "2026-10-04"
+   },
+   {
+    "q": "Will Aldo Rebelo win the 2026 Brazilian presidential election?",
+    "yes": "0.0005",
+    "end": "2026-10-04"
+   },
+   {
+    "q": "Will Tereza Cristina win the 2026 Brazilian presidential election?",
+    "yes": "0.0005",
+    "end": "2026-10-04"
+   },
+   {
+    "q": "Will Helder Barbalho win the 2026 Brazilian presidential election?",
+    "yes": "0.0005",
+    "end": "2026-10-04"
+   },
+   {
+    "q": "Will Pablo Mar\u00e7al win the 2026 Brazilian presidential election?",
+    "yes": "0.0005",
+    "end": "2026-10-04"
+   },
+   {
+    "q": "Will Augusto Cury win the 2026 Brazilian presidential election?",
+    "yes": "0.0035",
+    "end": "2026-10-04"
+   },
+   {
+    "q": "Will Person O win the 2026 Brazilian presidential election?",
+    "yes": null,
+    "end": "2026-10-04"
+   },
+   {
+    "q": "Will Person P win the 2026 Brazilian presidential election?",
+    "yes": null,
+    "end": "2026-10-04"
+   },
+   {
+    "q": "Will Person Q win the 2026 Brazilian presidential election?",
+    "yes": null,
+    "end": "2026-10-04"
+   },
+   {
+    "q": "Will Person R win the 2026 Brazilian presidential election?",
+    "yes": null,
+    "end": "2026-10-04"
+   },
+   {
+    "q": "Will Person S win the 2026 Brazilian presidential election?",
+    "yes": null,
+    "end": "2026-10-04"
+   },
+   {
+    "q": "Will Person T win the 2026 Brazilian presidential election?",
+    "yes": null,
+    "end": "2026-10-04"
+   },
+   {
+    "q": "Will Person U win the 2026 Brazilian presidential election?",
+    "yes": null,
+    "end": "2026-10-04"
+   },
+   {
+    "q": "Will Person V win the 2026 Brazilian presidential election?",
+    "yes": null,
+    "end": "2026-10-04"
+   },
+   {
+    "q": "Will Person W win the 2026 Brazilian presidential election?",
+    "yes": null,
+    "end": "2026-10-04"
+   },
+   {
+    "q": "Will Person X win the 2026 Brazilian presidential election?",
+    "yes": null,
+    "end": "2026-10-04"
+   },
+   {
+    "q": "Will Person Y win the 2026 Brazilian presidential election?",
+    "yes": null,
+    "end": "2026-10-04"
+   },
+   {
+    "q": "Will Person Z win the 2026 Brazilian presidential election?",
+    "yes": null,
+    "end": "2026-10-04"
+   },
+   {
+    "q": "Will another person win the 2026 Brazilian presidential election?",
+    "yes": null,
+    "end": "2026-10-04"
+   }
+  ],
+  "vol24": 426388.98397899995,
+  "endDate": "2026-10-04"
+ }
+}

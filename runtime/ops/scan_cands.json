@@ -1,0 +1,333 @@
+{
+ "cands": [
+  {
+   "q": "Will there be no change in Fed interest rates after the September 2026 meeting?",
+   "p": 0.125,
+   "slug": "will-there-be-no-change-in-fed-interest-rates-after-the-september-2026-meeting-615",
+   "vol24": 6649151,
+   "end": "2026-09-16T00:00:00Z",
+   "ev": "Fed Decision in September?"
+  },
+  {
+   "q": "Will the Fed increase interest rates by 25 bps after the September 2026 meeting?",
+   "p": 0.875,
+   "slug": "will-the-fed-increase-interest-rates-by-25-bps-after-the-september-2026-meeting-649",
+   "vol24": 4457041,
+   "end": "2026-09-16T00:00:00Z",
+   "ev": "Fed Decision in September?"
+  },
+  {
+   "q": "Will United Russia (ER) gain the most seats in the next Russian parliamentary election?",
+   "p": 0.755,
+   "slug": "will-united-russia-er-gain-the-most-seats-in-the-next-russian-parliamentary-election",
+   "vol24": 521517,
+   "end": "2026-09-30T00:00:00Z",
+   "ev": "Which party will gain most seats in Russian Parliamentary Election?"
+  },
+  {
+   "q": "Sao Paulo Open: Xiaodi You vs Alina Charaeva",
+   "p": 0.365,
+   "slug": "wta-you-charaev-2026-09-14",
+   "vol24": 359670,
+   "end": "2026-09-21T17:00:12Z",
+   "ev": "Sao Paulo Open: Xiaodi You vs Alina Charaeva"
+  },
+  {
+   "q": "Fed rate hike in 2026?",
+   "p": 0.955,
+   "slug": "fed-rate-hike-in-2026",
+   "vol24": 307941,
+   "end": "2026-12-09T00:00:00Z",
+   "ev": "Fed rate hike in 2026?"
+  },
+  {
+   "q": "Sao Paulo Open: Eva Lys vs Gabriela Ce",
+   "p": 0.754,
+   "slug": "wta-lys-ce-2026-09-14",
+   "vol24": 245442,
+   "end": "2026-09-21T13:00:00Z",
+   "ev": "Sao Paulo Open: Eva Lys vs Gabriela Ce"
+  },
+  {
+   "q": "W35 Shenyang: Meng Yi Chen vs Tahlia Kokkinis",
+   "p": 0.495,
+   "slug": "itf-chen7-kokkin1-2026-09-16",
+   "vol24": 197507,
+   "end": "2026-09-23T02:00:00Z",
+   "ev": "W35 Shenyang: Meng Yi Chen vs Tahlia Kokkinis"
+  },
+  {
+   "q": "Will New People (NL) gain the most seats in the next Russian parliamentary election?",
+   "p": 0.2065,
+   "slug": "will-new-people-nl-gain-the-most-seats-in-the-next-russian-parliamentary-election",
+   "vol24": 167472,
+   "end": "2026-09-30T00:00:00Z",
+   "ev": "Which party will gain most seats in Russian Parliamentary Election?"
+  },
+  {
+   "q": "Will China invade Taiwan by end of 2026?",
+   "p": 0.0385,
+   "slug": "will-china-invade-taiwan-before-2027",
+   "vol24": 164974,
+   "end": "2026-12-31T00:00:00Z",
+   "ev": "Will China invade Taiwan by end of 2026?"
+  },
+  {
+   "q": "Will the Democratic Party control the House after the 2026 Midterm elections?",
+   "p": 0.875,
+   "slug": "will-the-democratic-party-control-the-house-after-the-2026-midterm-elections",
+   "vol24": 148922,
+   "end": "2026-11-03T00:00:00Z",
+   "ev": "Which party will win the House in 2026?"
+  },
+  {
+   "q": "Israel x Iran ceasefire continues through September 30?",
+   "p": 0.865,
+   "slug": "israel-x-iran-ceasefire-continues-through-september-30",
+   "vol24": 146148,
+   "end": "2026-09-30T20:29:00Z",
+   "ev": "Israel x Iran ceasefire continues through...?"
+  },
+  {
+   "q": "Counter-Strike: Black Phoenix vs ENCE (BO3) - CCT Europe Series #9 Group Stage",
+   "p": 0.495,
+   "slug": "cs2-blackp-ence-2026-09-16",
+   "vol24": 135187,
+   "end": "2026-09-16T14:00:00Z",
+   "ev": "Counter-Strike: Black Phoenix vs ENCE (BO3) - CCT Europe Series #9 Group Stage"
+  },
+  {
+   "q": "Will there be no change in Fed interest rates after the October 2026 meeting?",
+   "p": 0.625,
+   "slug": "will-there-be-no-change-in-fed-interest-rates-after-the-october-2026-meeting-20260617190324031",
+   "vol24": 132654,
+   "end": "2026-10-28T23:59:00Z",
+   "ev": "Fed Decision in October?"
+  },
+  {
+   "q": "Fed Rate Hike by October 2026 Meeting?",
+   "p": 0.915,
+   "slug": "fed-rate-hike-by-october-2026-meeting",
+   "vol24": 122371,
+   "end": "2026-12-09T00:00:00Z",
+   "ev": "Fed rate hike by...?"
+  },
+  {
+   "q": "Phan Thiet 4: Matthew Dellavedova vs Enzo Aguiard",
+   "p": 0.745,
+   "slug": "atp-dellave-aguiard-2026-09-16",
+   "vol24": 111875,
+   "end": "2026-09-23T06:00:00Z",
+   "ev": "Phan Thiet 4: Matthew Dellavedova vs Enzo Aguiard"
+  },
+  {
+   "q": "Will Fl\u00e1vio Bolsonaro win the 2026 Brazilian presidential election?",
+   "p": 0.545,
+   "slug": "will-flvio-bolsonaro-win-the-2026-brazilian-presidential-election",
+   "vol24": 105336,
+   "end": "2026-10-04T00:00:00Z",
+   "ev": "Brazil Presidential Election"
+  },
+  {
+   "q": "US announces end of Iranian blockade by September 21, 2026?",
+   "p": 0.0505,
+   "slug": "us-announces-end-of-iranian-blockade-by-september-21-2026",
+   "vol24": 102584,
+   "end": "2026-09-22T03:59:00Z",
+   "ev": "US announces end of Iranian blockade by...?"
+  },
+  {
+   "q": "Will FC Barcelona vs. Real Racing Club end in a draw?",
+   "p": 0.055,
+   "slug": "lal-bar-rrc-2026-09-16-draw",
+   "vol24": 88358,
+   "end": "2026-09-16T19:30:00Z",
+   "ev": "FC Barcelona vs. Real Racing Club"
+  },
+  {
+   "q": "LoL: Top Esports vs Invictus Gaming (BO5) - LPL Regional Finals Playoffs",
+   "p": 0.445,
+   "slug": "lol-tes-ig1-2026-09-17",
+   "vol24": 87490,
+   "end": "2026-09-17T15:00:00Z",
+   "ev": "LoL: Top Esports vs Invictus Gaming (BO5) - LPL Regional Finals Playoffs"
+  },
+  {
+   "q": "Will FC Barcelona win on 2026-09-16?",
+   "p": 0.925,
+   "slug": "lal-bar-rrc-2026-09-16-bar",
+   "vol24": 85435,
+   "end": "2026-09-16T19:30:00Z",
+   "ev": "FC Barcelona vs. Real Racing Club"
+  },
+  {
+   "q": "Will Luiz In\u00e1cio Lula da Silva win the 2026 Brazilian presidential election?",
+   "p": 0.445,
+   "slug": "will-luiz-incio-lula-da-silva-win-the-2026-brazilian-presidential-election",
+   "vol24": 78254,
+   "end": "2026-10-04T00:00:00Z",
+   "ev": "Brazil Presidential Election"
+  },
+  {
+   "q": "Iran charges Hormuz fees by October 31?",
+   "p": 0.155,
+   "slug": "iran-charges-hormuz-fees-by-october-31",
+   "vol24": 76989,
+   "end": "2026-11-01T03:59:00Z",
+   "ev": "Iran charges Hormuz fees by...?"
+  },
+  {
+   "q": "Counter-Strike: Vitality vs magic (BO3) - StarLadder StarSeries Playoffs",
+   "p": 0.89,
+   "slug": "cs2-vit-mgc-2026-09-17",
+   "vol24": 76483,
+   "end": "2026-09-17T18:30:00Z",
+   "ev": "Counter-Strike: Vitality vs magic (BO3) - StarLadder StarSeries Playoffs"
+  },
+  {
+   "q": "Will Club Atl\u00e9tico de Madrid win on 2026-09-16?",
+   "p": 0.705,
+   "slug": "lal-mad-osa-2026-09-16-mad",
+   "vol24": 72600,
+   "end": "2026-09-16T17:00:00Z",
+   "ev": "Club Atl\u00e9tico de Madrid vs. CA Osasuna"
+  },
+  {
+   "q": "Will WTI Crude Oil (WTI) hit (HIGH) $110 in September?",
+   "p": 0.44,
+   "slug": "will-wti-reach-110-in-september-2026",
+   "vol24": 71554,
+   "end": "2026-10-01T03:59:59.999Z",
+   "ev": "What will WTI Crude Oil (WTI) hit in September 2026?"
+  },
+  {
+   "q": "Will Donald Trump win the Nobel Peace Prize in 2026?",
+   "p": 0.034,
+   "slug": "will-donald-trump-win-the-nobel-peace-prize-in-2026-382",
+   "vol24": 70386,
+   "end": "2026-10-10T00:00:00Z",
+   "ev": "Nobel Peace Prize Winner 2026"
+  },
+  {
+   "q": "Will CA Osasuna win on 2026-09-16?",
+   "p": 0.095,
+   "slug": "lal-mad-osa-2026-09-16-osa",
+   "vol24": 69276,
+   "end": "2026-09-16T17:00:00Z",
+   "ev": "Club Atl\u00e9tico de Madrid vs. CA Osasuna"
+  },
+  {
+   "q": "Will WTI Crude Oil (WTI) hit (HIGH) $130 in September?",
+   "p": 0.0445,
+   "slug": "will-wti-reach-130-in-september-2026",
+   "vol24": 69002,
+   "end": "2026-10-01T03:59:59.999Z",
+   "ev": "What will WTI Crude Oil (WTI) hit in September 2026?"
+  },
+  {
+   "q": "Will Elon Musk post 40-64 tweets from September 14 to September 16, 2026?",
+   "p": 0.735,
+   "slug": "elon-musk-of-tweets-september-14-september-16-2026-40-64",
+   "vol24": 65332,
+   "end": "2026-09-16T16:00:00Z",
+   "ev": "Elon Musk # tweets September 14 - September 16, 2026?"
+  },
+  {
+   "q": "Bab el-Mandeb Strait effectively closed by September 30?",
+   "p": 0.049,
+   "slug": "bab-el-mandeb-strait-effectively-closed-by-september-30-999-671-939",
+   "vol24": 63962,
+   "end": "2026-10-01T03:59:00Z",
+   "ev": "Bab el-Mandeb Strait effectively closed by...?"
+  },
+  {
+   "q": "Will WTI Crude Oil (WTI) hit (HIGH) $115 in September?",
+   "p": 0.2245,
+   "slug": "will-wti-reach-115-in-september-2026",
+   "vol24": 63259,
+   "end": "2026-10-01T03:59:59.999Z",
+   "ev": "What will WTI Crude Oil (WTI) hit in September 2026?"
+  },
+  {
+   "q": "US announces end of Iranian blockade by September 30, 2026?",
+   "p": 0.145,
+   "slug": "us-announces-end-of-iranian-blockade-by-september-30-2026-20260727171615364-722-649-646-561-213-644-414-831",
+   "vol24": 62724,
+   "end": "2026-10-01T03:59:00Z",
+   "ev": "US announces end of Iranian blockade by...?"
+  },
+  {
+   "q": "Fed Rate Hike by September 2026 Meeting?",
+   "p": 0.88,
+   "slug": "fed-rate-hike-by-september-2026-meeting",
+   "vol24": 62484,
+   "end": "2026-12-09T00:00:00Z",
+   "ev": "Fed rate hike by...?"
+  },
+  {
+   "q": "Will Elon Musk post 160-179 tweets from September 11 to September 18, 2026?",
+   "p": 0.0465,
+   "slug": "elon-musk-of-tweets-september-11-september-18-2026-160-179",
+   "vol24": 58965,
+   "end": "2026-09-18T16:00:00Z",
+   "ev": "Elon Musk # tweets September 11 - September 18, 2026?"
+  },
+  {
+   "q": "Will the Fed increase interest rates by 25 bps after the October 2026 meeting?",
+   "p": 0.365,
+   "slug": "will-the-fed-increase-interest-rates-by-25-bps-after-the-october-2026-meeting-20260617190324032",
+   "vol24": 58095,
+   "end": "2026-10-28T23:59:00Z",
+   "ev": "Fed Decision in October?"
+  },
+  {
+   "q": "Israel x Iran ceasefire continues through October 31?",
+   "p": 0.755,
+   "slug": "israel-x-iran-ceasefire-continues-through-october-31",
+   "vol24": 57435,
+   "end": "2026-10-31T20:29:00Z",
+   "ev": "Israel x Iran ceasefire continues through...?"
+  },
+  {
+   "q": "Saudi Oil Pipeline (East-West) restarts by September 30?",
+   "p": 0.465,
+   "slug": "saudi-oil-pipeline-east-west-restarts-by-september-30",
+   "vol24": 56831,
+   "end": "2026-10-01T03:59:00Z",
+   "ev": "Saudi Oil Pipeline (East-West) restarts by...?"
+  },
+  {
+   "q": "Strait of Hormuz traffic returns to normal by December 31?",
+   "p": 0.175,
+   "slug": "strait-of-hormuz-traffic-returns-to-normal-by-december-31",
+   "vol24": 56197,
+   "end": "2026-12-31T00:00:00Z",
+   "ev": "Strait of Hormuz traffic returns to normal by December 31?"
+  },
+  {
+   "q": "Will Elon Musk post 65-89 tweets from September 14 to September 16, 2026?",
+   "p": 0.265,
+   "slug": "elon-musk-of-tweets-september-14-september-16-2026-65-89",
+   "vol24": 55882,
+   "end": "2026-09-16T16:00:00Z",
+   "ev": "Elon Musk # tweets September 14 - September 16, 2026?"
+  },
+  {
+   "q": "Will Fl\u00e1vio Bolsonaro finish in second place in the first round of the 2026 Brazilian presidential election?",
+   "p": 0.755,
+   "slug": "will-flvio-bolsonaro-finish-in-second-place-in-the-first-round-of-the-2026-brazilian-presidential-election",
+   "vol24": 54438,
+   "end": "2026-10-04T00:00:00Z",
+   "ev": "Brazil Presidential Election First Round: 2nd Place"
+  }
+ ],
+ "descs": {
+  "wta-you-charaev-2026-09-14": "This market refers to the tennis match between Xiaodi You and Alina Charaeva in the Sao Paulo Open, originally scheduled for September 14, 2026 at 1:00PM ET.\n\nThis market will resolve to 'Xiaodi You' if Xiaodi You advances against Alina Charaeva.\n\nThis market will resolve to 'Alina Charaeva' if Alina Charaeva advances against Xiaodi You.\n\nIf the match is canceled (not played at all), ends in a tie, or a winner has not been determined by September 28, 2026, 11:59 PM ET (14 days after the scheduled start), this market will resolve to 50-50.\n\nIf the match begins but is not completed, and one play",
+  "fed-rate-hike-in-2026": "This market will resolve to \u201cYes\u201d if the upper bound of the target federal funds rate is increased at any point between January 1, 2026 and the Fed's December 2026 meeting, currently scheduled for December 8-9, 2026. Otherwise, this market will resolve to \u201cNo\u201d.\n\nThis market may not resolve to \"No\" until the Fed has released its rate change decision following its December meeting.\n\nThe primary resolution source for this market will be the official website of the Federal Reserve (https://www.federalreserve.gov/monetarypolicy/openmarket.htm), however a consensus of credible reporting may also be ",
+  "wta-lys-ce-2026-09-14": "This market refers to the tennis match between Eva Lys and Gabriela Ce in the Sao Paulo Open, originally scheduled for September 14, 2026 at 9:00AM ET.\n\nThis market will resolve to 'Eva Lys' if Eva Lys advances against Gabriela Ce.\n\nThis market will resolve to 'Gabriela Ce' if Gabriela Ce advances against Eva Lys.\n\nIf the match is canceled (not played at all), ends in a tie, or a winner has not been determined by September 28, 2026, 11:59 PM ET (14 days after the scheduled start), this market will resolve to 50-50.\n\nIf the match begins but is not completed, and one player advances due to the o",
+  "itf-chen7-kokkin1-2026-09-16": "This market refers to the tennis match between Meng Yi Chen and Tahlia Kokkinis in the W35 Shenyang, Main Draw, originally scheduled for September 15, 2026 at 10:00PM ET.\n\nThis market will resolve to 'Meng Yi Chen' if Meng Yi Chen advances against Tahlia Kokkinis.\n\nThis market will resolve to 'Tahlia Kokkinis' if Tahlia Kokkinis advances against Meng Yi Chen.\n\nIf the match is canceled (not played at all), ends in a tie, or a winner has not been determined by September 29, 2026, 11:59 PM ET (14 days after the scheduled start), this market will resolve to 50-50.\n\nIf the match begins but is not c",
+  "will-china-invade-taiwan-before-2027": "This market will resolve to \"Yes\" if China commences a military offensive intended to establish control over any portion of the Republic of China (Taiwan) by December 31, 2026, 11:59 PM ET. Otherwise, this market will resolve to \"No\".\n\nTerritory under the administration of the Republic of China including any inhabited islands will qualify, however uninhabited islands will not qualify. \n\nThe resolution source for this market will be will be official confirmation by China, Taiwan, the United Nations, or any permanent member of the UN Security Council, however a consensus of credible reporting wi",
+  "cs2-blackp-ence-2026-09-16": "This market refers to the Counter-Strike Round 1 match between Black Phoenix and ENCE in the CCT Europe Series #9 Group Stage, initially scheduled for September 16, 2026 at 4:00 AM ET.\n\nThis market will resolve to \"Black Phoenix\" if Black Phoenix win Map 1 against ENCE.\n\nThis market will resolve to \"ENCE\" if ENCE win Map 1 against Black Phoenix.\n\nIf the match begins but is not completed, and Map 1 is concluded with a winner determined, this market will resolve based on the completed Map 1. \n\nIf Map 1 is not completed for any reason, this market will resolve 50-50. \n\nIf the match is canceled (n",
+  "atp-dellave-aguiard-2026-09-16": "This market refers to the tennis match between Matthew Dellavedova and Enzo Aguiard in the Phan Thiet 4, originally scheduled for September 16, 2026 at 2:00AM ET.\n\nThis market will resolve to 'Matthew Dellavedova' if Matthew Dellavedova advances against Enzo Aguiard.\n\nThis market will resolve to 'Enzo Aguiard' if Enzo Aguiard advances against Matthew Dellavedova.\n\nIf the match is canceled (not played at all), ends in a tie, or a winner has not been determined by September 30, 2026, 11:59 PM ET (14 days after the scheduled start), this market will resolve to 50-50.\n\nIf the match begins but is n"
+ }
+}
