@@ -23,12 +23,18 @@ try {
 const money = (n) => { const x = Number(n); return Number.isFinite(x) ? '$' + x.toFixed(2) : '—'; };
 const cfSum = rejected.reduce((a,r)=>a+(r.counterfactual_pnl ?? 0), 0);
 const openTrades = trades.filter(t=>t.status==='open');
-// live tracking: join open trades with on-chain positions
+// live tracking: join open trades with on-chain positions (direct upstream, same as trade page)
+const wallet = Astro.locals.runtime?.env?.WALLET_ADDRESS;
 let chainPos = [];
-try {
-  const r = await fetch('/api/positions', { signal: AbortSignal.timeout(8000) });
-  if (r.ok) chainPos = await r.json();
-} catch (e) { console.error('positions fetch failed', e); }
+if (wallet) {
+  try {
+    const r = await fetch(`https://data-api.polymarket.com/positions?user=${wallet}&limit=100`, {
+      signal: AbortSignal.timeout(8000),
+      headers: { 'User-Agent': 'cash-machine-site' },
+    });
+    if (r.ok) chainPos = await r.json();
+  } catch (e) { console.error('positions fetch failed', e); }
+}
 const tracking = openTrades.map(t => {
   const mq = (t.market||'').trim().replace(/\?$/,'').toLowerCase();
   let p = chainPos.find(p => (p.title||'').trim().replace(/\?$/,'').toLowerCase() === mq);
